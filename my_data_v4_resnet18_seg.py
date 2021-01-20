@@ -13,10 +13,10 @@ import torchvision.transforms as transforms
 import torchvision.datasets as datasets
 
 # model
-from models import resnet50, resnet18
+from models import resnet50, resnet18, resnet18_seg
 
 # dataset
-from dataset import MWD
+from dataset import MyData, MyDataSeg
 import numpy as np
 
 from utils import AverageMeter, accuracy, Bar
@@ -24,8 +24,9 @@ from utils import AverageMeter, accuracy, Bar
 parser = argparse.ArgumentParser()
 
 # datasets
-parser.add_argument('-d', '--dataset', default='mwd', type=str)
-parser.add_argument('--root-path', default='G:\\dataset\\MWD\\weather_classification\\')
+parser.add_argument('-d', '--dataset', default='my_data_seg', type=str)
+parser.add_argument('--train-path', default="G:\\vscode_workspace\\Weather_Recognition\\data_split_v4\\train\\")
+parser.add_argument('--test-path', default="G:\\vscode_workspace\\Weather_Recognition\\data_split_v4\\test\\")
 parser.add_argument('--imagesize', default=224, type=int)
 
 # optimization options
@@ -33,32 +34,34 @@ parser.add_argument('--epochs', default=100, type=int, metavar='N',
                 help='number of total epochs to run')
 parser.add_argument('--start-epoch', default=0, type=int, metavar='N',
                 help='manual epoch number (useful on restarts)')
-parser.add_argument('--train_batch', default=16, type=int, metavar='N',
+parser.add_argument('--train_batch', default=4, type=int, metavar='N',
                 help='train batchsize')
-parser.add_argument('--test-batch', default=16, type=int, metavar='N',
+parser.add_argument('--test-batch', default=4, type=int, metavar='N',
                 help='test batchsize')
-parser.add_argument('--lr', '--learning-rate', default=0.001, type=float,
+parser.add_argument('--lr', '--learning-rate', default=0.0005, type=float,
                 metavar='LR', help='initial learning rate')
 parser.add_argument('--drop', '--dropout', default=0, type=float,
                 metavar='Dropout', help='Dropout ratio')
-parser.add_argument('--schedule', type=int, nargs='+', default=[20, 30, 40],
+parser.add_argument('--schedule', type=int, nargs='+', default=[1, 2, 4, 6, 8, 10],
                 help='Decrease learning rate at these epochs.')
-parser.add_argument('--gamma', type=float, default=0.90, help='LR is multiplied by gamma on schedule.')
+parser.add_argument('--gamma', type=float, default=0.80, help='LR is multiplied by gamma on schedule.')
 parser.add_argument('--momentum', default=0.8, type=float, metavar='M',
                 help='momentum')
-parser.add_argument('--weight-decay', '--wd', default=1e-4, type=float,
+parser.add_argument('--weight-decay', '--wd', default=1e-3, type=float,
                 metavar='W', help='weight decay (default: 1e-4)')
 
 # parser.add_argument('--pretrained', default='pretrainedmodels/vgg_msceleb_resnet50_ft_weight.pkl', type=str, metavar='PATH', 
 #                     help='path to latest checkpoint (default: none)')
 
 # checkpoints
-parser.add_argument('-c', '--checkpoint', default='checkpoints/mwd_resnet18', type=str, metavar='PATH',
+parser.add_argument('-c', '--checkpoint', default='checkpoints/my_data_v4_resnet18_seg_4classes', type=str, metavar='PATH',
                 help='path to save checkpoint (default:checkpoint)')
 parser.add_argument('--resume', default='', type=str, metavar='PATH')
 
+# parser.add_argument('--resume', default='checkpoints/my_data_v4_resnet18_seg_4classes/fold_0_checkpoint.pth.tar', type=str, metavar='PATH')
+
 # architecture
-parser.add_argument('--arch', '-a', metavar='ARCH', default='resnet18')
+parser.add_argument('--arch', '-a', metavar='ARCH', default='resnet18_seg')
 
 # miscs
 parser.add_argument('--manualSeed', type=int, help='manual seed')
@@ -91,41 +94,73 @@ def main():
     # load data
     # mean = [0.5, 0.5, 0.5]
     # std = [0.5, 0.5, 0.5]
-    imagesize = args.imagesize
-   
+    # imagesize = args.imagesize
+    image_size = (576, 720)
+
+    # 使用图片原尺寸
     train_transform = transforms.Compose([          
-            transforms.RandomHorizontalFlip(p=0.5),           
-            transforms.ColorJitter(brightness=0.4, contrast=0.3, saturation=0.25, hue=0.05),            
-            transforms.Resize((args.imagesize, args.imagesize)),
+            # transforms.RandomHorizontalFlip(p=0.5),           
+            # transforms.ColorJitter(brightness=0.4, contrast=0.3, saturation=0.25, hue=0.05),            
+            # transforms.Resize((args.imagesize, args.imagesize)),
+            transforms.Resize(image_size),
             transforms.ToTensor(),
             # transforms.Normalize(mean, std)
         ])
 
     valid_transform = transforms.Compose([
-            transforms.Resize((args.imagesize, args.imagesize)),
+            # transforms.Resize((args.imagesize, args.imagesize)),
+            transforms.Resize(image_size),
             transforms.ToTensor(),
             # transforms.Normalize(mean, std)
         ])
 
-    dataset = MWD(root_path=args.root_path, transform=valid_transform)
-    train_dataset, test_dataset = torch.utils.data.random_split(dataset, [50000, 10000])
+    train_dataset = MyDataSeg(root_path=args.train_path, transform=train_transform)
+    test_dataset = MyDataSeg(root_path=args.test_path, transform=valid_transform)
+    # dataset = MWD(root_path=args.root_path, transform=valid_transform)
+    # train_dataset, test_dataset = torch.utils.data.random_split(dataset, [50000, 10000])
     train_iter = torch.utils.data.DataLoader(train_dataset, args.train_batch, shuffle=True)
-    test_iter = torch.utils.data.DataLoader(test_dataset, args.test_batch, shuffle=True)
+    test_iter = torch.utils.data.DataLoader(test_dataset, args.test_batch, shuffle=False)
     # model
-    model = resnet18(pretrained=True)
+    model = resnet18_seg(pretrained=True)
     if use_cuda:
         model = model.cuda()
 
     print('    Total params: %.2fM' % (sum(p.numel() for p in model.parameters())/1000000.0))
     
     # criterion
+    # label_list = ['Cloud', 'Fog', 'Rainy', 'Snow', 'Sunny', 'Thunder']
+    # weights = [6297, 3214, 9349, 2711, 7734, 1470]
+    # normed_weights = [1 - (x / sum(weights)) for x in weights]
+    # normed_weights = torch.FloatTensor(normed_weights).cuda()
+    # criterion = nn.CrossEntropyLoss(weight=normed_weights)
     criterion = nn.CrossEntropyLoss()
-    
+
     # optimizer
-    optimizer = optim.SGD(model.parameters(), lr=args.lr, momentum=args.momentum, weight_decay=args.weight_decay)
+    # optimizer
+    seg_layer3_params = list(map(id, model.seg_layer3.parameters()))
+    fc_params = list(map(id, model.fc.parameters()))
+    base_params = filter(lambda p: id(p) not in seg_layer3_params + fc_params,
+                            model.parameters())
+
+    optimizer = optim.SGD([{'params': base_params},
+                            {'params': model.seg_layer3.parameters(), 'lr': 0.002},
+                            {'params': model.fc.parameters(), 'lr': 0.002}
+    ], lr=args.lr, momentum=args.momentum, weight_decay=args.weight_decay)
+
+    if args.resume:
+        # Load checkpoint.
+        print('==> Resuming from checkpoint..')
+        assert os.path.isfile(args.resume), 'Error: no checkpoint directory found!'
+        args.checkpoint = os.path.dirname(args.resume)
+        checkpoint = torch.load(args.resume)
+        best_acc = checkpoint['best_acc']
+        start_epoch = checkpoint['epoch']
+        model.load_state_dict(checkpoint['state_dict'])
+        optimizer.load_state_dict(checkpoint['optimizer'])
+    # optimizer = optim.SGD(model.parameters(), lr=args.lr, momentum=args.momentum, weight_decay=args.weight_decay)
     
     # set up logging
-    logging.basicConfig(level=logging.DEBUG,
+    logging.basicConfig(level=logging.INFO,
                         filename=os.path.join(args.checkpoint, 'log_info.log'),
                         filemode='a+',
                         format="%(asctime)-15s %(levelname)-8s  %(message)s")
@@ -143,7 +178,11 @@ def main():
         print('\nEpoch: [%d | %d] LR: %f' % (epoch + 1, args.epochs, optimizer.param_groups[0]['lr']))
 
         train_loss, train_acc = train(train_iter, model, criterion, optimizer, epoch, use_cuda)
+        # 清理显存
+        torch.cuda.empty_cache()
         test_loss, test_acc = test(test_iter, model, criterion, epoch, use_cuda)
+        # 清理显存
+        torch.cuda.empty_cache()
 
         # logger
 
@@ -175,15 +214,15 @@ def train(train_iter, model, criterion, optimizer, epoch, use_cuda):
 
     bar = Bar('Processing', max=len(train_iter))
 
-    for batch_idx, (inputs, targets) in enumerate(train_iter):
+    for batch_idx, (inputs, inputs_seg, targets) in enumerate(train_iter):
         # measure data loading time
         data_time.update(time.time() - end)
 
         if use_cuda:
-            inputs, targets = inputs.cuda(), targets.cuda()
+            inputs, inputs_seg, targets = inputs.cuda(), inputs_seg.cuda(), targets.cuda()
 
         # compute output
-        per_outputs = model(inputs)
+        per_outputs = model(inputs, inputs_seg)
 
         per_loss = criterion(per_outputs, targets)
 
@@ -199,6 +238,8 @@ def train(train_iter, model, criterion, optimizer, epoch, use_cuda):
         loss.backward()
         optimizer.step()
 
+        # 清理显存
+        # torch.cuda.empty_cache()
         # measure elapsed time
         batch_time.update(time.time() - end)
         end = time.time()
@@ -233,16 +274,16 @@ def test(test_iter, model, criterion, epoch, use_cuda):
 
     end = time.time()
     bar = Bar('Processing', max=len(test_iter))
-    for batch_idx, (inputs, targets) in enumerate(test_iter):
+    for batch_idx, (inputs, inputs_seg, targets) in enumerate(test_iter):
     # measure data loading time
         data_time.update(time.time() - end)
 
         if use_cuda:
-            inputs, targets = inputs.cuda(), targets.cuda()
+            inputs, inputs_seg, targets = inputs.cuda(), inputs_seg.cuda(), targets.cuda()
         # inputs, targets = torch.autograd.Variable(inputs, volatile=True), torch.autograd.Variable(targets)
 
         # compute output
-        outputs = model(inputs)
+        outputs = model(inputs, inputs_seg)
         loss = criterion(outputs, targets)
 
         """

@@ -13,10 +13,10 @@ import torchvision.transforms as transforms
 import torchvision.datasets as datasets
 
 # model
-from models import resnet50, resnet18
+from models import resnet50, densenet_121, FocalLoss
 
 # dataset
-from dataset import MWD
+from dataset import MyData
 import numpy as np
 
 from utils import AverageMeter, accuracy, Bar
@@ -24,8 +24,10 @@ from utils import AverageMeter, accuracy, Bar
 parser = argparse.ArgumentParser()
 
 # datasets
-parser.add_argument('-d', '--dataset', default='mwd', type=str)
-parser.add_argument('--root-path', default='G:\\dataset\\MWD\\weather_classification\\')
+parser.add_argument('-d', '--dataset', default='my_data', type=str)
+parser.add_argument('--train-path', default="G:\\vscode_workspace\\Weather_Recognition\\data_split_v2\\train\\")
+parser.add_argument('--test-path', default="G:\\vscode_workspace\\Weather_Recognition\\data_split_v2\\test\\")
+parser.add_argument('--pretrained-path', default="G:\\vscode_workspace\\Weather_Recognition\\checkpoints\\mwd_densenet121\\fold_0_model_best.pth.tar")
 parser.add_argument('--imagesize', default=224, type=int)
 
 # optimization options
@@ -37,7 +39,7 @@ parser.add_argument('--train_batch', default=16, type=int, metavar='N',
                 help='train batchsize')
 parser.add_argument('--test-batch', default=16, type=int, metavar='N',
                 help='test batchsize')
-parser.add_argument('--lr', '--learning-rate', default=0.001, type=float,
+parser.add_argument('--lr', '--learning-rate', default=0.0001, type=float,
                 metavar='LR', help='initial learning rate')
 parser.add_argument('--drop', '--dropout', default=0, type=float,
                 metavar='Dropout', help='Dropout ratio')
@@ -53,12 +55,12 @@ parser.add_argument('--weight-decay', '--wd', default=1e-4, type=float,
 #                     help='path to latest checkpoint (default: none)')
 
 # checkpoints
-parser.add_argument('-c', '--checkpoint', default='checkpoints/mwd_resnet18', type=str, metavar='PATH',
+parser.add_argument('-c', '--checkpoint', default='checkpoints/my_data_densenet121_transfer', type=str, metavar='PATH',
                 help='path to save checkpoint (default:checkpoint)')
 parser.add_argument('--resume', default='', type=str, metavar='PATH')
 
 # architecture
-parser.add_argument('--arch', '-a', metavar='ARCH', default='resnet18')
+parser.add_argument('--arch', '-a', metavar='ARCH', default='densenet121')
 
 # miscs
 parser.add_argument('--manualSeed', type=int, help='manual seed')
@@ -91,11 +93,13 @@ def main():
     # load data
     # mean = [0.5, 0.5, 0.5]
     # std = [0.5, 0.5, 0.5]
+    mean=[0.485, 0.456, 0.406]
+    std=[0.229, 0.224, 0.225]
     imagesize = args.imagesize
    
     train_transform = transforms.Compose([          
             transforms.RandomHorizontalFlip(p=0.5),           
-            transforms.ColorJitter(brightness=0.4, contrast=0.3, saturation=0.25, hue=0.05),            
+            # transforms.ColorJitter(brightness=0.4, contrast=0.3, saturation=0.25, hue=0.05),            
             transforms.Resize((args.imagesize, args.imagesize)),
             transforms.ToTensor(),
             # transforms.Normalize(mean, std)
@@ -107,25 +111,37 @@ def main():
             # transforms.Normalize(mean, std)
         ])
 
-    dataset = MWD(root_path=args.root_path, transform=valid_transform)
-    train_dataset, test_dataset = torch.utils.data.random_split(dataset, [50000, 10000])
+    train_dataset = MyData(root_path=args.train_path, transform=train_transform)
+    test_dataset = MyData(root_path=args.test_path, transform=valid_transform)
+    # dataset = MWD(root_path=args.root_path, transform=valid_transform)
+    # train_dataset, test_dataset = torch.utils.data.random_split(dataset, [50000, 10000])
     train_iter = torch.utils.data.DataLoader(train_dataset, args.train_batch, shuffle=True)
     test_iter = torch.utils.data.DataLoader(test_dataset, args.test_batch, shuffle=True)
     # model
-    model = resnet18(pretrained=True)
+    model = densenet_121(pretrained=True)
+    # 从MWD 迁移学习
+    checkpoint = torch.load(args.pretrained_path)
+    model.load_state_dict(checkpoint['state_dict'])
+
     if use_cuda:
         model = model.cuda()
 
     print('    Total params: %.2fM' % (sum(p.numel() for p in model.parameters())/1000000.0))
     
     # criterion
-    criterion = nn.CrossEntropyLoss()
+    # re-weighting loss
+    label_list = ['Cloud', 'Fog', 'Rainy', 'Snow', 'Sunny', 'Thunder']
+    weights = [4495, 2248, 6607, 1895, 5540, 1093]
+    normed_weights = [1 - (x / sum(weights)) for x in weights]
+    normed_weights = torch.FloatTensor(normed_weights).cuda()
+    criterion = nn.CrossEntropyLoss(weight=normed_weights)
+    # criterion = FocalLoss(6)
     
     # optimizer
     optimizer = optim.SGD(model.parameters(), lr=args.lr, momentum=args.momentum, weight_decay=args.weight_decay)
     
     # set up logging
-    logging.basicConfig(level=logging.DEBUG,
+    logging.basicConfig(level=logging.INFO,
                         filename=os.path.join(args.checkpoint, 'log_info.log'),
                         filemode='a+',
                         format="%(asctime)-15s %(levelname)-8s  %(message)s")

@@ -16,7 +16,7 @@ import torchvision.datasets as datasets
 from models import resnet50, resnet18
 
 # dataset
-from dataset import MWD
+from dataset import MyData
 import numpy as np
 
 from utils import AverageMeter, accuracy, Bar
@@ -24,8 +24,9 @@ from utils import AverageMeter, accuracy, Bar
 parser = argparse.ArgumentParser()
 
 # datasets
-parser.add_argument('-d', '--dataset', default='mwd', type=str)
-parser.add_argument('--root-path', default='G:\\dataset\\MWD\\weather_classification\\')
+parser.add_argument('-d', '--dataset', default='my_data', type=str)
+parser.add_argument('--train-path', default="G:\\vscode_workspace\\Weather_Recognition\\data_split_v3\\train\\")
+parser.add_argument('--test-path', default="G:\\vscode_workspace\\Weather_Recognition\\data_split_v3\\test\\")
 parser.add_argument('--imagesize', default=224, type=int)
 
 # optimization options
@@ -37,23 +38,23 @@ parser.add_argument('--train_batch', default=16, type=int, metavar='N',
                 help='train batchsize')
 parser.add_argument('--test-batch', default=16, type=int, metavar='N',
                 help='test batchsize')
-parser.add_argument('--lr', '--learning-rate', default=0.001, type=float,
+parser.add_argument('--lr', '--learning-rate', default=0.005, type=float,
                 metavar='LR', help='initial learning rate')
 parser.add_argument('--drop', '--dropout', default=0, type=float,
                 metavar='Dropout', help='Dropout ratio')
-parser.add_argument('--schedule', type=int, nargs='+', default=[20, 30, 40],
+parser.add_argument('--schedule', type=int, nargs='+', default=[1, 2, 3, 4, 5],
                 help='Decrease learning rate at these epochs.')
-parser.add_argument('--gamma', type=float, default=0.90, help='LR is multiplied by gamma on schedule.')
+parser.add_argument('--gamma', type=float, default=0.80, help='LR is multiplied by gamma on schedule.')
 parser.add_argument('--momentum', default=0.8, type=float, metavar='M',
                 help='momentum')
-parser.add_argument('--weight-decay', '--wd', default=1e-4, type=float,
+parser.add_argument('--weight-decay', '--wd', default=1e-3, type=float,
                 metavar='W', help='weight decay (default: 1e-4)')
 
 # parser.add_argument('--pretrained', default='pretrainedmodels/vgg_msceleb_resnet50_ft_weight.pkl', type=str, metavar='PATH', 
 #                     help='path to latest checkpoint (default: none)')
 
 # checkpoints
-parser.add_argument('-c', '--checkpoint', default='checkpoints/mwd_resnet18', type=str, metavar='PATH',
+parser.add_argument('-c', '--checkpoint', default='checkpoints/my_data_v3_resnet18', type=str, metavar='PATH',
                 help='path to save checkpoint (default:checkpoint)')
 parser.add_argument('--resume', default='', type=str, metavar='PATH')
 
@@ -94,8 +95,8 @@ def main():
     imagesize = args.imagesize
    
     train_transform = transforms.Compose([          
-            transforms.RandomHorizontalFlip(p=0.5),           
-            transforms.ColorJitter(brightness=0.4, contrast=0.3, saturation=0.25, hue=0.05),            
+            # transforms.RandomHorizontalFlip(p=0.5),           
+            # transforms.ColorJitter(brightness=0.4, contrast=0.3, saturation=0.25, hue=0.05),            
             transforms.Resize((args.imagesize, args.imagesize)),
             transforms.ToTensor(),
             # transforms.Normalize(mean, std)
@@ -107,8 +108,10 @@ def main():
             # transforms.Normalize(mean, std)
         ])
 
-    dataset = MWD(root_path=args.root_path, transform=valid_transform)
-    train_dataset, test_dataset = torch.utils.data.random_split(dataset, [50000, 10000])
+    train_dataset = MyData(root_path=args.train_path, transform=train_transform)
+    test_dataset = MyData(root_path=args.test_path, transform=valid_transform)
+    # dataset = MWD(root_path=args.root_path, transform=valid_transform)
+    # train_dataset, test_dataset = torch.utils.data.random_split(dataset, [50000, 10000])
     train_iter = torch.utils.data.DataLoader(train_dataset, args.train_batch, shuffle=True)
     test_iter = torch.utils.data.DataLoader(test_dataset, args.test_batch, shuffle=True)
     # model
@@ -119,13 +122,17 @@ def main():
     print('    Total params: %.2fM' % (sum(p.numel() for p in model.parameters())/1000000.0))
     
     # criterion
-    criterion = nn.CrossEntropyLoss()
+    label_list = ['Cloud', 'Fog', 'Rainy', 'Snow', 'Sunny', 'Thunder']
+    weights = [6297, 3214, 9349, 2711, 7734, 1470]
+    normed_weights = [1 - (x / sum(weights)) for x in weights]
+    normed_weights = torch.FloatTensor(normed_weights).cuda()
+    criterion = nn.CrossEntropyLoss(weight=normed_weights)
     
     # optimizer
     optimizer = optim.SGD(model.parameters(), lr=args.lr, momentum=args.momentum, weight_decay=args.weight_decay)
     
     # set up logging
-    logging.basicConfig(level=logging.DEBUG,
+    logging.basicConfig(level=logging.INFO,
                         filename=os.path.join(args.checkpoint, 'log_info.log'),
                         filemode='a+',
                         format="%(asctime)-15s %(levelname)-8s  %(message)s")

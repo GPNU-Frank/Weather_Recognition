@@ -108,7 +108,7 @@ class Bottleneck(nn.Module):
 
 class ResNet(nn.Module):
 
-    def __init__(self, block, layers, num_classes=6):
+    def __init__(self, block, layers, num_classes=4):
         self.inplanes = 64
         super(ResNet, self).__init__()
         self.conv1 = nn.Conv2d(3, 64, kernel_size=7, stride=2, padding=3,
@@ -119,11 +119,18 @@ class ResNet(nn.Module):
         self.layer1 = self._make_layer(block, 64, layers[0])
         self.layer2 = self._make_layer(block, 128, layers[1], stride=2)
         self.layer3 = self._make_layer(block, 256, layers[2], stride=2)
-        self.layer4 = self._make_layer(block, 512, layers[3], stride=2)
-        # self.avgpool = nn.AvgPool2d(7, stride=1)
 
+        # modified
+        self.inplanes = 128
+        self.seg_layer3 = self._make_layer(block, 256, layers[2], stride=2)
+
+        self.layer4 = self._make_layer(block, 512, layers[3], stride=2)
+
+        # self.avgpool = nn.AvgPool2d(7, stride=1)
         self.avgpool = nn.AdaptiveAvgPool2d(1)
-        self.fc = nn.Linear(512 * block.expansion, num_classes)
+        self.seg_avgpool = nn.AdaptiveAvgPool2d(1)
+        # self.fc = nn.Linear(512 * block.expansion, num_classes)
+        self.fc = nn.Linear(512 * block.expansion + 256 * block.expansion, num_classes)
 
         for m in self.modules():
             if isinstance(m, nn.Conv2d):
@@ -150,7 +157,7 @@ class ResNet(nn.Module):
 
         return nn.Sequential(*layers)
 
-    def forward(self, x):
+    def forward(self, x, x_seg):
        
         x = self.conv1(x)
         x = self.bn1(x)
@@ -159,17 +166,38 @@ class ResNet(nn.Module):
  
         x = self.layer1(x)
         x = self.layer2(x)
+
+        bz, c, h, w = x.size()
+
+        # x_seg = x_seg.unsqueeze(1)
+        x_seg = F.interpolate(x_seg, size=[h, w])
+        x_seg = x_seg * x
+
         x = self.layer3(x)
+    
+        x_seg = self.seg_layer3(x_seg)
+
         x = self.layer4(x)
  
+
         x = self.avgpool(x)
+
+        x_seg = self.seg_avgpool(x_seg)
+
         x = x.view(x.size(0), -1)
-        x = self.fc(x)
+        
+        x_seg = x_seg.view(x_seg.size(0), -1)
+
+        x_fusion = torch.cat([x, x_seg], dim=1)
+
+        x_fusion = self.fc(x_fusion)
+        # x = self.fc(x)
  
-        return x
+        return x_fusion
+        # return x
            
 
-def resnet18(pretrained=False, **kwargs):
+def resnet18_seg(pretrained=False, **kwargs):
     """Constructs a ResNet-18 model.
     Args:
         pretrained (bool): If True, returns a model pre-trained on ImageNet
@@ -253,10 +281,12 @@ def count_parameters(model):
 
 def main():
     device = torch.device("cuda")
-    model = resnet50(pretrained=True)
+    model = resnet18_seg(pretrained=True)
     print('net #', count_parameters(model))
-    x = torch.rand(2, 3, 224, 224)
-    y = model(x)
+    x = torch.rand(2, 3, 702, 576)
+    x_seg = torch.rand(2, 702, 576)
+    y = model(x, x_seg)
+
     print(y)
 
 
