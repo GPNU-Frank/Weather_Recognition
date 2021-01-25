@@ -17,3 +17,5 @@ from .resnet_adv import resnet50_adv
 from .densenet import *
 
 from .resnet_seg import resnet18_seg
+
+from .resnet_seg_snow import resnet18_seg_snow

@@ -118,6 +118,7 @@ def main():
     test_iter = torch.utils.data.DataLoader(test_dataset, args.test_batch, shuffle=True)
     # model
     model = resnet18(pretrained=True)
+
     if use_cuda:
         model = model.cuda()
 

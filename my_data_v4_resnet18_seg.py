@@ -13,7 +13,7 @@ import torchvision.transforms as transforms
 import torchvision.datasets as datasets
 
 # model
-from models import resnet50, resnet18, resnet18_seg
+from models import resnet50, resnet18, resnet18_seg, FocalLoss
 
 # dataset
 from dataset import MyData, MyDataSeg
@@ -38,11 +38,11 @@ parser.add_argument('--train_batch', default=4, type=int, metavar='N',
                 help='train batchsize')
 parser.add_argument('--test-batch', default=4, type=int, metavar='N',
                 help='test batchsize')
-parser.add_argument('--lr', '--learning-rate', default=0.0005, type=float,
+parser.add_argument('--lr', '--learning-rate', default=0.001, type=float,
                 metavar='LR', help='initial learning rate')
 parser.add_argument('--drop', '--dropout', default=0, type=float,
                 metavar='Dropout', help='Dropout ratio')
-parser.add_argument('--schedule', type=int, nargs='+', default=[1, 2, 4, 6, 8, 10],
+parser.add_argument('--schedule', type=int, nargs='+', default=[1, 3, 5, 7, 9],
                 help='Decrease learning rate at these epochs.')
 parser.add_argument('--gamma', type=float, default=0.80, help='LR is multiplied by gamma on schedule.')
 parser.add_argument('--momentum', default=0.8, type=float, metavar='M',
@@ -54,7 +54,7 @@ parser.add_argument('--weight-decay', '--wd', default=1e-3, type=float,
 #                     help='path to latest checkpoint (default: none)')
 
 # checkpoints
-parser.add_argument('-c', '--checkpoint', default='checkpoints/my_data_v4_resnet18_seg_4classes', type=str, metavar='PATH',
+parser.add_argument('-c', '--checkpoint', default='checkpoints/my_data_v4_resnet18_seg', type=str, metavar='PATH',
                 help='path to save checkpoint (default:checkpoint)')
 parser.add_argument('--resume', default='', type=str, metavar='PATH')
 
@@ -134,6 +134,7 @@ def main():
     # normed_weights = torch.FloatTensor(normed_weights).cuda()
     # criterion = nn.CrossEntropyLoss(weight=normed_weights)
     criterion = nn.CrossEntropyLoss()
+    # criterion = FocalLoss(5)
 
     # optimizer
     # optimizer
@@ -143,8 +144,8 @@ def main():
                             model.parameters())
 
     optimizer = optim.SGD([{'params': base_params},
-                            {'params': model.seg_layer3.parameters(), 'lr': 0.002},
-                            {'params': model.fc.parameters(), 'lr': 0.002}
+                            {'params': model.seg_layer3.parameters(), 'lr': 0.005},
+                            {'params': model.fc.parameters(), 'lr': 0.005}
     ], lr=args.lr, momentum=args.momentum, weight_decay=args.weight_decay)
 
     if args.resume:
