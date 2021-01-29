@@ -1,0 +1,79 @@
+2021-01-13 21:41:51,789 INFO      ----------configuration**********
+2021-01-13 21:41:51,789 INFO      ('dataset', 'mwd')
+2021-01-13 21:41:51,789 INFO      ('root_path', 'G:\\dataset\\MWD\\weather_classification\\')
+2021-01-13 21:41:51,789 INFO      ('imagesize', '224')
+2021-01-13 21:41:51,789 INFO      ('epochs', '100')
+2021-01-13 21:41:51,789 INFO      ('start_epoch', '0')
+2021-01-13 21:41:51,789 INFO      ('train_batch', '16')
+2021-01-13 21:41:51,789 INFO      ('test_batch', '16')
+2021-01-13 21:41:51,789 INFO      ('lr', '0.001')
+2021-01-13 21:41:51,789 INFO      ('drop', '0')
+2021-01-13 21:41:51,790 INFO      ('schedule', '[20, 30, 40]')
+2021-01-13 21:41:51,790 INFO      ('gamma', '0.9')
+2021-01-13 21:41:51,790 INFO      ('momentum', '0.8')
+2021-01-13 21:41:51,810 INFO      ('weight_decay', '0.0001')
+2021-01-13 21:41:51,810 INFO      ('checkpoint', 'checkpoints/mwd_densenet121')
+2021-01-13 21:41:51,810 INFO      ('resume', '')
+2021-01-13 21:41:51,810 INFO      ('arch', 'densenet121')
+2021-01-13 21:41:51,810 INFO      ('manualSeed', '9006')
+2021-01-13 22:05:46,828 INFO      epoch: 1, train_acc: 78.09, test_acc: 84.34
+2021-01-13 22:17:38,989 INFO      epoch: 2, train_acc: 85.13, test_acc: 85.51
+2021-01-13 22:29:24,545 INFO      epoch: 3, train_acc: 88.00, test_acc: 86.09
+2021-01-13 22:41:08,774 INFO      epoch: 4, train_acc: 90.29, test_acc: 84.79
+2021-01-13 22:52:57,392 INFO      epoch: 5, train_acc: 92.13, test_acc: 85.89
+2021-01-13 23:04:47,311 INFO      epoch: 6, train_acc: 93.75, test_acc: 86.24
+2021-01-13 23:16:28,048 INFO      epoch: 7, train_acc: 94.76, test_acc: 86.54
+2021-01-13 23:28:16,104 INFO      epoch: 8, train_acc: 95.62, test_acc: 86.45
+2021-01-13 23:40:01,482 INFO      epoch: 9, train_acc: 96.10, test_acc: 86.43
+2021-01-13 23:51:49,681 INFO      epoch: 10, train_acc: 96.61, test_acc: 86.13
+2021-01-14 00:03:37,374 INFO      epoch: 11, train_acc: 97.26, test_acc: 87.24
+2021-01-14 00:15:23,644 INFO      epoch: 12, train_acc: 97.33, test_acc: 86.29
+2021-01-14 00:27:03,417 INFO      epoch: 13, train_acc: 97.63, test_acc: 87.08
+2021-01-14 00:38:47,265 INFO      epoch: 14, train_acc: 97.82, test_acc: 86.42
+2021-01-14 00:50:36,738 INFO      epoch: 15, train_acc: 97.96, test_acc: 86.93
+2021-01-14 01:02:22,970 INFO      epoch: 16, train_acc: 98.06, test_acc: 86.88
+2021-01-14 01:14:14,691 INFO      epoch: 17, train_acc: 98.27, test_acc: 86.17
+2021-01-14 01:26:01,127 INFO      epoch: 18, train_acc: 98.29, test_acc: 86.90
+2021-01-14 01:37:47,673 INFO      epoch: 19, train_acc: 98.45, test_acc: 87.18
+2021-01-14 01:49:35,720 INFO      epoch: 20, train_acc: 98.50, test_acc: 87.23
+2021-01-14 02:01:24,357 INFO      epoch: 21, train_acc: 98.66, test_acc: 87.65
+2021-01-14 02:13:17,307 INFO      epoch: 22, train_acc: 98.72, test_acc: 87.69
+2021-01-14 02:25:05,824 INFO      epoch: 23, train_acc: 98.78, test_acc: 87.47
+2021-01-14 02:36:54,048 INFO      epoch: 24, train_acc: 98.87, test_acc: 87.86
+2021-01-14 02:48:41,988 INFO      epoch: 25, train_acc: 98.82, test_acc: 87.36
+2021-01-14 03:00:27,902 INFO      epoch: 26, train_acc: 98.98, test_acc: 87.02
+2021-01-14 03:12:19,624 INFO      epoch: 27, train_acc: 98.95, test_acc: 87.31
+2021-01-14 03:24:05,650 INFO      epoch: 28, train_acc: 99.02, test_acc: 87.43
+2021-01-14 03:35:50,717 INFO      epoch: 29, train_acc: 99.04, test_acc: 87.74
+2021-01-14 03:47:32,316 INFO      epoch: 30, train_acc: 99.01, test_acc: 87.41
+2021-01-14 03:59:22,029 INFO      epoch: 31, train_acc: 99.01, test_acc: 87.37
+2021-01-14 04:11:13,897 INFO      epoch: 32, train_acc: 99.07, test_acc: 87.69
+2021-01-14 04:23:04,599 INFO      epoch: 33, train_acc: 99.04, test_acc: 87.57
+2021-01-14 04:34:48,397 INFO      epoch: 34, train_acc: 99.09, test_acc: 87.17
+2021-01-14 04:46:28,876 INFO      epoch: 35, train_acc: 99.13, test_acc: 87.58
+2021-01-14 04:58:17,965 INFO      epoch: 36, train_acc: 99.07, test_acc: 87.38
+2021-01-14 05:10:07,904 INFO      epoch: 37, train_acc: 99.09, test_acc: 87.42
+2021-01-14 05:21:52,883 INFO      epoch: 38, train_acc: 99.11, test_acc: 87.69
+2021-01-14 05:33:34,211 INFO      epoch: 39, train_acc: 99.13, test_acc: 87.72
+2021-01-14 05:45:37,594 INFO      epoch: 40, train_acc: 99.07, test_acc: 87.39
+2021-01-14 05:57:40,146 INFO      epoch: 41, train_acc: 99.13, test_acc: 87.14
+2021-01-14 06:09:30,043 INFO      epoch: 42, train_acc: 99.16, test_acc: 87.45
+2021-01-14 06:21:14,899 INFO      epoch: 43, train_acc: 99.20, test_acc: 87.75
+2021-01-14 06:32:55,020 INFO      epoch: 44, train_acc: 99.25, test_acc: 87.15
+2021-01-14 06:44:39,063 INFO      epoch: 45, train_acc: 99.20, test_acc: 87.57
+2021-01-14 06:56:29,529 INFO      epoch: 46, train_acc: 99.20, test_acc: 87.73
+2021-01-14 07:08:19,706 INFO      epoch: 47, train_acc: 99.19, test_acc: 87.79
+2021-01-14 07:20:07,951 INFO      epoch: 48, train_acc: 99.16, test_acc: 87.53
+2021-01-14 07:31:47,408 INFO      epoch: 49, train_acc: 99.25, test_acc: 87.59
+2021-01-14 07:43:30,805 INFO      epoch: 50, train_acc: 99.25, test_acc: 87.91
+2021-01-14 07:55:20,361 INFO      epoch: 51, train_acc: 99.21, test_acc: 87.80
+2021-01-14 08:07:09,969 INFO      epoch: 52, train_acc: 99.24, test_acc: 87.65
+2021-01-14 08:18:57,118 INFO      epoch: 53, train_acc: 99.22, test_acc: 86.59
+2021-01-14 08:30:39,698 INFO      epoch: 54, train_acc: 99.23, test_acc: 87.94
+2021-01-14 08:42:25,092 INFO      epoch: 55, train_acc: 99.24, test_acc: 87.66
+2021-01-14 08:54:14,478 INFO      epoch: 56, train_acc: 99.18, test_acc: 87.60
+2021-01-14 09:06:06,655 INFO      epoch: 57, train_acc: 99.23, test_acc: 87.56
+2021-01-14 09:17:50,098 INFO      epoch: 58, train_acc: 99.25, test_acc: 87.52
+2021-01-14 09:29:32,714 INFO      epoch: 59, train_acc: 99.28, test_acc: 87.55
+2021-01-14 09:41:18,028 INFO      epoch: 60, train_acc: 99.25, test_acc: 86.34
+2021-01-14 09:53:10,952 INFO      epoch: 61, train_acc: 99.26, test_acc: 87.34

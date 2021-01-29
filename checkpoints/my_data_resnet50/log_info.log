@@ -1,0 +1,48 @@
+2021-01-08 17:47:23,497 INFO      ----------configuration**********
+2021-01-08 17:47:23,497 INFO      ('dataset', 'my_data')
+2021-01-08 17:47:23,498 INFO      ('train_path', 'G:\\vscode_workspace\\Weather_Recognition\\data_split_v2\\train\\')
+2021-01-08 17:47:23,498 INFO      ('test_path', 'G:\\vscode_workspace\\Weather_Recognition\\data_split_v2\\test\\')
+2021-01-08 17:47:23,498 INFO      ('imagesize', '224')
+2021-01-08 17:47:23,498 INFO      ('epochs', '100')
+2021-01-08 17:47:23,498 INFO      ('start_epoch', '0')
+2021-01-08 17:47:23,498 INFO      ('train_batch', '16')
+2021-01-08 17:47:23,498 INFO      ('test_batch', '16')
+2021-01-08 17:47:23,498 INFO      ('lr', '0.001')
+2021-01-08 17:47:23,498 INFO      ('drop', '0')
+2021-01-08 17:47:23,499 INFO      ('schedule', '[20, 30, 40]')
+2021-01-08 17:47:23,499 INFO      ('gamma', '0.9')
+2021-01-08 17:47:23,499 INFO      ('momentum', '0.8')
+2021-01-08 17:47:23,499 INFO      ('weight_decay', '0.0001')
+2021-01-08 17:47:23,499 INFO      ('checkpoint', 'checkpoints/my_data_resnet50')
+2021-01-08 17:47:23,499 INFO      ('resume', '')
+2021-01-08 17:47:23,499 INFO      ('arch', 'resnet50')
+2021-01-08 17:47:23,499 INFO      ('manualSeed', '3616')
+2021-01-08 17:59:50,124 INFO      epoch: 1, train_acc: 95.73, test_acc: 88.68
+2021-01-08 18:09:43,727 INFO      epoch: 2, train_acc: 99.82, test_acc: 88.59
+2021-01-08 18:19:36,635 INFO      epoch: 3, train_acc: 99.96, test_acc: 87.63
+2021-01-08 18:29:26,584 INFO      epoch: 4, train_acc: 99.93, test_acc: 88.58
+2021-01-08 18:39:39,558 INFO      epoch: 5, train_acc: 99.92, test_acc: 88.80
+2021-01-08 20:31:08,986 INFO      ----------configuration**********
+2021-01-08 20:31:09,003 INFO      ('dataset', 'my_data')
+2021-01-08 20:31:09,003 INFO      ('train_path', 'G:\\vscode_workspace\\Weather_Recognition\\data_split_v2\\train\\')
+2021-01-08 20:31:09,003 INFO      ('test_path', 'G:\\vscode_workspace\\Weather_Recognition\\data_split_v2\\test\\')
+2021-01-08 20:31:09,004 INFO      ('imagesize', '224')
+2021-01-08 20:31:09,004 INFO      ('epochs', '100')
+2021-01-08 20:31:09,004 INFO      ('start_epoch', '0')
+2021-01-08 20:31:09,004 INFO      ('train_batch', '16')
+2021-01-08 20:31:09,004 INFO      ('test_batch', '16')
+2021-01-08 20:31:09,004 INFO      ('lr', '0.001')
+2021-01-08 20:31:09,004 INFO      ('drop', '0')
+2021-01-08 20:31:09,004 INFO      ('schedule', '[20, 30, 40]')
+2021-01-08 20:31:09,005 INFO      ('gamma', '0.9')
+2021-01-08 20:31:09,005 INFO      ('momentum', '0.8')
+2021-01-08 20:31:09,005 INFO      ('weight_decay', '0.0001')
+2021-01-08 20:31:09,005 INFO      ('checkpoint', 'checkpoints/my_data_resnet50')
+2021-01-08 20:31:09,005 INFO      ('resume', '')
+2021-01-08 20:31:09,005 INFO      ('arch', 'resnet50')
+2021-01-08 20:31:09,005 INFO      ('manualSeed', '2096')
+2021-01-08 20:42:45,750 INFO      epoch: 1, train_acc: 95.34, test_acc: 89.01
+2021-01-08 20:53:15,446 INFO      epoch: 2, train_acc: 99.82, test_acc: 89.72
+2021-01-08 21:03:46,483 INFO      epoch: 3, train_acc: 99.88, test_acc: 91.01
+2021-01-08 21:13:46,564 INFO      epoch: 4, train_acc: 99.86, test_acc: 88.61
+2021-01-08 21:23:48,373 INFO      epoch: 5, train_acc: 99.95, test_acc: 90.01

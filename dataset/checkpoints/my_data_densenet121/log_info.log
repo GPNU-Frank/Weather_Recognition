@@ -1,0 +1,21 @@
+2021-01-08 19:53:58,113 INFO      ----------configuration**********
+2021-01-08 19:53:58,113 INFO      ('dataset', 'my_data')
+2021-01-08 19:53:58,113 INFO      ('train_path', 'G:\\vscode_workspace\\Weather_Recognition\\data_split_v2\\train\\')
+2021-01-08 19:53:58,113 INFO      ('test_path', 'G:\\vscode_workspace\\Weather_Recognition\\data_split_v2\\test\\')
+2021-01-08 19:53:58,113 INFO      ('imagesize', '224')
+2021-01-08 19:53:58,113 INFO      ('epochs', '100')
+2021-01-08 19:53:58,113 INFO      ('start_epoch', '0')
+2021-01-08 19:53:58,113 INFO      ('train_batch', '16')
+2021-01-08 19:53:58,113 INFO      ('test_batch', '16')
+2021-01-08 19:53:58,113 INFO      ('lr', '0.001')
+2021-01-08 19:53:58,113 INFO      ('drop', '0')
+2021-01-08 19:53:58,114 INFO      ('schedule', '[20, 30, 40]')
+2021-01-08 19:53:58,114 INFO      ('gamma', '0.9')
+2021-01-08 19:53:58,114 INFO      ('momentum', '0.8')
+2021-01-08 19:53:58,114 INFO      ('weight_decay', '0.0001')
+2021-01-08 19:53:58,114 INFO      ('checkpoint', 'checkpoints/my_data_densenet121')
+2021-01-08 19:53:58,114 INFO      ('resume', '')
+2021-01-08 19:53:58,114 INFO      ('arch', 'densenet121')
+2021-01-08 19:53:58,114 INFO      ('manualSeed', '2471')
+2021-01-08 20:09:05,195 INFO      epoch: 1, train_acc: 95.63, test_acc: 89.88
+2021-01-08 20:20:24,906 INFO      epoch: 2, train_acc: 99.82, test_acc: 90.39

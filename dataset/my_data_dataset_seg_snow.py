@@ -15,6 +15,7 @@ class MyDataSegSnow(Dataset):
         self.transform = transform
         # label_dict = {'Cloud': 0, 'Fog': 1, 'Rainy': 2, 'Snow': 3, 'Sunny': 4, 'Thunderstorm': 5}
         label_dict = {'Cloud': 0, 'Fog': 1, 'Rainy': 2, 'Snow': 3, 'Sunny': 0}
+        # label_dict = {'Cloud': 0, 'Snow_svm': 1}
 
         if not os.path.exists(root_path):
             print(root_path)
@@ -57,8 +58,8 @@ if __name__ == '__main__':
     transform = transforms.Compose(
         [transforms.Resize((imagesize, imagesize))])
 
-    train_dataset = MyDataSeg(root_path=train_path, transform=transform)
-    test_dataset = MyDataSeg(root_path=test_path, transform=transform)
+    train_dataset = MyDataSegSnow(root_path=train_path, transform=transform)
+    test_dataset = MyDataSegSnow(root_path=test_path, transform=transform)
     # train_dataset, test_dataset = torch.utils.data.random_split(dataset, [50000, 10000])
     # print(dataset[0: 10])
     # x_train, x_test, y_train, y_test = train_test_split(dataset[:][0], dataset[:][1], test_size=0.3, stratify=dataset[:][1])

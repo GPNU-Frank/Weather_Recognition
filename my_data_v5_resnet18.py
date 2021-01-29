@@ -26,8 +26,8 @@ parser = argparse.ArgumentParser()
 
 # datasets
 parser.add_argument('-d', '--dataset', default='my_data', type=str)
-parser.add_argument('--train-path', default="G:\\vscode_workspace\\Weather_Recognition\\data_split_v4\\train\\")
-parser.add_argument('--test-path', default="G:\\vscode_workspace\\Weather_Recognition\\data_split_v4\\test\\")
+parser.add_argument('--train-path', default="G:\\vscode_workspace\\Weather_Recognition\\data_split_v5\\train\\")
+parser.add_argument('--test-path', default="G:\\vscode_workspace\\Weather_Recognition\\data_split_v5\\test\\")
 parser.add_argument('--imagesize', default=224, type=int)
 
 # optimization options
@@ -35,15 +35,15 @@ parser.add_argument('--epochs', default=100, type=int, metavar='N',
                 help='number of total epochs to run')
 parser.add_argument('--start-epoch', default=0, type=int, metavar='N',
                 help='manual epoch number (useful on restarts)')
-parser.add_argument('--train_batch', default=8, type=int, metavar='N',
+parser.add_argument('--train_batch', default=4, type=int, metavar='N',
                 help='train batchsize')
-parser.add_argument('--test-batch', default=8, type=int, metavar='N',
+parser.add_argument('--test-batch', default=4, type=int, metavar='N',
                 help='test batchsize')
 parser.add_argument('--lr', '--learning-rate', default=0.001, type=float,
                 metavar='LR', help='initial learning rate')
 parser.add_argument('--drop', '--dropout', default=0, type=float,
                 metavar='Dropout', help='Dropout ratio')
-parser.add_argument('--schedule', type=int, nargs='+', default=[1, 2, 3, 4, 5, 10, 15],
+parser.add_argument('--schedule', type=int, nargs='+', default=[5, 10, 15],
                 help='Decrease learning rate at these epochs.')
 parser.add_argument('--gamma', type=float, default=0.80, help='LR is multiplied by gamma on schedule.')
 parser.add_argument('--momentum', default=0.8, type=float, metavar='M',
@@ -55,7 +55,7 @@ parser.add_argument('--weight-decay', '--wd', default=1e-3, type=float,
 #                     help='path to latest checkpoint (default: none)')
 
 # checkpoints
-parser.add_argument('-c', '--checkpoint', default='checkpoints/my_data_v4_resnet18', type=str, metavar='PATH',
+parser.add_argument('-c', '--checkpoint', default='checkpoints/my_data_v5_resnet18_4classes', type=str, metavar='PATH',
                 help='path to save checkpoint (default:checkpoint)')
 parser.add_argument('--resume', default='', type=str, metavar='PATH')
 
