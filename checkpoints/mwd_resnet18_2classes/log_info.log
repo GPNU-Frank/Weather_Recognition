@@ -1,0 +1,39 @@
+2021-05-10 09:30:01,688 INFO      ----------configuration**********
+2021-05-10 09:30:01,689 INFO      ('dataset', 'mwd')
+2021-05-10 09:30:01,689 INFO      ('root_path', 'D:\\flk\\MWD\\weather_classification\\')
+2021-05-10 09:30:01,689 INFO      ('imagesize', '480')
+2021-05-10 09:30:01,689 INFO      ('epochs', '20')
+2021-05-10 09:30:01,689 INFO      ('start_epoch', '0')
+2021-05-10 09:30:01,689 INFO      ('train_batch', '16')
+2021-05-10 09:30:01,689 INFO      ('test_batch', '16')
+2021-05-10 09:30:01,689 INFO      ('lr', '0.001')
+2021-05-10 09:30:01,689 INFO      ('drop', '0')
+2021-05-10 09:30:01,689 INFO      ('schedule', '[20, 30, 40]')
+2021-05-10 09:30:01,689 INFO      ('gamma', '0.9')
+2021-05-10 09:30:01,689 INFO      ('momentum', '0.8')
+2021-05-10 09:30:01,690 INFO      ('weight_decay', '0.0001')
+2021-05-10 09:30:01,690 INFO      ('checkpoint', 'checkpoints/mwd_resnet18_2classes')
+2021-05-10 09:30:01,690 INFO      ('resume', '')
+2021-05-10 09:30:01,690 INFO      ('arch', 'resnet18')
+2021-05-10 09:30:01,690 INFO      ('manualSeed', '759')
+2021-05-10 09:34:53,949 INFO      epoch: 1, train_acc: 81.39, test_acc: 85.72
+2021-05-10 09:38:42,077 INFO      epoch: 2, train_acc: 87.34, test_acc: 87.60
+2021-05-10 09:42:29,519 INFO      epoch: 3, train_acc: 89.36, test_acc: 85.98
+2021-05-10 09:46:17,608 INFO      epoch: 4, train_acc: 91.35, test_acc: 88.67
+2021-05-10 09:50:06,053 INFO      epoch: 5, train_acc: 93.37, test_acc: 88.62
+2021-05-10 09:53:54,417 INFO      epoch: 6, train_acc: 94.19, test_acc: 88.83
+2021-05-10 09:57:42,701 INFO      epoch: 7, train_acc: 96.46, test_acc: 89.08
+2021-05-10 10:01:30,381 INFO      epoch: 8, train_acc: 97.22, test_acc: 89.33
+2021-05-10 10:05:18,416 INFO      epoch: 9, train_acc: 97.99, test_acc: 89.15
+2021-05-10 10:09:07,103 INFO      epoch: 10, train_acc: 98.56, test_acc: 89.75
+2021-05-10 10:12:55,168 INFO      epoch: 11, train_acc: 98.75, test_acc: 89.55
+2021-05-10 10:16:43,930 INFO      epoch: 12, train_acc: 99.21, test_acc: 89.32
+2021-05-10 10:21:21,092 INFO      epoch: 13, train_acc: 99.26, test_acc: 89.68
+2021-05-10 10:29:32,219 INFO      epoch: 14, train_acc: 99.34, test_acc: 89.53
+2021-05-10 10:33:07,673 INFO      epoch: 15, train_acc: 99.40, test_acc: 89.68
+2021-05-10 10:36:43,235 INFO      epoch: 16, train_acc: 99.56, test_acc: 90.20
+2021-05-10 10:40:19,018 INFO      epoch: 17, train_acc: 99.71, test_acc: 89.48
+2021-05-10 10:43:54,840 INFO      epoch: 18, train_acc: 99.63, test_acc: 90.00
+2021-05-10 10:47:30,677 INFO      epoch: 19, train_acc: 99.71, test_acc: 89.98
+2021-05-10 10:51:06,321 INFO      epoch: 20, train_acc: 99.77, test_acc: 90.10
+2021-05-10 10:51:06,321 INFO      best_acc: 90.20

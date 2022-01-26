@@ -17,6 +17,8 @@ class MWD(Dataset):
         self.img_list = []
         with os.scandir(root_path) as root:
             for emotion in root:
+                # if emotion.name == 'thunder':
+                #     continue
                 label = label_dict[emotion.name]
                 with os.scandir(emotion.path) as fold:
                     for img in fold:

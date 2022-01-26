@@ -29,7 +29,7 @@ parser.add_argument('--root-path', default='G:\\dataset\\MWD\\weather_classifica
 parser.add_argument('--imagesize', default=224, type=int)
 
 # optimization options
-parser.add_argument('--epochs', default=100, type=int, metavar='N',
+parser.add_argument('--epochs', default=20, type=int, metavar='N',
                 help='number of total epochs to run')
 parser.add_argument('--start-epoch', default=0, type=int, metavar='N',
                 help='manual epoch number (useful on restarts)')
@@ -91,26 +91,28 @@ def main():
     # load data
     # mean = [0.5, 0.5, 0.5]
     # std = [0.5, 0.5, 0.5]
-    imagesize = args.imagesize
-   
+    # imagesize = args.imagesize
+    imagesize = (480, 480)
     train_transform = transforms.Compose([          
             transforms.RandomHorizontalFlip(p=0.5),           
-            transforms.ColorJitter(brightness=0.4, contrast=0.3, saturation=0.25, hue=0.05),            
-            transforms.Resize((args.imagesize, args.imagesize)),
+            # transforms.ColorJitter(brightness=0.4, contrast=0.3, saturation=0.25, hue=0.05),            
+            # transforms.Resize((args.imagesize, args.imagesize)),
+            transforms.Resize(imagesize),
             transforms.ToTensor(),
             # transforms.Normalize(mean, std)
         ])
 
     valid_transform = transforms.Compose([
-            transforms.Resize((args.imagesize, args.imagesize)),
+            # transforms.Resize((args.imagesize, args.imagesize)),
+            transforms.Resize(imagesize),
             transforms.ToTensor(),
             # transforms.Normalize(mean, std)
         ])
 
     dataset = MWD(root_path=args.root_path, transform=valid_transform)
-    train_dataset, test_dataset = torch.utils.data.random_split(dataset, [50000, 10000])
+    train_dataset, test_dataset = torch.utils.data.random_split(dataset, [40000, 10000])
     train_iter = torch.utils.data.DataLoader(train_dataset, args.train_batch, shuffle=True)
-    test_iter = torch.utils.data.DataLoader(test_dataset, args.test_batch, shuffle=True)
+    test_iter = torch.utils.data.DataLoader(test_dataset, args.test_batch, shuffle=False)
     # model
     model = resnet18(pretrained=True)
     if use_cuda:
@@ -138,7 +140,7 @@ def main():
     # train and val
     for epoch in range(start_epoch, args.epochs):
         # 在特定的 epoch 调整学习率
-        adjust_learning_rate(optimizer, epoch)
+        adjust_learning_rate(optimizer, epoch, args)
 
         print('\nEpoch: [%d | %d] LR: %f' % (epoch + 1, args.epochs, optimizer.param_groups[0]['lr']))
 
@@ -284,13 +286,23 @@ def save_checkpoint(state, is_best, f_num, checkpoint='checkpoint', filename='ch
         shutil.copyfile(filepath, os.path.join(checkpoint, 'fold_' + str(f_num) + '_model_best.pth.tar'))
 
 
-def adjust_learning_rate(optimizer, epoch):
-    global state
-    if epoch in args.schedule:
-        state['lr'] *= args.gamma
-        for param_group in optimizer.param_groups:
-            param_group['lr'] *= args.gamma
+# def adjust_learning_rate(optimizer, epoch):
+#     global state
+#     if epoch in args.schedule:
+#         state['lr'] *= args.gamma
+#         for param_group in optimizer.param_groups:
+#             param_group['lr'] *= args.gamma
+def adjust_learning_rate(optimizer, epoch, args):
+    scale_running_lr = ((1. - float(epoch) / args.epochs) ** 0.9)
+    now_lr = args.lr * scale_running_lr
+    # cfg.TRAIN.running_lr_encoder = cfg.TRAIN.lr_encoder * scale_running_lr
+    # cfg.TRAIN.running_lr_decoder = cfg.TRAIN.lr_decoder * scale_running_lr
 
+    # (optimizer_encoder, optimizer_decoder) = optimizers
+    for param_group in optimizer.param_groups:
+        param_group['lr'] = now_lr
+    # for param_group in optimizer_decoder.param_groups:
+    #     param_group['lr'] = cfg.TRAIN.running_lr_decoder
 
 if __name__ == '__main__':
     main()

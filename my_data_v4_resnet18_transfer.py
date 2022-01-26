@@ -126,6 +126,10 @@ def main():
 
     pretrained_state_dict = checkpoint['state_dict']
     model_state_dict = model.state_dict()
+
+    # print(pretrained_state_dict.keys())
+    # print(model_state_dict.keys())
+    # exit()
         # print(pretrained_state_dict.keys())
     for key in pretrained_state_dict:
         if((key == 'fc.weight') | (key == 'fc.bias')):

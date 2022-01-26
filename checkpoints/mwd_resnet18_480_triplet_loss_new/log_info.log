@@ -1,0 +1,246 @@
+2022-01-05 14:54:50,368 INFO      ----------configuration**********
+2022-01-05 14:54:50,368 INFO      ('dataset', 'mwd')
+2022-01-05 14:54:50,368 INFO      ('root_path', 'G:\\dataset\\MWD\\weather_classification\\')
+2022-01-05 14:54:50,368 INFO      ('imagesize', '224')
+2022-01-05 14:54:50,368 INFO      ('epochs', '5')
+2022-01-05 14:54:50,368 INFO      ('start_epoch', '0')
+2022-01-05 14:54:50,368 INFO      ('train_batch', '16')
+2022-01-05 14:54:50,368 INFO      ('test_batch', '4')
+2022-01-05 14:54:50,368 INFO      ('lr', '0.001')
+2022-01-05 14:54:50,368 INFO      ('drop', '0')
+2022-01-05 14:54:50,368 INFO      ('schedule', '[5, 10, 15, 20, 25, 30, 35, 40, 45]')
+2022-01-05 14:54:50,368 INFO      ('gamma', '0.9')
+2022-01-05 14:54:50,369 INFO      ('momentum', '0.8')
+2022-01-05 14:54:50,369 INFO      ('weight_decay', '0.0001')
+2022-01-05 14:54:50,369 INFO      ('checkpoint', 'checkpoints/mwd_resnet18_480_triplet_loss_new')
+2022-01-05 14:54:50,369 INFO      ('resume', '')
+2022-01-05 14:54:50,369 INFO      ('arch', 'resnet18')
+2022-01-05 14:54:50,369 INFO      ('manualSeed', '1100')
+2022-01-05 14:55:27,716 INFO      ----------configuration**********
+2022-01-05 14:55:27,716 INFO      ('dataset', 'mwd')
+2022-01-05 14:55:27,716 INFO      ('root_path', 'G:\\dataset\\MWD\\weather_classification\\')
+2022-01-05 14:55:27,716 INFO      ('imagesize', '224')
+2022-01-05 14:55:27,716 INFO      ('epochs', '5')
+2022-01-05 14:55:27,717 INFO      ('start_epoch', '0')
+2022-01-05 14:55:27,717 INFO      ('train_batch', '16')
+2022-01-05 14:55:27,717 INFO      ('test_batch', '4')
+2022-01-05 14:55:27,717 INFO      ('lr', '0.001')
+2022-01-05 14:55:27,717 INFO      ('drop', '0')
+2022-01-05 14:55:27,717 INFO      ('schedule', '[5, 10, 15, 20, 25, 30, 35, 40, 45]')
+2022-01-05 14:55:27,717 INFO      ('gamma', '0.9')
+2022-01-05 14:55:27,717 INFO      ('momentum', '0.8')
+2022-01-05 14:55:27,717 INFO      ('weight_decay', '0.0001')
+2022-01-05 14:55:27,717 INFO      ('checkpoint', 'checkpoints/mwd_resnet18_480_triplet_loss_new')
+2022-01-05 14:55:27,717 INFO      ('resume', '')
+2022-01-05 14:55:27,717 INFO      ('arch', 'resnet18')
+2022-01-05 14:55:27,717 INFO      ('manualSeed', '5251')
+2022-01-05 15:01:09,635 INFO      ----------configuration**********
+2022-01-05 15:01:09,636 INFO      ('dataset', 'mwd')
+2022-01-05 15:01:09,636 INFO      ('root_path', 'G:\\dataset\\MWD\\weather_classification\\')
+2022-01-05 15:01:09,636 INFO      ('imagesize', '224')
+2022-01-05 15:01:09,636 INFO      ('epochs', '5')
+2022-01-05 15:01:09,636 INFO      ('start_epoch', '0')
+2022-01-05 15:01:09,636 INFO      ('train_batch', '16')
+2022-01-05 15:01:09,636 INFO      ('test_batch', '4')
+2022-01-05 15:01:09,636 INFO      ('lr', '0.001')
+2022-01-05 15:01:09,636 INFO      ('drop', '0')
+2022-01-05 15:01:09,636 INFO      ('schedule', '[5, 10, 15, 20, 25, 30, 35, 40, 45]')
+2022-01-05 15:01:09,636 INFO      ('gamma', '0.9')
+2022-01-05 15:01:09,636 INFO      ('momentum', '0.8')
+2022-01-05 15:01:09,636 INFO      ('weight_decay', '0.0001')
+2022-01-05 15:01:09,636 INFO      ('checkpoint', 'checkpoints/mwd_resnet18_480_triplet_loss_new')
+2022-01-05 15:01:09,637 INFO      ('resume', '')
+2022-01-05 15:01:09,637 INFO      ('arch', 'resnet18')
+2022-01-05 15:01:09,637 INFO      ('manualSeed', '1391')
+2022-01-05 15:14:14,006 INFO      ----------configuration**********
+2022-01-05 15:14:14,006 INFO      ('dataset', 'mwd')
+2022-01-05 15:14:14,006 INFO      ('root_path', 'G:\\dataset\\MWD\\weather_classification\\')
+2022-01-05 15:14:14,006 INFO      ('imagesize', '224')
+2022-01-05 15:14:14,006 INFO      ('epochs', '5')
+2022-01-05 15:14:14,006 INFO      ('start_epoch', '0')
+2022-01-05 15:14:14,006 INFO      ('train_batch', '16')
+2022-01-05 15:14:14,006 INFO      ('test_batch', '4')
+2022-01-05 15:14:14,006 INFO      ('lr', '0.001')
+2022-01-05 15:14:14,006 INFO      ('drop', '0')
+2022-01-05 15:14:14,006 INFO      ('schedule', '[5, 10, 15, 20, 25, 30, 35, 40, 45]')
+2022-01-05 15:14:14,006 INFO      ('gamma', '0.9')
+2022-01-05 15:14:14,006 INFO      ('momentum', '0.8')
+2022-01-05 15:14:14,006 INFO      ('weight_decay', '0.0001')
+2022-01-05 15:14:14,006 INFO      ('checkpoint', 'checkpoints/mwd_resnet18_480_triplet_loss_new')
+2022-01-05 15:14:14,006 INFO      ('resume', '')
+2022-01-05 15:14:14,007 INFO      ('arch', 'resnet18')
+2022-01-05 15:14:14,007 INFO      ('manualSeed', '7334')
+2022-01-05 15:15:23,805 INFO      ----------configuration**********
+2022-01-05 15:15:23,805 INFO      ('dataset', 'mwd')
+2022-01-05 15:15:23,805 INFO      ('root_path', 'G:\\dataset\\MWD\\weather_classification\\')
+2022-01-05 15:15:23,805 INFO      ('imagesize', '224')
+2022-01-05 15:15:23,805 INFO      ('epochs', '5')
+2022-01-05 15:15:23,805 INFO      ('start_epoch', '0')
+2022-01-05 15:15:23,805 INFO      ('train_batch', '16')
+2022-01-05 15:15:23,805 INFO      ('test_batch', '4')
+2022-01-05 15:15:23,805 INFO      ('lr', '0.001')
+2022-01-05 15:15:23,805 INFO      ('drop', '0')
+2022-01-05 15:15:23,805 INFO      ('schedule', '[5, 10, 15, 20, 25, 30, 35, 40, 45]')
+2022-01-05 15:15:23,805 INFO      ('gamma', '0.9')
+2022-01-05 15:15:23,805 INFO      ('momentum', '0.8')
+2022-01-05 15:15:23,805 INFO      ('weight_decay', '0.0001')
+2022-01-05 15:15:23,806 INFO      ('checkpoint', 'checkpoints/mwd_resnet18_480_triplet_loss_new')
+2022-01-05 15:15:23,806 INFO      ('resume', '')
+2022-01-05 15:15:23,806 INFO      ('arch', 'resnet18')
+2022-01-05 15:15:23,806 INFO      ('manualSeed', '3959')
+2022-01-05 15:17:10,247 INFO      ----------configuration**********
+2022-01-05 15:17:10,248 INFO      ('dataset', 'mwd')
+2022-01-05 15:17:10,248 INFO      ('root_path', 'G:\\dataset\\MWD\\weather_classification\\')
+2022-01-05 15:17:10,248 INFO      ('imagesize', '224')
+2022-01-05 15:17:10,248 INFO      ('epochs', '5')
+2022-01-05 15:17:10,248 INFO      ('start_epoch', '0')
+2022-01-05 15:17:10,248 INFO      ('train_batch', '16')
+2022-01-05 15:17:10,248 INFO      ('test_batch', '4')
+2022-01-05 15:17:10,248 INFO      ('lr', '0.001')
+2022-01-05 15:17:10,248 INFO      ('drop', '0')
+2022-01-05 15:17:10,248 INFO      ('schedule', '[5, 10, 15, 20, 25, 30, 35, 40, 45]')
+2022-01-05 15:17:10,248 INFO      ('gamma', '0.9')
+2022-01-05 15:17:10,248 INFO      ('momentum', '0.8')
+2022-01-05 15:17:10,248 INFO      ('weight_decay', '0.0001')
+2022-01-05 15:17:10,248 INFO      ('checkpoint', 'checkpoints/mwd_resnet18_480_triplet_loss_new')
+2022-01-05 15:17:10,248 INFO      ('resume', '')
+2022-01-05 15:17:10,248 INFO      ('arch', 'resnet18')
+2022-01-05 15:17:10,248 INFO      ('manualSeed', '8582')
+2022-01-05 15:21:08,506 INFO      ----------configuration**********
+2022-01-05 15:21:08,506 INFO      ('dataset', 'mwd')
+2022-01-05 15:21:08,506 INFO      ('root_path', 'G:\\dataset\\MWD\\weather_classification\\')
+2022-01-05 15:21:08,506 INFO      ('imagesize', '224')
+2022-01-05 15:21:08,507 INFO      ('epochs', '5')
+2022-01-05 15:21:08,507 INFO      ('start_epoch', '0')
+2022-01-05 15:21:08,507 INFO      ('train_batch', '16')
+2022-01-05 15:21:08,507 INFO      ('test_batch', '4')
+2022-01-05 15:21:08,507 INFO      ('lr', '0.001')
+2022-01-05 15:21:08,507 INFO      ('drop', '0')
+2022-01-05 15:21:08,507 INFO      ('schedule', '[5, 10, 15, 20, 25, 30, 35, 40, 45]')
+2022-01-05 15:21:08,507 INFO      ('gamma', '0.9')
+2022-01-05 15:21:08,507 INFO      ('momentum', '0.8')
+2022-01-05 15:21:08,507 INFO      ('weight_decay', '0.0001')
+2022-01-05 15:21:08,507 INFO      ('checkpoint', 'checkpoints/mwd_resnet18_480_triplet_loss_new')
+2022-01-05 15:21:08,507 INFO      ('resume', '')
+2022-01-05 15:21:08,507 INFO      ('arch', 'resnet18')
+2022-01-05 15:21:08,507 INFO      ('manualSeed', '4180')
+2022-01-05 15:28:30,960 INFO      ----------configuration**********
+2022-01-05 15:28:30,960 INFO      ('dataset', 'mwd')
+2022-01-05 15:28:30,960 INFO      ('root_path', 'G:\\dataset\\MWD\\weather_classification\\')
+2022-01-05 15:28:30,960 INFO      ('imagesize', '224')
+2022-01-05 15:28:30,960 INFO      ('epochs', '5')
+2022-01-05 15:28:30,960 INFO      ('start_epoch', '0')
+2022-01-05 15:28:30,960 INFO      ('train_batch', '16')
+2022-01-05 15:28:30,960 INFO      ('test_batch', '4')
+2022-01-05 15:28:30,960 INFO      ('lr', '0.001')
+2022-01-05 15:28:30,961 INFO      ('drop', '0')
+2022-01-05 15:28:30,961 INFO      ('schedule', '[5, 10, 15, 20, 25, 30, 35, 40, 45]')
+2022-01-05 15:28:30,961 INFO      ('gamma', '0.9')
+2022-01-05 15:28:30,961 INFO      ('momentum', '0.8')
+2022-01-05 15:28:30,961 INFO      ('weight_decay', '0.0001')
+2022-01-05 15:28:30,961 INFO      ('checkpoint', 'checkpoints/mwd_resnet18_480_triplet_loss_new')
+2022-01-05 15:28:30,961 INFO      ('resume', '')
+2022-01-05 15:28:30,961 INFO      ('arch', 'resnet18')
+2022-01-05 15:28:30,961 INFO      ('manualSeed', '5552')
+2022-01-05 15:29:01,918 INFO      ----------configuration**********
+2022-01-05 15:29:01,919 INFO      ('dataset', 'mwd')
+2022-01-05 15:29:01,919 INFO      ('root_path', 'G:\\dataset\\MWD\\weather_classification\\')
+2022-01-05 15:29:01,919 INFO      ('imagesize', '224')
+2022-01-05 15:29:01,919 INFO      ('folds', '10')
+2022-01-05 15:29:01,919 INFO      ('epochs', '5')
+2022-01-05 15:29:01,919 INFO      ('start_epoch', '0')
+2022-01-05 15:29:01,919 INFO      ('train_batch', '16')
+2022-01-05 15:29:01,919 INFO      ('test_batch', '4')
+2022-01-05 15:29:01,919 INFO      ('lr', '0.001')
+2022-01-05 15:29:01,919 INFO      ('drop', '0')
+2022-01-05 15:29:01,919 INFO      ('schedule', '[5, 10, 15, 20, 25, 30, 35, 40, 45]')
+2022-01-05 15:29:01,919 INFO      ('gamma', '0.9')
+2022-01-05 15:29:01,919 INFO      ('momentum', '0.8')
+2022-01-05 15:29:01,919 INFO      ('weight_decay', '0.0001')
+2022-01-05 15:29:01,919 INFO      ('checkpoint', 'checkpoints/mwd_resnet18_480_triplet_loss_new')
+2022-01-05 15:29:01,919 INFO      ('resume', '')
+2022-01-05 15:29:01,919 INFO      ('arch', 'resnet18')
+2022-01-05 15:29:01,919 INFO      ('manualSeed', '7032')
+2022-01-05 15:44:24,221 INFO      epoch: 1, train_acc: 75.14, test_acc: 82.55
+2022-01-05 15:58:11,491 INFO      epoch: 2, train_acc: 82.64, test_acc: 84.50
+2022-01-05 16:12:01,933 INFO      epoch: 3, train_acc: 85.68, test_acc: 85.85
+2022-01-05 16:33:40,863 INFO      ----------configuration**********
+2022-01-05 16:33:40,875 INFO      ('dataset', 'mwd')
+2022-01-05 16:33:40,876 INFO      ('root_path', 'G:\\dataset\\MWD\\weather_classification\\')
+2022-01-05 16:33:40,876 INFO      ('imagesize', '224')
+2022-01-05 16:33:40,876 INFO      ('folds', '10')
+2022-01-05 16:33:40,876 INFO      ('epochs', '5')
+2022-01-05 16:33:40,876 INFO      ('start_epoch', '0')
+2022-01-05 16:33:40,876 INFO      ('train_batch', '16')
+2022-01-05 16:33:40,876 INFO      ('test_batch', '4')
+2022-01-05 16:33:40,876 INFO      ('lr', '0.001')
+2022-01-05 16:33:40,876 INFO      ('drop', '0')
+2022-01-05 16:33:40,876 INFO      ('schedule', '[5, 10, 15, 20, 25, 30, 35, 40, 45]')
+2022-01-05 16:33:40,876 INFO      ('gamma', '0.9')
+2022-01-05 16:33:40,877 INFO      ('momentum', '0.8')
+2022-01-05 16:33:40,877 INFO      ('weight_decay', '0.0001')
+2022-01-05 16:33:40,877 INFO      ('checkpoint', 'checkpoints/mwd_resnet18_480_triplet_loss_new')
+2022-01-05 16:33:40,877 INFO      ('resume', '')
+2022-01-05 16:33:40,877 INFO      ('arch', 'resnet18')
+2022-01-05 16:33:40,877 INFO      ('manualSeed', '2631')
+2022-01-05 16:58:17,788 INFO      epoch: 1, train_acc: 74.76, test_acc: 83.18
+2022-01-05 17:11:37,341 INFO      epoch: 2, train_acc: 82.74, test_acc: 84.83
+2022-01-05 17:24:57,477 INFO      epoch: 3, train_acc: 85.71, test_acc: 86.31
+2022-01-05 17:38:17,244 INFO      epoch: 4, train_acc: 87.94, test_acc: 86.33
+2022-01-05 17:51:39,159 INFO      epoch: 5, train_acc: 89.77, test_acc: 87.06
+2022-01-05 17:51:39,159 INFO      best_acc: 87.06
+2022-01-05 18:04:58,837 INFO      epoch: 1, train_acc: 75.08, test_acc: 80.72
+2022-01-05 18:18:29,619 INFO      epoch: 2, train_acc: 82.95, test_acc: 83.46
+2022-01-05 18:31:52,896 INFO      epoch: 3, train_acc: 85.94, test_acc: 85.71
+2022-01-05 18:45:07,845 INFO      epoch: 4, train_acc: 88.10, test_acc: 86.19
+2022-01-05 18:58:21,645 INFO      epoch: 5, train_acc: 89.91, test_acc: 86.21
+2022-01-05 18:58:21,645 INFO      best_acc: 87.06
+2022-01-05 19:11:40,033 INFO      epoch: 1, train_acc: 74.96, test_acc: 82.56
+2022-01-05 19:24:57,783 INFO      epoch: 2, train_acc: 82.75, test_acc: 84.99
+2022-01-05 19:38:13,568 INFO      epoch: 3, train_acc: 85.84, test_acc: 85.63
+2022-01-05 19:51:44,733 INFO      epoch: 4, train_acc: 87.79, test_acc: 86.44
+2022-01-05 20:05:02,056 INFO      epoch: 5, train_acc: 89.91, test_acc: 86.70
+2022-01-05 20:05:02,056 INFO      best_acc: 87.06
+2022-01-05 20:18:14,586 INFO      epoch: 1, train_acc: 74.89, test_acc: 82.94
+2022-01-05 20:31:25,289 INFO      epoch: 2, train_acc: 82.83, test_acc: 84.74
+2022-01-05 20:44:38,989 INFO      epoch: 3, train_acc: 85.86, test_acc: 85.31
+2022-01-05 20:57:53,406 INFO      epoch: 4, train_acc: 87.86, test_acc: 85.95
+2022-01-05 21:11:08,141 INFO      epoch: 5, train_acc: 89.86, test_acc: 86.84
+2022-01-05 21:11:08,141 INFO      best_acc: 87.06
+2022-01-05 21:24:25,269 INFO      epoch: 1, train_acc: 74.81, test_acc: 82.89
+2022-01-05 21:37:42,163 INFO      epoch: 2, train_acc: 82.91, test_acc: 85.49
+2022-01-05 21:50:58,875 INFO      epoch: 3, train_acc: 85.59, test_acc: 85.39
+2022-01-05 22:04:16,940 INFO      epoch: 4, train_acc: 87.84, test_acc: 86.42
+2022-01-05 22:17:41,685 INFO      epoch: 5, train_acc: 89.45, test_acc: 86.75
+2022-01-05 22:17:41,685 INFO      best_acc: 87.06
+2022-01-05 22:30:54,908 INFO      epoch: 1, train_acc: 74.66, test_acc: 82.17
+2022-01-05 22:44:09,038 INFO      epoch: 2, train_acc: 82.70, test_acc: 84.57
+2022-01-05 22:57:23,595 INFO      epoch: 3, train_acc: 85.60, test_acc: 85.29
+2022-01-05 23:10:37,884 INFO      epoch: 4, train_acc: 87.76, test_acc: 86.07
+2022-01-05 23:23:52,827 INFO      epoch: 5, train_acc: 89.50, test_acc: 86.81
+2022-01-05 23:23:52,827 INFO      best_acc: 87.06
+2022-01-05 23:37:10,647 INFO      epoch: 1, train_acc: 74.87, test_acc: 81.06
+2022-01-05 23:50:27,111 INFO      epoch: 2, train_acc: 82.63, test_acc: 85.25
+2022-01-06 00:03:44,974 INFO      epoch: 3, train_acc: 85.55, test_acc: 85.47
+2022-01-06 00:16:57,789 INFO      epoch: 4, train_acc: 87.63, test_acc: 85.81
+2022-01-06 00:30:14,594 INFO      epoch: 5, train_acc: 89.52, test_acc: 86.61
+2022-01-06 00:30:14,595 INFO      best_acc: 87.06
+2022-01-06 00:43:28,627 INFO      epoch: 1, train_acc: 74.68, test_acc: 82.60
+2022-01-06 00:56:43,703 INFO      epoch: 2, train_acc: 83.03, test_acc: 84.24
+2022-01-06 01:09:58,026 INFO      epoch: 3, train_acc: 85.85, test_acc: 85.73
+2022-01-06 01:23:12,846 INFO      epoch: 4, train_acc: 88.27, test_acc: 86.42
+2022-01-06 01:36:28,031 INFO      epoch: 5, train_acc: 89.86, test_acc: 85.79
+2022-01-06 01:36:28,031 INFO      best_acc: 87.06
+2022-01-06 01:49:45,071 INFO      epoch: 1, train_acc: 74.49, test_acc: 82.17
+2022-01-06 02:02:59,168 INFO      epoch: 2, train_acc: 82.94, test_acc: 83.91
+2022-01-06 02:16:12,297 INFO      epoch: 3, train_acc: 85.81, test_acc: 85.99
+2022-01-06 02:29:28,318 INFO      epoch: 4, train_acc: 88.03, test_acc: 85.98
+2022-01-06 02:42:44,478 INFO      epoch: 5, train_acc: 89.62, test_acc: 86.39
+2022-01-06 02:42:44,479 INFO      best_acc: 87.06
+2022-01-06 02:56:14,709 INFO      epoch: 1, train_acc: 74.74, test_acc: 82.18
+2022-01-06 03:09:34,894 INFO      epoch: 2, train_acc: 82.55, test_acc: 83.77
+2022-01-06 03:22:49,289 INFO      epoch: 3, train_acc: 85.73, test_acc: 85.76
+2022-01-06 03:36:04,850 INFO      epoch: 4, train_acc: 87.71, test_acc: 85.40
+2022-01-06 03:49:20,476 INFO      epoch: 5, train_acc: 89.68, test_acc: 86.41
+2022-01-06 03:49:20,476 INFO      best_acc: 87.06
+2022-01-06 03:49:20,476 INFO      fold: 9, best_acc: 87.06, average_acc: 87.06

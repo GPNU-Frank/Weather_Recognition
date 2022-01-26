@@ -1,0 +1,61 @@
+2022-02-19 22:40:44,827 INFO      ----------configuration**********
+2022-02-19 22:40:44,839 INFO      ('dataset', 'my_data_seg')
+2022-02-19 22:40:44,839 INFO      ('train_path', 'G:\\vscode_workspace\\Weather_Recognition\\data_split_v6\\train\\')
+2022-02-19 22:40:44,839 INFO      ('test_path', 'G:\\vscode_workspace\\Weather_Recognition\\data_split_v6\\test\\')
+2022-02-19 22:40:44,839 INFO      ('pretrained_path', 'G:\\vscode_workspace\\Weather_Recognition\\checkpoints\\mwd_resnet18\\04_14_14_25_fold_0_model_best.pth.tar')
+2022-02-19 22:40:44,839 INFO      ('imagesize', '224')
+2022-02-19 22:40:44,839 INFO      ('epochs', '20')
+2022-02-19 22:40:44,839 INFO      ('start_epoch', '0')
+2022-02-19 22:40:44,839 INFO      ('train_batch', '8')
+2022-02-19 22:40:44,839 INFO      ('test_batch', '8')
+2022-02-19 22:40:44,839 INFO      ('lr', '0.001')
+2022-02-19 22:40:44,840 INFO      ('drop', '0')
+2022-02-19 22:40:44,840 INFO      ('schedule', '[1, 2, 3, 10, 15]')
+2022-02-19 22:40:44,840 INFO      ('gamma', '0.8')
+2022-02-19 22:40:44,840 INFO      ('momentum', '0.8')
+2022-02-19 22:40:44,840 INFO      ('weight_decay', '0.0001')
+2022-02-19 22:40:44,840 INFO      ('checkpoint', 'checkpoints/my_data_v6_resnet18_seg_a1_transfer')
+2022-02-19 22:40:44,840 INFO      ('resume', '')
+2022-02-19 22:40:44,840 INFO      ('arch', 'resnet18_seg')
+2022-02-19 22:40:44,840 INFO      ('manualSeed', '5489')
+2022-02-19 23:01:31,070 INFO      ----------configuration**********
+2022-02-19 23:01:31,070 INFO      ('dataset', 'my_data_seg')
+2022-02-19 23:01:31,070 INFO      ('train_path', 'G:\\vscode_workspace\\Weather_Recognition\\data_split_v6\\train\\')
+2022-02-19 23:01:31,070 INFO      ('test_path', 'G:\\vscode_workspace\\Weather_Recognition\\data_split_v6\\test\\')
+2022-02-19 23:01:31,070 INFO      ('pretrained_path', 'G:\\vscode_workspace\\Weather_Recognition\\checkpoints\\mwd_resnet18\\04_14_14_25_fold_0_model_best.pth.tar')
+2022-02-19 23:01:31,070 INFO      ('imagesize', '224')
+2022-02-19 23:01:31,070 INFO      ('epochs', '20')
+2022-02-19 23:01:31,070 INFO      ('start_epoch', '0')
+2022-02-19 23:01:31,071 INFO      ('train_batch', '16')
+2022-02-19 23:01:31,071 INFO      ('test_batch', '8')
+2022-02-19 23:01:31,071 INFO      ('lr', '0.001')
+2022-02-19 23:01:31,071 INFO      ('drop', '0')
+2022-02-19 23:01:31,071 INFO      ('schedule', '[1, 2, 3, 10, 15]')
+2022-02-19 23:01:31,071 INFO      ('gamma', '0.8')
+2022-02-19 23:01:31,071 INFO      ('momentum', '0.8')
+2022-02-19 23:01:31,071 INFO      ('weight_decay', '0.0001')
+2022-02-19 23:01:31,071 INFO      ('checkpoint', 'checkpoints/my_data_v6_resnet18_seg_a1_transfer')
+2022-02-19 23:01:31,071 INFO      ('resume', '')
+2022-02-19 23:01:31,071 INFO      ('arch', 'resnet18_seg')
+2022-02-19 23:01:31,072 INFO      ('manualSeed', '1375')
+2022-02-19 23:45:20,771 INFO      epoch: 1, train_acc: 97.63, test_acc: 83.75
+2022-02-20 00:28:44,593 INFO      epoch: 2, train_acc: 99.96, test_acc: 85.40
+2022-02-20 01:12:21,721 INFO      epoch: 3, train_acc: 99.96, test_acc: 82.03
+2022-02-20 01:55:52,228 INFO      epoch: 4, train_acc: 99.98, test_acc: 84.86
+2022-02-20 02:39:20,050 INFO      epoch: 5, train_acc: 99.99, test_acc: 83.58
+2022-02-20 03:23:18,571 INFO      epoch: 6, train_acc: 99.99, test_acc: 83.94
+2022-02-20 04:07:34,314 INFO      epoch: 7, train_acc: 100.00, test_acc: 83.72
+2022-02-20 04:52:18,680 INFO      epoch: 8, train_acc: 99.99, test_acc: 84.21
+2022-02-20 05:37:00,164 INFO      epoch: 9, train_acc: 99.99, test_acc: 84.46
+2022-02-20 06:22:17,926 INFO      epoch: 10, train_acc: 99.99, test_acc: 83.11
+2022-02-20 07:07:13,399 INFO      epoch: 11, train_acc: 100.00, test_acc: 83.37
+2022-02-20 07:52:15,931 INFO      epoch: 12, train_acc: 99.99, test_acc: 82.13
+2022-02-20 08:37:23,584 INFO      epoch: 13, train_acc: 100.00, test_acc: 84.05
+2022-02-20 09:22:40,626 INFO      epoch: 14, train_acc: 100.00, test_acc: 85.25
+2022-02-20 10:07:54,717 INFO      epoch: 15, train_acc: 100.00, test_acc: 83.17
+2022-02-20 10:53:18,093 INFO      epoch: 16, train_acc: 100.00, test_acc: 84.79
+2022-02-20 11:38:28,284 INFO      epoch: 17, train_acc: 100.00, test_acc: 82.90
+2022-02-20 12:25:05,237 INFO      epoch: 18, train_acc: 100.00, test_acc: 84.38
+2022-02-20 13:11:36,683 INFO      epoch: 19, train_acc: 100.00, test_acc: 83.08
+2022-02-20 13:58:26,688 INFO      epoch: 20, train_acc: 100.00, test_acc: 84.78
+2022-02-20 13:58:26,688 INFO      best_acc: 85.40

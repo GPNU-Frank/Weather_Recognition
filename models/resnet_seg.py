@@ -4,7 +4,7 @@ import torch.utils.model_zoo as model_zoo
 import torch.nn.functional as F
 import torch
 import numpy as np
-import cv2
+# import cv2
 import pdb
 import pickle
 import sys
@@ -108,7 +108,7 @@ class Bottleneck(nn.Module):
 
 class ResNet(nn.Module):
 
-    def __init__(self, block, layers, num_classes=4):
+    def __init__(self, block, layers, num_classes=5):
         self.inplanes = 64
         super(ResNet, self).__init__()
         self.conv1 = nn.Conv2d(3, 64, kernel_size=7, stride=2, padding=3,
@@ -282,12 +282,22 @@ def count_parameters(model):
 def main():
     device = torch.device("cuda")
     model = resnet18_seg(pretrained=True)
-    print('net #', count_parameters(model))
-    x = torch.rand(2, 3, 702, 576)
-    x_seg = torch.rand(2, 702, 576)
-    y = model(x, x_seg)
 
-    print(y)
+    inputs = torch.randn(1, 3, 224, 224)
+    inputs_seg = torch.rand(1, 1, 224, 224)
+
+    from thop import profile
+    # flops, params = profile(model, (inputs,), (inputs_seg,))
+    flops, params = profile(model, (inputs, inputs_seg))
+    print('flops: ', flops/1000000.0, 'params: ', params/1000000.0)
+
+    # print('    Total params: %.2fM' % (sum(p.numel() for p in model.parameters())/1000000.0))
+    # print('net #', count_parameters(model))
+    # x = torch.rand(2, 3, 702, 576)
+    # x_seg = torch.rand(2, 702, 576)
+    # y = model(x, x_seg)
+
+    # print(y)
 
 
 if __name__ == '__main__':

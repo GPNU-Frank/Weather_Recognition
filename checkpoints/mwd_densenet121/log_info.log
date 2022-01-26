@@ -77,3 +77,99 @@
 2021-01-14 09:29:32,714 INFO      epoch: 59, train_acc: 99.28, test_acc: 87.55
 2021-01-14 09:41:18,028 INFO      epoch: 60, train_acc: 99.25, test_acc: 86.34
 2021-01-14 09:53:10,952 INFO      epoch: 61, train_acc: 99.26, test_acc: 87.34
+2021-04-20 20:33:18,991 INFO      ----------configuration**********
+2021-04-20 20:33:19,195 INFO      ('dataset', 'mwd')
+2021-04-20 20:33:19,195 INFO      ('root_path', 'G:\\dataset\\MWD\\weather_classification\\')
+2021-04-20 20:33:19,195 INFO      ('imagesize', '224')
+2021-04-20 20:33:19,195 INFO      ('epochs', '100')
+2021-04-20 20:33:19,195 INFO      ('start_epoch', '0')
+2021-04-20 20:33:19,195 INFO      ('train_batch', '8')
+2021-04-20 20:33:19,196 INFO      ('test_batch', '8')
+2021-04-20 20:33:19,196 INFO      ('lr', '0.001')
+2021-04-20 20:33:19,196 INFO      ('drop', '0')
+2021-04-20 20:33:19,196 INFO      ('schedule', '[20, 30, 40]')
+2021-04-20 20:33:19,196 INFO      ('gamma', '0.9')
+2021-04-20 20:33:19,196 INFO      ('momentum', '0.8')
+2021-04-20 20:33:19,196 INFO      ('weight_decay', '0.0001')
+2021-04-20 20:33:19,196 INFO      ('checkpoint', 'checkpoints/mwd_densenet121')
+2021-04-20 20:33:19,197 INFO      ('resume', '')
+2021-04-20 20:33:19,197 INFO      ('arch', 'densenet121')
+2021-04-20 20:33:19,197 INFO      ('manualSeed', '3341')
+2021-04-20 20:48:50,634 INFO      epoch: 1, train_acc: 72.12, test_acc: 81.24
+2021-04-20 21:01:55,086 INFO      epoch: 2, train_acc: 78.83, test_acc: 82.81
+2021-04-20 21:15:25,510 INFO      epoch: 3, train_acc: 82.42, test_acc: 82.88
+2021-04-20 22:44:50,252 INFO      ----------configuration**********
+2021-04-20 22:44:50,252 INFO      ('dataset', 'mwd')
+2021-04-20 22:44:50,252 INFO      ('root_path', 'G:\\dataset\\MWD\\weather_classification\\')
+2021-04-20 22:44:50,252 INFO      ('imagesize', '224')
+2021-04-20 22:44:50,252 INFO      ('epochs', '20')
+2021-04-20 22:44:50,252 INFO      ('start_epoch', '0')
+2021-04-20 22:44:50,252 INFO      ('train_batch', '16')
+2021-04-20 22:44:50,252 INFO      ('test_batch', '16')
+2021-04-20 22:44:50,252 INFO      ('lr', '0.001')
+2021-04-20 22:44:50,252 INFO      ('drop', '0')
+2021-04-20 22:44:50,252 INFO      ('schedule', '[20, 30, 40]')
+2021-04-20 22:44:50,252 INFO      ('gamma', '0.9')
+2021-04-20 22:44:50,252 INFO      ('momentum', '0.8')
+2021-04-20 22:44:50,253 INFO      ('weight_decay', '0.0001')
+2021-04-20 22:44:50,253 INFO      ('checkpoint', 'checkpoints/mwd_densenet121')
+2021-04-20 22:44:50,253 INFO      ('resume', '')
+2021-04-20 22:44:50,253 INFO      ('arch', 'densenet121')
+2021-04-20 22:44:50,253 INFO      ('manualSeed', '4750')
+2021-04-20 22:45:25,292 INFO      ----------configuration**********
+2021-04-20 22:45:25,292 INFO      ('dataset', 'mwd')
+2021-04-20 22:45:25,292 INFO      ('root_path', 'G:\\dataset\\MWD\\weather_classification\\')
+2021-04-20 22:45:25,292 INFO      ('imagesize', '224')
+2021-04-20 22:45:25,292 INFO      ('epochs', '20')
+2021-04-20 22:45:25,292 INFO      ('start_epoch', '0')
+2021-04-20 22:45:25,293 INFO      ('train_batch', '8')
+2021-04-20 22:45:25,293 INFO      ('test_batch', '8')
+2021-04-20 22:45:25,293 INFO      ('lr', '0.001')
+2021-04-20 22:45:25,293 INFO      ('drop', '0')
+2021-04-20 22:45:25,293 INFO      ('schedule', '[20, 30, 40]')
+2021-04-20 22:45:25,293 INFO      ('gamma', '0.9')
+2021-04-20 22:45:25,293 INFO      ('momentum', '0.8')
+2021-04-20 22:45:25,293 INFO      ('weight_decay', '0.0001')
+2021-04-20 22:45:25,293 INFO      ('checkpoint', 'checkpoints/mwd_densenet121')
+2021-04-20 22:45:25,293 INFO      ('resume', '')
+2021-04-20 22:45:25,293 INFO      ('arch', 'densenet121')
+2021-04-20 22:45:25,293 INFO      ('manualSeed', '4521')
+2021-04-20 23:14:36,506 INFO      ----------configuration**********
+2021-04-20 23:14:36,506 INFO      ('dataset', 'mwd')
+2021-04-20 23:14:36,506 INFO      ('root_path', 'G:\\dataset\\MWD\\weather_classification\\')
+2021-04-20 23:14:36,506 INFO      ('imagesize', '224')
+2021-04-20 23:14:36,506 INFO      ('epochs', '20')
+2021-04-20 23:14:36,506 INFO      ('start_epoch', '0')
+2021-04-20 23:14:36,506 INFO      ('train_batch', '4')
+2021-04-20 23:14:36,506 INFO      ('test_batch', '4')
+2021-04-20 23:14:36,506 INFO      ('lr', '0.001')
+2021-04-20 23:14:36,506 INFO      ('drop', '0')
+2021-04-20 23:14:36,506 INFO      ('schedule', '[20, 30, 40]')
+2021-04-20 23:14:36,506 INFO      ('gamma', '0.9')
+2021-04-20 23:14:36,506 INFO      ('momentum', '0.8')
+2021-04-20 23:14:36,506 INFO      ('weight_decay', '0.0001')
+2021-04-20 23:14:36,506 INFO      ('checkpoint', 'checkpoints/mwd_densenet121')
+2021-04-20 23:14:36,506 INFO      ('resume', '')
+2021-04-20 23:14:36,507 INFO      ('arch', 'densenet121')
+2021-04-20 23:14:36,507 INFO      ('manualSeed', '4497')
+2021-04-20 23:43:21,290 INFO      epoch: 1, train_acc: 67.29, test_acc: 80.30
+2021-04-21 00:10:00,763 INFO      epoch: 2, train_acc: 75.77, test_acc: 81.14
+2021-04-21 00:36:38,630 INFO      epoch: 3, train_acc: 79.66, test_acc: 80.81
+2021-04-21 01:02:59,460 INFO      epoch: 4, train_acc: 82.45, test_acc: 83.70
+2021-04-21 01:29:22,664 INFO      epoch: 5, train_acc: 84.34, test_acc: 83.83
+2021-04-21 01:55:42,746 INFO      epoch: 6, train_acc: 85.87, test_acc: 83.69
+2021-04-21 02:22:03,821 INFO      epoch: 7, train_acc: 87.54, test_acc: 83.06
+2021-04-21 02:48:25,017 INFO      epoch: 8, train_acc: 89.05, test_acc: 84.07
+2021-04-21 03:14:48,328 INFO      epoch: 9, train_acc: 90.34, test_acc: 82.89
+2021-04-21 03:41:09,752 INFO      epoch: 10, train_acc: 91.80, test_acc: 84.01
+2021-04-21 04:07:32,756 INFO      epoch: 11, train_acc: 93.17, test_acc: 84.40
+2021-04-21 04:33:53,698 INFO      epoch: 12, train_acc: 94.23, test_acc: 83.99
+2021-04-21 05:00:14,480 INFO      epoch: 13, train_acc: 95.26, test_acc: 84.67
+2021-04-21 05:26:36,205 INFO      epoch: 14, train_acc: 96.35, test_acc: 85.29
+2021-04-21 05:52:56,599 INFO      epoch: 15, train_acc: 97.09, test_acc: 85.22
+2021-04-21 06:19:16,936 INFO      epoch: 16, train_acc: 97.61, test_acc: 85.48
+2021-04-21 06:45:33,769 INFO      epoch: 17, train_acc: 98.15, test_acc: 85.08
+2021-04-21 07:11:52,940 INFO      epoch: 18, train_acc: 98.56, test_acc: 86.08
+2021-04-21 07:38:10,123 INFO      epoch: 19, train_acc: 98.72, test_acc: 86.28
+2021-04-21 08:04:27,435 INFO      epoch: 20, train_acc: 98.91, test_acc: 86.17
+2021-04-21 08:04:27,435 INFO      best_acc: 86.28

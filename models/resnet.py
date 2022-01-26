@@ -4,7 +4,7 @@ import torch.utils.model_zoo as model_zoo
 import torch.nn.functional as F
 import torch
 import numpy as np
-import cv2
+# import cv2
 import pdb
 import pickle
 import sys
@@ -108,7 +108,7 @@ class Bottleneck(nn.Module):
 
 class ResNet(nn.Module):
 
-    def __init__(self, block, layers, num_classes=4):
+    def __init__(self, block, layers, num_classes=5):
         self.inplanes = 64
         super(ResNet, self).__init__()
         self.conv1 = nn.Conv2d(3, 64, kernel_size=7, stride=2, padding=3,
@@ -191,6 +191,29 @@ def resnet18(pretrained=False, **kwargs):
     return model
 
 
+def resnet18_2classes(pretrained=False, **kwargs):
+    """Constructs a ResNet-18 model.
+    Args:
+        pretrained (bool): If True, returns a model pre-trained on ImageNet
+    """
+    model = ResNet(BasicBlock, [2, 2, 2, 2], **kwargs)
+    model.fc = nn.Linear(512, 2)
+    if pretrained:
+        pretrained_state_dict = model_zoo.load_url(model_urls['resnet18'])
+        model_state_dict = model.state_dict()
+        # print(pretrained_state_dict.keys())
+        for key in pretrained_state_dict:
+            if((key == 'fc.weight') | (key == 'fc.bias')):
+
+                pass
+            else:
+                model_state_dict[key] = pretrained_state_dict[key]
+
+        model.load_state_dict(model_state_dict)
+        # model.load_state_dict(model_zoo.load_url(model_urls['resnet18']))
+    return model
+
+
 def resnet34(pretrained=False, **kwargs):
     """Constructs a ResNet-34 model.
     Args:
@@ -198,8 +221,18 @@ def resnet34(pretrained=False, **kwargs):
     """
     model = ResNet(BasicBlock, [3, 4, 6, 3], **kwargs)
     if pretrained:
-        load_parameter(model, model_zoo.load_url(model_urls['resnet34']))
-        # model.load_state_dict(model_zoo.load_url(model_urls['resnet34']))
+        pretrained_state_dict = model_zoo.load_url(model_urls['resnet34'])
+        model_state_dict = model.state_dict()
+        # print(pretrained_state_dict.keys())
+        for key in pretrained_state_dict:
+            if((key == 'fc.weight') | (key == 'fc.bias')):
+
+                pass
+            else:
+                model_state_dict[key] = pretrained_state_dict[key]
+
+        model.load_state_dict(model_state_dict)
+        # model.load_state_dict(model_zoo.load_url(model_urls['resnet18']))
     return model
 
 
@@ -253,11 +286,26 @@ def count_parameters(model):
 
 def main():
     device = torch.device("cuda")
-    model = resnet50(pretrained=True)
-    print('net #', count_parameters(model))
-    x = torch.rand(2, 3, 224, 224)
-    y = model(x)
-    print(y)
+    # model = resnet18(pretrained=True)
+    model = resnet34(pretrained=True)
+
+    inputs = torch.randn(1, 3, 224, 224)
+    
+    from thop import profile
+    flops, params = profile(model, (inputs,))
+    print('flops: ', flops/1000000.0, 'params: ', params/1000000.0)
+
+    # print('    Total params: %.2fM' % (sum(p.numel() for p in model.parameters())/1000000.0))
+    # print(model)
+    # print('net #', count_parameters(model))
+    # x = torch.rand(2, 3, 224, 224)
+    # y = model(x)
+    # _, pred = y.topk(2, 1)
+    # print(y)
+    # for a, b in pred:
+    #     print(a.numpy(), b.numpy())
+
+    # print(pred)
 
 
 if __name__ == '__main__':

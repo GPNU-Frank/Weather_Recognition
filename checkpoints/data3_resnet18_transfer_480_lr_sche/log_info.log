@@ -1,0 +1,357 @@
+2021-06-07 10:11:02,832 INFO      ----------configuration**********
+2021-06-07 10:11:02,841 INFO      ('dataset', 'my_data')
+2021-06-07 10:11:02,841 INFO      ('train_path', 'G:\\vscode_workspace\\Weather_Recognition\\data3\\train\\')
+2021-06-07 10:11:02,841 INFO      ('test_path', 'G:\\vscode_workspace\\Weather_Recognition\\data3\\test\\')
+2021-06-07 10:11:02,841 INFO      ('imagesize', '224')
+2021-06-07 10:11:02,841 INFO      ('pretrained_path', 'G:\\vscode_workspace\\Weather_Recognition\\checkpoints\\mwd_resnet18\\04_14_14_25_fold_0_model_best.pth.tar')
+2021-06-07 10:11:02,841 INFO      ('train_batch', '8')
+2021-06-07 10:11:02,841 INFO      ('test_batch', '8')
+2021-06-07 10:11:02,841 INFO      ('drop', '0')
+2021-06-07 10:11:02,841 INFO      ('schedule', '[5, 10, 15, 20, 25, 30, 35, 40, 45]')
+2021-06-07 10:11:02,841 INFO      ('gamma', '0.9')
+2021-06-07 10:11:02,841 INFO      ('momentum', '0.8')
+2021-06-07 10:11:02,842 INFO      ('weight_decay', '0.0001')
+2021-06-07 10:11:02,842 INFO      ('checkpoint', 'checkpoints/data3_resnet18_transfer_480_lr_sche')
+2021-06-07 10:11:02,842 INFO      ('resume', '')
+2021-06-07 10:11:02,842 INFO      ('arch', 'resnet18')
+2021-06-07 10:11:02,842 INFO      ('manualSeed', '8921')
+2021-06-07 10:11:02,842 INFO      ('sched', 'step')
+2021-06-07 10:11:02,842 INFO      ('lr', '0.01')
+2021-06-07 10:11:02,842 INFO      ('lr_noise', 'None')
+2021-06-07 10:11:02,842 INFO      ('lr_noise_pct', '0.67')
+2021-06-07 10:11:02,842 INFO      ('lr_noise_std', '1.0')
+2021-06-07 10:11:02,842 INFO      ('lr_cycle_mul', '1.0')
+2021-06-07 10:11:02,842 INFO      ('lr_cycle_limit', '1')
+2021-06-07 10:11:02,842 INFO      ('warmup_lr', '0.0001')
+2021-06-07 10:11:02,842 INFO      ('min_lr', '1e-05')
+2021-06-07 10:11:02,842 INFO      ('epochs', '200')
+2021-06-07 10:11:02,842 INFO      ('epoch_repeats', '0.0')
+2021-06-07 10:11:02,842 INFO      ('start_epoch', 'None')
+2021-06-07 10:11:02,842 INFO      ('decay_epochs', '30')
+2021-06-07 10:11:02,842 INFO      ('warmup_epochs', '3')
+2021-06-07 10:11:02,842 INFO      ('cooldown_epochs', '10')
+2021-06-07 10:11:02,843 INFO      ('patience_epochs', '10')
+2021-06-07 10:11:02,843 INFO      ('decay_rate', '0.1')
+2021-06-07 10:11:35,361 INFO      ----------configuration**********
+2021-06-07 10:11:35,361 INFO      ('dataset', 'my_data')
+2021-06-07 10:11:35,361 INFO      ('train_path', 'G:\\vscode_workspace\\Weather_Recognition\\data3\\train\\')
+2021-06-07 10:11:35,361 INFO      ('test_path', 'G:\\vscode_workspace\\Weather_Recognition\\data3\\test\\')
+2021-06-07 10:11:35,361 INFO      ('imagesize', '224')
+2021-06-07 10:11:35,361 INFO      ('pretrained_path', 'G:\\vscode_workspace\\Weather_Recognition\\checkpoints\\mwd_resnet18\\04_14_14_25_fold_0_model_best.pth.tar')
+2021-06-07 10:11:35,361 INFO      ('train_batch', '8')
+2021-06-07 10:11:35,361 INFO      ('test_batch', '8')
+2021-06-07 10:11:35,361 INFO      ('drop', '0')
+2021-06-07 10:11:35,361 INFO      ('schedule', '[5, 10, 15, 20, 25, 30, 35, 40, 45]')
+2021-06-07 10:11:35,361 INFO      ('gamma', '0.9')
+2021-06-07 10:11:35,362 INFO      ('momentum', '0.8')
+2021-06-07 10:11:35,362 INFO      ('weight_decay', '0.0001')
+2021-06-07 10:11:35,362 INFO      ('checkpoint', 'checkpoints/data3_resnet18_transfer_480_lr_sche')
+2021-06-07 10:11:35,362 INFO      ('resume', '')
+2021-06-07 10:11:35,362 INFO      ('arch', 'resnet18')
+2021-06-07 10:11:35,362 INFO      ('manualSeed', '9485')
+2021-06-07 10:11:35,362 INFO      ('sched', 'step')
+2021-06-07 10:11:35,362 INFO      ('lr', '0.01')
+2021-06-07 10:11:35,362 INFO      ('lr_noise', 'None')
+2021-06-07 10:11:35,362 INFO      ('lr_noise_pct', '0.67')
+2021-06-07 10:11:35,362 INFO      ('lr_noise_std', '1.0')
+2021-06-07 10:11:35,362 INFO      ('lr_cycle_mul', '1.0')
+2021-06-07 10:11:35,362 INFO      ('lr_cycle_limit', '1')
+2021-06-07 10:11:35,362 INFO      ('warmup_lr', '0.0001')
+2021-06-07 10:11:35,362 INFO      ('min_lr', '1e-05')
+2021-06-07 10:11:35,362 INFO      ('epochs', '200')
+2021-06-07 10:11:35,362 INFO      ('epoch_repeats', '0.0')
+2021-06-07 10:11:35,362 INFO      ('start_epoch', '0')
+2021-06-07 10:11:35,362 INFO      ('decay_epochs', '30')
+2021-06-07 10:11:35,362 INFO      ('warmup_epochs', '3')
+2021-06-07 10:11:35,363 INFO      ('cooldown_epochs', '10')
+2021-06-07 10:11:35,363 INFO      ('patience_epochs', '10')
+2021-06-07 10:11:35,363 INFO      ('decay_rate', '0.1')
+2021-06-07 10:16:03,178 INFO      ----------configuration**********
+2021-06-07 10:16:03,178 INFO      ('dataset', 'my_data')
+2021-06-07 10:16:03,178 INFO      ('train_path', 'G:\\vscode_workspace\\Weather_Recognition\\data3\\train\\')
+2021-06-07 10:16:03,179 INFO      ('test_path', 'G:\\vscode_workspace\\Weather_Recognition\\data3\\test\\')
+2021-06-07 10:16:03,179 INFO      ('imagesize', '224')
+2021-06-07 10:16:03,179 INFO      ('pretrained_path', 'G:\\vscode_workspace\\Weather_Recognition\\checkpoints\\mwd_resnet18\\04_14_14_25_fold_0_model_best.pth.tar')
+2021-06-07 10:16:03,179 INFO      ('train_batch', '8')
+2021-06-07 10:16:03,179 INFO      ('test_batch', '8')
+2021-06-07 10:16:03,179 INFO      ('drop', '0')
+2021-06-07 10:16:03,179 INFO      ('schedule', '[5, 10, 15, 20, 25, 30, 35, 40, 45]')
+2021-06-07 10:16:03,179 INFO      ('gamma', '0.9')
+2021-06-07 10:16:03,179 INFO      ('momentum', '0.8')
+2021-06-07 10:16:03,179 INFO      ('weight_decay', '0.0001')
+2021-06-07 10:16:03,179 INFO      ('checkpoint', 'checkpoints/data3_resnet18_transfer_480_lr_sche')
+2021-06-07 10:16:03,179 INFO      ('resume', '')
+2021-06-07 10:16:03,179 INFO      ('arch', 'resnet18')
+2021-06-07 10:16:03,179 INFO      ('manualSeed', '8116')
+2021-06-07 10:16:03,179 INFO      ('sched', 'step')
+2021-06-07 10:16:03,179 INFO      ('lr', '0.01')
+2021-06-07 10:16:03,179 INFO      ('lr_noise', 'None')
+2021-06-07 10:16:03,179 INFO      ('lr_noise_pct', '0.67')
+2021-06-07 10:16:03,179 INFO      ('lr_noise_std', '1.0')
+2021-06-07 10:16:03,179 INFO      ('lr_cycle_mul', '1.0')
+2021-06-07 10:16:03,180 INFO      ('lr_cycle_limit', '1')
+2021-06-07 10:16:03,180 INFO      ('warmup_lr', '0.0001')
+2021-06-07 10:16:03,180 INFO      ('min_lr', '1e-05')
+2021-06-07 10:16:03,180 INFO      ('epochs', '200')
+2021-06-07 10:16:03,180 INFO      ('epoch_repeats', '0.0')
+2021-06-07 10:16:03,180 INFO      ('start_epoch', '0')
+2021-06-07 10:16:03,180 INFO      ('decay_epochs', '30')
+2021-06-07 10:16:03,180 INFO      ('warmup_epochs', '3')
+2021-06-07 10:16:03,180 INFO      ('cooldown_epochs', '10')
+2021-06-07 10:16:03,180 INFO      ('patience_epochs', '10')
+2021-06-07 10:16:03,180 INFO      ('decay_rate', '0.1')
+2021-06-07 10:17:35,173 INFO      epoch: 1, train_acc: 55.25, test_acc: 52.57
+2021-06-07 10:19:05,914 INFO      epoch: 2, train_acc: 71.38, test_acc: 65.91
+2021-06-07 10:20:35,237 INFO      epoch: 3, train_acc: 82.07, test_acc: 74.58
+2021-06-07 10:22:05,070 INFO      epoch: 4, train_acc: 77.05, test_acc: 62.58
+2021-06-07 10:23:41,335 INFO      epoch: 5, train_acc: 74.29, test_acc: 54.64
+2021-06-07 10:25:11,894 INFO      epoch: 6, train_acc: 81.11, test_acc: 63.71
+2021-06-07 10:26:42,010 INFO      epoch: 7, train_acc: 84.01, test_acc: 63.51
+2021-06-07 10:28:11,976 INFO      epoch: 8, train_acc: 88.99, test_acc: 67.58
+2021-06-07 10:29:45,669 INFO      epoch: 9, train_acc: 89.95, test_acc: 60.37
+2021-06-07 10:31:19,378 INFO      epoch: 10, train_acc: 89.08, test_acc: 63.31
+2021-06-07 10:32:51,328 INFO      epoch: 11, train_acc: 92.21, test_acc: 64.58
+2021-06-07 10:34:24,415 INFO      epoch: 12, train_acc: 94.06, test_acc: 71.11
+2021-06-07 10:35:57,793 INFO      epoch: 13, train_acc: 94.33, test_acc: 69.65
+2021-06-07 10:37:30,674 INFO      epoch: 14, train_acc: 94.98, test_acc: 70.25
+2021-06-07 10:38:59,782 INFO      epoch: 15, train_acc: 96.04, test_acc: 66.44
+2021-06-07 10:40:29,358 INFO      epoch: 16, train_acc: 95.44, test_acc: 71.05
+2021-06-07 10:42:05,118 INFO      epoch: 17, train_acc: 95.94, test_acc: 68.65
+2021-06-07 10:43:36,803 INFO      epoch: 18, train_acc: 96.31, test_acc: 67.31
+2021-06-07 10:45:17,049 INFO      epoch: 19, train_acc: 96.36, test_acc: 67.78
+2021-06-07 10:46:48,074 INFO      epoch: 20, train_acc: 97.42, test_acc: 68.78
+2021-06-07 10:48:18,664 INFO      epoch: 21, train_acc: 95.71, test_acc: 71.58
+2021-06-07 10:50:03,168 INFO      epoch: 22, train_acc: 96.59, test_acc: 68.51
+2021-06-07 10:51:33,813 INFO      epoch: 23, train_acc: 97.00, test_acc: 65.04
+2021-06-07 10:53:04,216 INFO      epoch: 24, train_acc: 96.64, test_acc: 70.58
+2021-06-07 10:54:37,140 INFO      epoch: 25, train_acc: 97.79, test_acc: 67.11
+2021-06-07 10:57:19,821 INFO      ----------configuration**********
+2021-06-07 10:57:19,821 INFO      ('dataset', 'my_data')
+2021-06-07 10:57:19,821 INFO      ('train_path', 'G:\\vscode_workspace\\Weather_Recognition\\data3\\train\\')
+2021-06-07 10:57:19,821 INFO      ('test_path', 'G:\\vscode_workspace\\Weather_Recognition\\data3\\test\\')
+2021-06-07 10:57:19,821 INFO      ('imagesize', '224')
+2021-06-07 10:57:19,821 INFO      ('pretrained_path', 'G:\\vscode_workspace\\Weather_Recognition\\checkpoints\\mwd_resnet18\\04_14_14_25_fold_0_model_best.pth.tar')
+2021-06-07 10:57:19,821 INFO      ('train_batch', '8')
+2021-06-07 10:57:19,821 INFO      ('test_batch', '8')
+2021-06-07 10:57:19,822 INFO      ('drop', '0')
+2021-06-07 10:57:19,822 INFO      ('schedule', '[5, 10, 15, 20, 25, 30, 35, 40, 45]')
+2021-06-07 10:57:19,822 INFO      ('gamma', '0.9')
+2021-06-07 10:57:19,822 INFO      ('momentum', '0.8')
+2021-06-07 10:57:19,822 INFO      ('weight_decay', '0.0001')
+2021-06-07 10:57:19,822 INFO      ('checkpoint', 'checkpoints/data3_resnet18_transfer_480_lr_sche')
+2021-06-07 10:57:19,822 INFO      ('resume', '')
+2021-06-07 10:57:19,822 INFO      ('arch', 'resnet18')
+2021-06-07 10:57:19,822 INFO      ('manualSeed', '9111')
+2021-06-07 10:57:19,822 INFO      ('sched', 'step')
+2021-06-07 10:57:19,822 INFO      ('lr', '0.01')
+2021-06-07 10:57:19,822 INFO      ('lr_noise', 'None')
+2021-06-07 10:57:19,822 INFO      ('lr_noise_pct', '0.67')
+2021-06-07 10:57:19,822 INFO      ('lr_noise_std', '1.0')
+2021-06-07 10:57:19,822 INFO      ('lr_cycle_mul', '1.0')
+2021-06-07 10:57:19,822 INFO      ('lr_cycle_limit', '1')
+2021-06-07 10:57:19,822 INFO      ('warmup_lr', '0.0001')
+2021-06-07 10:57:19,822 INFO      ('min_lr', '1e-05')
+2021-06-07 10:57:19,822 INFO      ('epochs', '200')
+2021-06-07 10:57:19,822 INFO      ('epoch_repeats', '0.0')
+2021-06-07 10:57:19,823 INFO      ('start_epoch', '0')
+2021-06-07 10:57:19,823 INFO      ('decay_epochs', '30')
+2021-06-07 10:57:19,823 INFO      ('warmup_epochs', '3')
+2021-06-07 10:57:19,823 INFO      ('cooldown_epochs', '10')
+2021-06-07 10:57:19,823 INFO      ('patience_epochs', '10')
+2021-06-07 10:57:19,823 INFO      ('decay_rate', '0.1')
+2021-06-07 10:58:54,376 INFO      epoch: 1, train_acc: 82.26, test_acc: 73.18
+2021-06-07 11:00:33,889 INFO      epoch: 2, train_acc: 91.61, test_acc: 75.98
+2021-06-07 11:02:04,695 INFO      epoch: 3, train_acc: 72.35, test_acc: 65.71
+2021-06-07 11:03:35,973 INFO      epoch: 4, train_acc: 79.22, test_acc: 58.97
+2021-06-07 11:05:06,756 INFO      epoch: 5, train_acc: 74.29, test_acc: 45.16
+2021-06-07 11:06:37,318 INFO      epoch: 6, train_acc: 80.23, test_acc: 46.50
+2021-06-07 11:08:08,909 INFO      epoch: 7, train_acc: 85.99, test_acc: 61.44
+2021-06-07 11:09:39,131 INFO      epoch: 8, train_acc: 86.13, test_acc: 67.51
+2021-06-07 11:11:10,966 INFO      epoch: 9, train_acc: 90.97, test_acc: 59.44
+2021-06-07 11:12:43,401 INFO      epoch: 10, train_acc: 92.21, test_acc: 59.57
+2021-06-07 11:14:26,803 INFO      epoch: 11, train_acc: 91.15, test_acc: 64.24
+2021-06-07 11:16:10,993 INFO      epoch: 12, train_acc: 92.53, test_acc: 70.91
+2021-06-07 11:17:53,256 INFO      epoch: 13, train_acc: 94.10, test_acc: 63.98
+2021-06-07 11:19:28,910 INFO      epoch: 14, train_acc: 94.52, test_acc: 64.44
+2021-06-07 11:21:15,800 INFO      epoch: 15, train_acc: 93.92, test_acc: 68.85
+2021-06-07 11:22:49,735 INFO      epoch: 16, train_acc: 95.99, test_acc: 68.51
+2021-06-07 11:24:32,597 INFO      epoch: 17, train_acc: 96.18, test_acc: 69.31
+2021-06-07 11:27:27,878 INFO      ----------configuration**********
+2021-06-07 11:27:27,878 INFO      ('dataset', 'my_data')
+2021-06-07 11:27:27,878 INFO      ('train_path', 'G:\\vscode_workspace\\Weather_Recognition\\data3\\train\\')
+2021-06-07 11:27:27,878 INFO      ('test_path', 'G:\\vscode_workspace\\Weather_Recognition\\data3\\test\\')
+2021-06-07 11:27:27,878 INFO      ('imagesize', '224')
+2021-06-07 11:27:27,878 INFO      ('pretrained_path', 'G:\\vscode_workspace\\Weather_Recognition\\checkpoints\\from_others\\mwd_resnet_384_model_best.pth.tar')
+2021-06-07 11:27:27,878 INFO      ('train_batch', '8')
+2021-06-07 11:27:27,878 INFO      ('test_batch', '8')
+2021-06-07 11:27:27,878 INFO      ('drop', '0')
+2021-06-07 11:27:27,878 INFO      ('schedule', '[5, 10, 15, 20, 25, 30, 35, 40, 45]')
+2021-06-07 11:27:27,878 INFO      ('gamma', '0.9')
+2021-06-07 11:27:27,878 INFO      ('momentum', '0.8')
+2021-06-07 11:27:27,878 INFO      ('weight_decay', '0.0001')
+2021-06-07 11:27:27,878 INFO      ('checkpoint', 'checkpoints/data3_resnet18_transfer_480_lr_sche')
+2021-06-07 11:27:27,878 INFO      ('resume', '')
+2021-06-07 11:27:27,879 INFO      ('arch', 'resnet18')
+2021-06-07 11:27:27,879 INFO      ('manualSeed', '2593')
+2021-06-07 11:27:27,879 INFO      ('sched', 'step')
+2021-06-07 11:27:27,879 INFO      ('lr', '0.01')
+2021-06-07 11:27:27,879 INFO      ('lr_noise', 'None')
+2021-06-07 11:27:27,879 INFO      ('lr_noise_pct', '0.67')
+2021-06-07 11:27:27,879 INFO      ('lr_noise_std', '1.0')
+2021-06-07 11:27:27,879 INFO      ('lr_cycle_mul', '1.0')
+2021-06-07 11:27:27,879 INFO      ('lr_cycle_limit', '1')
+2021-06-07 11:27:27,879 INFO      ('warmup_lr', '0.0001')
+2021-06-07 11:27:27,879 INFO      ('min_lr', '1e-05')
+2021-06-07 11:27:27,879 INFO      ('epochs', '200')
+2021-06-07 11:27:27,879 INFO      ('epoch_repeats', '0.0')
+2021-06-07 11:27:27,879 INFO      ('start_epoch', '0')
+2021-06-07 11:27:27,879 INFO      ('decay_epochs', '30')
+2021-06-07 11:27:27,879 INFO      ('warmup_epochs', '3')
+2021-06-07 11:27:27,879 INFO      ('cooldown_epochs', '10')
+2021-06-07 11:27:27,879 INFO      ('patience_epochs', '10')
+2021-06-07 11:27:27,879 INFO      ('decay_rate', '0.1')
+2021-06-07 11:29:07,372 INFO      epoch: 1, train_acc: 82.07, test_acc: 75.98
+2021-06-07 11:30:48,337 INFO      epoch: 2, train_acc: 86.96, test_acc: 77.38
+2021-06-07 11:32:24,084 INFO      epoch: 3, train_acc: 92.40, test_acc: 79.85
+2021-06-07 11:33:58,269 INFO      epoch: 4, train_acc: 94.93, test_acc: 73.18
+2021-06-07 11:35:33,253 INFO      epoch: 5, train_acc: 93.55, test_acc: 73.52
+2021-06-07 11:37:07,279 INFO      epoch: 6, train_acc: 94.70, test_acc: 70.11
+2021-06-07 11:38:41,820 INFO      epoch: 7, train_acc: 96.91, test_acc: 75.52
+2021-06-07 11:40:16,147 INFO      epoch: 8, train_acc: 98.57, test_acc: 77.25
+2021-06-07 11:41:50,985 INFO      epoch: 9, train_acc: 98.48, test_acc: 73.72
+2021-06-07 11:43:29,890 INFO      epoch: 10, train_acc: 97.42, test_acc: 74.52
+2021-06-07 11:45:11,093 INFO      epoch: 11, train_acc: 98.66, test_acc: 70.31
+2021-06-07 11:46:45,009 INFO      epoch: 12, train_acc: 97.74, test_acc: 75.65
+2021-06-07 11:48:18,266 INFO      epoch: 13, train_acc: 98.43, test_acc: 75.92
+2021-06-07 11:49:50,841 INFO      epoch: 14, train_acc: 98.66, test_acc: 69.71
+2021-06-07 11:51:24,226 INFO      epoch: 15, train_acc: 98.66, test_acc: 73.32
+2021-06-07 11:52:56,855 INFO      epoch: 16, train_acc: 99.54, test_acc: 72.58
+2021-06-07 11:54:29,848 INFO      epoch: 17, train_acc: 98.71, test_acc: 23.95
+2021-06-07 11:56:02,572 INFO      epoch: 18, train_acc: 55.99, test_acc: 54.04
+2021-06-07 11:57:36,347 INFO      epoch: 19, train_acc: 70.00, test_acc: 55.57
+2021-06-07 11:59:12,894 INFO      epoch: 20, train_acc: 75.30, test_acc: 61.17
+2021-06-07 12:00:53,893 INFO      epoch: 21, train_acc: 79.26, test_acc: 57.51
+2021-06-07 12:02:27,821 INFO      epoch: 22, train_acc: 82.44, test_acc: 62.04
+2021-06-07 12:04:02,374 INFO      epoch: 23, train_acc: 84.98, test_acc: 61.97
+2021-06-07 12:05:36,665 INFO      epoch: 24, train_acc: 87.05, test_acc: 62.17
+2021-06-07 12:07:10,515 INFO      epoch: 25, train_acc: 88.62, test_acc: 61.44
+2021-06-07 12:08:45,095 INFO      epoch: 26, train_acc: 88.39, test_acc: 56.57
+2021-06-07 12:10:19,218 INFO      epoch: 27, train_acc: 89.91, test_acc: 62.37
+2021-06-07 12:11:53,910 INFO      epoch: 28, train_acc: 92.53, test_acc: 61.97
+2021-06-07 12:13:27,801 INFO      epoch: 29, train_acc: 92.12, test_acc: 58.97
+2021-06-07 12:15:08,711 INFO      epoch: 30, train_acc: 93.23, test_acc: 64.44
+2021-06-07 12:16:42,762 INFO      epoch: 31, train_acc: 94.01, test_acc: 59.57
+2021-06-07 12:18:15,655 INFO      epoch: 32, train_acc: 96.31, test_acc: 64.58
+2021-06-07 12:19:48,266 INFO      epoch: 33, train_acc: 97.83, test_acc: 65.64
+2021-06-07 12:21:21,586 INFO      epoch: 34, train_acc: 98.02, test_acc: 64.98
+2021-06-07 12:22:54,045 INFO      epoch: 35, train_acc: 98.06, test_acc: 65.78
+2021-06-07 12:24:29,721 INFO      epoch: 36, train_acc: 98.53, test_acc: 65.11
+2021-06-07 12:26:05,415 INFO      epoch: 37, train_acc: 98.20, test_acc: 64.64
+2021-06-07 12:29:31,106 INFO      ----------configuration**********
+2021-06-07 12:29:31,106 INFO      ('dataset', 'my_data')
+2021-06-07 12:29:31,106 INFO      ('train_path', 'G:\\vscode_workspace\\Weather_Recognition\\data3\\train\\')
+2021-06-07 12:29:31,106 INFO      ('test_path', 'G:\\vscode_workspace\\Weather_Recognition\\data3\\test\\')
+2021-06-07 12:29:31,106 INFO      ('imagesize', '224')
+2021-06-07 12:29:31,106 INFO      ('pretrained_path', 'G:\\vscode_workspace\\Weather_Recognition\\checkpoints\\from_others\\mwd_resnet_384_model_best.pth.tar')
+2021-06-07 12:29:31,106 INFO      ('train_batch', '8')
+2021-06-07 12:29:31,106 INFO      ('test_batch', '8')
+2021-06-07 12:29:31,107 INFO      ('drop', '0')
+2021-06-07 12:29:31,107 INFO      ('schedule', '[5, 10, 15, 20, 25, 30, 35, 40, 45]')
+2021-06-07 12:29:31,107 INFO      ('gamma', '0.9')
+2021-06-07 12:29:31,107 INFO      ('momentum', '0.8')
+2021-06-07 12:29:31,107 INFO      ('weight_decay', '0.0001')
+2021-06-07 12:29:31,107 INFO      ('checkpoint', 'checkpoints/data3_resnet18_transfer_480_lr_sche')
+2021-06-07 12:29:31,107 INFO      ('resume', '')
+2021-06-07 12:29:31,107 INFO      ('arch', 'resnet18')
+2021-06-07 12:29:31,107 INFO      ('manualSeed', '6343')
+2021-06-07 12:29:31,107 INFO      ('sched', 'step')
+2021-06-07 12:29:31,107 INFO      ('lr', '0.01')
+2021-06-07 12:29:31,107 INFO      ('lr_noise', 'None')
+2021-06-07 12:29:31,108 INFO      ('lr_noise_pct', '0.67')
+2021-06-07 12:29:31,108 INFO      ('lr_noise_std', '1.0')
+2021-06-07 12:29:31,108 INFO      ('lr_cycle_mul', '1.0')
+2021-06-07 12:29:31,108 INFO      ('lr_cycle_limit', '1')
+2021-06-07 12:29:31,108 INFO      ('warmup_lr', '0.0001')
+2021-06-07 12:29:31,108 INFO      ('min_lr', '1e-05')
+2021-06-07 12:29:31,108 INFO      ('epochs', '200')
+2021-06-07 12:29:31,108 INFO      ('epoch_repeats', '0.0')
+2021-06-07 12:29:31,108 INFO      ('start_epoch', '0')
+2021-06-07 12:29:31,108 INFO      ('decay_epochs', '30')
+2021-06-07 12:29:31,108 INFO      ('warmup_epochs', '3')
+2021-06-07 12:29:31,108 INFO      ('cooldown_epochs', '10')
+2021-06-07 12:29:31,109 INFO      ('patience_epochs', '10')
+2021-06-07 12:29:31,109 INFO      ('decay_rate', '0.1')
+2021-06-07 12:31:13,189 INFO      epoch: 1, train_acc: 81.57, test_acc: 74.58
+2021-06-07 12:32:48,353 INFO      epoch: 2, train_acc: 86.13, test_acc: 76.58
+2021-06-07 12:34:28,037 INFO      epoch: 3, train_acc: 92.63, test_acc: 78.45
+2021-06-07 12:36:10,786 INFO      epoch: 4, train_acc: 93.96, test_acc: 75.58
+2021-06-07 12:37:52,505 INFO      epoch: 5, train_acc: 92.95, test_acc: 70.51
+2021-06-07 12:39:31,998 INFO      epoch: 6, train_acc: 96.27, test_acc: 75.78
+2021-06-07 12:41:11,360 INFO      epoch: 7, train_acc: 97.00, test_acc: 74.38
+2021-06-07 12:42:50,642 INFO      epoch: 8, train_acc: 97.79, test_acc: 74.45
+2021-06-07 12:44:34,487 INFO      epoch: 9, train_acc: 96.96, test_acc: 71.98
+2021-06-07 12:46:18,673 INFO      epoch: 10, train_acc: 96.73, test_acc: 74.98
+2021-06-07 12:47:57,927 INFO      epoch: 11, train_acc: 98.20, test_acc: 74.12
+2021-06-07 12:49:36,499 INFO      epoch: 12, train_acc: 99.12, test_acc: 76.65
+2021-06-07 12:51:14,806 INFO      epoch: 13, train_acc: 99.59, test_acc: 76.58
+2021-06-07 12:52:54,650 INFO      epoch: 14, train_acc: 99.40, test_acc: 77.45
+2021-06-07 12:54:32,151 INFO      epoch: 15, train_acc: 99.40, test_acc: 78.72
+2021-06-07 12:56:08,416 INFO      epoch: 16, train_acc: 99.59, test_acc: 77.65
+2021-06-07 12:57:43,975 INFO      epoch: 17, train_acc: 99.82, test_acc: 76.98
+2021-06-07 12:59:25,298 INFO      epoch: 18, train_acc: 99.26, test_acc: 75.52
+2021-06-07 13:01:06,914 INFO      epoch: 19, train_acc: 99.31, test_acc: 77.38
+2021-06-07 13:02:42,911 INFO      epoch: 20, train_acc: 97.88, test_acc: 78.39
+2021-06-07 13:04:18,979 INFO      epoch: 21, train_acc: 99.17, test_acc: 75.85
+2021-06-07 13:05:55,037 INFO      epoch: 22, train_acc: 99.63, test_acc: 78.52
+2021-06-07 13:07:30,610 INFO      epoch: 23, train_acc: 99.68, test_acc: 77.05
+2021-06-07 13:09:06,750 INFO      epoch: 24, train_acc: 99.86, test_acc: 77.05
+2021-06-07 13:10:41,279 INFO      epoch: 25, train_acc: 99.77, test_acc: 76.12
+2021-06-07 13:12:16,320 INFO      epoch: 26, train_acc: 98.94, test_acc: 71.71
+2021-06-07 13:13:51,647 INFO      epoch: 27, train_acc: 99.08, test_acc: 75.85
+2021-06-07 13:15:35,493 INFO      epoch: 28, train_acc: 99.63, test_acc: 76.92
+2021-06-07 13:17:09,816 INFO      epoch: 29, train_acc: 99.17, test_acc: 74.58
+2021-06-07 13:18:44,403 INFO      epoch: 30, train_acc: 99.54, test_acc: 74.25
+2021-06-07 13:20:18,856 INFO      epoch: 31, train_acc: 99.91, test_acc: 74.45
+2021-06-07 13:21:53,330 INFO      epoch: 32, train_acc: 99.77, test_acc: 76.72
+2021-06-07 13:23:27,280 INFO      epoch: 33, train_acc: 99.95, test_acc: 76.98
+2021-06-07 13:25:02,406 INFO      epoch: 34, train_acc: 99.95, test_acc: 76.65
+2021-06-07 13:26:36,808 INFO      epoch: 35, train_acc: 99.95, test_acc: 77.25
+2021-06-07 13:28:11,458 INFO      epoch: 36, train_acc: 99.95, test_acc: 76.58
+2021-06-07 13:29:53,082 INFO      epoch: 37, train_acc: 100.00, test_acc: 76.78
+2021-06-07 13:31:30,606 INFO      epoch: 38, train_acc: 100.00, test_acc: 78.05
+2021-06-07 13:33:04,963 INFO      epoch: 39, train_acc: 99.91, test_acc: 76.32
+2021-06-07 13:34:39,800 INFO      epoch: 40, train_acc: 100.00, test_acc: 77.25
+2021-06-07 13:36:14,386 INFO      epoch: 41, train_acc: 99.95, test_acc: 77.99
+2021-06-07 13:37:50,079 INFO      epoch: 42, train_acc: 99.82, test_acc: 78.19
+2021-06-07 13:39:28,557 INFO      epoch: 43, train_acc: 99.91, test_acc: 77.45
+2021-06-07 13:41:06,003 INFO      epoch: 44, train_acc: 99.95, test_acc: 77.72
+2021-06-07 13:42:45,669 INFO      epoch: 45, train_acc: 100.00, test_acc: 76.58
+2021-06-07 13:44:29,430 INFO      epoch: 46, train_acc: 99.95, test_acc: 76.18
+2021-06-07 13:46:13,618 INFO      epoch: 47, train_acc: 100.00, test_acc: 78.25
+2021-06-07 13:47:52,697 INFO      epoch: 48, train_acc: 99.91, test_acc: 77.38
+2021-06-07 13:49:33,481 INFO      epoch: 49, train_acc: 99.95, test_acc: 77.18
+2021-06-07 13:51:14,375 INFO      epoch: 50, train_acc: 99.91, test_acc: 76.78
+2021-06-07 13:52:57,118 INFO      epoch: 51, train_acc: 100.00, test_acc: 77.72
+2021-06-07 13:54:37,627 INFO      epoch: 52, train_acc: 99.91, test_acc: 77.85
+2021-06-07 13:56:18,300 INFO      epoch: 53, train_acc: 99.95, test_acc: 77.79
+2021-06-07 13:57:58,572 INFO      epoch: 54, train_acc: 99.95, test_acc: 77.45
+2021-06-07 13:59:44,967 INFO      epoch: 55, train_acc: 99.95, test_acc: 78.12
+2021-06-07 14:01:26,563 INFO      epoch: 56, train_acc: 100.00, test_acc: 78.19
+2021-06-07 14:03:00,396 INFO      epoch: 57, train_acc: 100.00, test_acc: 77.32
+2021-06-07 14:04:34,548 INFO      epoch: 58, train_acc: 99.95, test_acc: 78.12
+2021-06-07 14:06:08,673 INFO      epoch: 59, train_acc: 100.00, test_acc: 77.45
+2021-06-07 14:07:42,766 INFO      epoch: 60, train_acc: 100.00, test_acc: 77.99
+2021-06-07 14:09:16,832 INFO      epoch: 61, train_acc: 99.91, test_acc: 78.45
+2021-06-07 14:10:51,026 INFO      epoch: 62, train_acc: 100.00, test_acc: 77.38
+2021-06-07 14:12:25,303 INFO      epoch: 63, train_acc: 99.91, test_acc: 78.39
+2021-06-07 14:14:01,521 INFO      epoch: 64, train_acc: 100.00, test_acc: 78.25
+2021-06-07 14:15:43,398 INFO      epoch: 65, train_acc: 99.95, test_acc: 78.72
+2021-06-07 14:17:20,641 INFO      epoch: 66, train_acc: 99.91, test_acc: 77.99
+2021-06-07 14:18:54,819 INFO      epoch: 67, train_acc: 100.00, test_acc: 77.72
+2021-06-07 14:20:30,839 INFO      epoch: 68, train_acc: 100.00, test_acc: 77.92
+2021-06-07 14:22:12,552 INFO      epoch: 69, train_acc: 99.95, test_acc: 78.92
+2021-06-07 14:24:03,008 INFO      epoch: 70, train_acc: 100.00, test_acc: 78.65
+2021-06-07 14:25:47,534 INFO      epoch: 71, train_acc: 99.95, test_acc: 77.92
+2021-06-07 14:27:30,649 INFO      epoch: 72, train_acc: 100.00, test_acc: 78.25
+2021-06-07 14:29:13,500 INFO      epoch: 73, train_acc: 99.95, test_acc: 77.92
+2021-06-07 14:31:11,047 INFO      epoch: 74, train_acc: 100.00, test_acc: 78.39

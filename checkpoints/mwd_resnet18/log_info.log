@@ -43,3 +43,76 @@
 2021-01-19 21:20:49,031 INFO      epoch: 7, train_acc: 95.25, test_acc: 85.18
 2021-01-19 21:28:30,182 INFO      epoch: 8, train_acc: 96.32, test_acc: 84.61
 2021-01-19 21:36:22,327 INFO      epoch: 9, train_acc: 96.86, test_acc: 85.35
+2021-04-14 10:58:11,210 INFO      ----------configuration**********
+2021-04-14 10:58:11,210 INFO      ('dataset', 'mwd')
+2021-04-14 10:58:11,210 INFO      ('root_path', 'G:\\dataset\\MWD\\weather_classification\\')
+2021-04-14 10:58:11,210 INFO      ('imagesize', '224')
+2021-04-14 10:58:11,210 INFO      ('epochs', '20')
+2021-04-14 10:58:11,211 INFO      ('start_epoch', '0')
+2021-04-14 10:58:11,211 INFO      ('train_batch', '4')
+2021-04-14 10:58:11,211 INFO      ('test_batch', '4')
+2021-04-14 10:58:11,211 INFO      ('lr', '0.001')
+2021-04-14 10:58:11,211 INFO      ('drop', '0')
+2021-04-14 10:58:11,211 INFO      ('schedule', '[20, 30, 40]')
+2021-04-14 10:58:11,211 INFO      ('gamma', '0.9')
+2021-04-14 10:58:11,211 INFO      ('momentum', '0.8')
+2021-04-14 10:58:11,211 INFO      ('weight_decay', '0.0001')
+2021-04-14 10:58:11,211 INFO      ('checkpoint', 'checkpoints/mwd_resnet18')
+2021-04-14 10:58:11,211 INFO      ('resume', '')
+2021-04-14 10:58:11,212 INFO      ('arch', 'resnet18')
+2021-04-14 10:58:11,212 INFO      ('manualSeed', '9789')
+2021-04-14 10:58:35,158 INFO      ----------configuration**********
+2021-04-14 10:58:35,158 INFO      ('dataset', 'mwd')
+2021-04-14 10:58:35,158 INFO      ('root_path', 'G:\\dataset\\MWD\\weather_classification\\')
+2021-04-14 10:58:35,173 INFO      ('imagesize', '224')
+2021-04-14 10:58:35,173 INFO      ('epochs', '20')
+2021-04-14 10:58:35,173 INFO      ('start_epoch', '0')
+2021-04-14 10:58:35,173 INFO      ('train_batch', '8')
+2021-04-14 10:58:35,173 INFO      ('test_batch', '8')
+2021-04-14 10:58:35,174 INFO      ('lr', '0.001')
+2021-04-14 10:58:35,174 INFO      ('drop', '0')
+2021-04-14 10:58:35,174 INFO      ('schedule', '[20, 30, 40]')
+2021-04-14 10:58:35,174 INFO      ('gamma', '0.9')
+2021-04-14 10:58:35,174 INFO      ('momentum', '0.8')
+2021-04-14 10:58:35,174 INFO      ('weight_decay', '0.0001')
+2021-04-14 10:58:35,174 INFO      ('checkpoint', 'checkpoints/mwd_resnet18')
+2021-04-14 10:58:35,174 INFO      ('resume', '')
+2021-04-14 10:58:35,174 INFO      ('arch', 'resnet18')
+2021-04-14 10:58:35,174 INFO      ('manualSeed', '9458')
+
+
+修改学习率调度 调整6类到5类 size调整为 480
+2021-04-14 10:59:11,040 INFO      ----------configuration**********
+2021-04-14 10:59:11,040 INFO      ('dataset', 'mwd')
+2021-04-14 10:59:11,041 INFO      ('root_path', 'G:\\dataset\\MWD\\weather_classification\\')
+2021-04-14 10:59:11,041 INFO      ('imagesize', '224')
+2021-04-14 10:59:11,041 INFO      ('epochs', '20')
+2021-04-14 10:59:11,041 INFO      ('start_epoch', '0')
+2021-04-14 10:59:11,041 INFO      ('train_batch', '16')
+2021-04-14 10:59:11,041 INFO      ('test_batch', '16')
+2021-04-14 10:59:11,041 INFO      ('lr', '0.001')
+2021-04-14 10:59:11,041 INFO      ('drop', '0')
+2021-04-14 10:59:11,041 INFO      ('schedule', '[20, 30, 40]')
+2021-04-14 10:59:11,041 INFO      ('gamma', '0.9')
+2021-04-14 10:59:11,041 INFO      ('momentum', '0.8')
+2021-04-14 10:59:11,043 INFO      ('weight_decay', '0.0001')
+2021-04-14 10:59:11,043 INFO      ('checkpoint', 'checkpoints/mwd_resnet18')
+2021-04-14 10:59:11,043 INFO      ('resume', '')
+2021-04-14 10:59:11,043 INFO      ('arch', 'resnet18')
+2021-04-14 10:59:11,043 INFO      ('manualSeed', '7739')
+2021-04-14 11:21:20,799 INFO      epoch: 1, train_acc: 73.98, test_acc: 81.22
+2021-04-14 11:34:02,982 INFO      epoch: 2, train_acc: 81.27, test_acc: 82.32
+2021-04-14 11:46:27,678 INFO      epoch: 3, train_acc: 84.38, test_acc: 82.82
+2021-04-14 11:58:45,840 INFO      epoch: 4, train_acc: 86.81, test_acc: 83.36
+2021-04-14 12:11:02,904 INFO      epoch: 5, train_acc: 89.01, test_acc: 84.61
+2021-04-14 12:23:11,269 INFO      epoch: 6, train_acc: 91.06, test_acc: 83.91
+2021-04-14 12:35:25,578 INFO      epoch: 7, train_acc: 93.09, test_acc: 83.83
+2021-04-14 12:47:39,199 INFO      epoch: 8, train_acc: 94.70, test_acc: 84.53
+2021-04-14 12:59:52,724 INFO      epoch: 9, train_acc: 95.78, test_acc: 84.45
+2021-04-14 13:12:06,750 INFO      epoch: 10, train_acc: 96.56, test_acc: 83.92
+2021-04-14 13:24:18,011 INFO      epoch: 11, train_acc: 97.28, test_acc: 84.50
+2021-04-14 13:36:31,734 INFO      epoch: 12, train_acc: 97.84, test_acc: 84.46
+2021-04-14 13:48:44,597 INFO      epoch: 13, train_acc: 98.11, test_acc: 85.18
+2021-04-14 14:00:58,013 INFO      epoch: 14, train_acc: 98.39, test_acc: 84.89
+2021-04-14 14:13:11,337 INFO      epoch: 15, train_acc: 98.58, test_acc: 84.91
+2021-04-14 14:25:42,611 INFO      epoch: 16, train_acc: 98.73, test_acc: 85.15

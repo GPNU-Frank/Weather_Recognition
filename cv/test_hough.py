@@ -6,8 +6,8 @@ import cv2
 import math
 
 blur_ksize = 5  # Gaussian blur kernel size
-canny_lthreshold = 50  # Canny edge detection low threshold
-canny_hthreshold = 150  # Canny edge detection high threshold
+canny_lthreshold = 150  # Canny edge detection low threshold
+canny_hthreshold = 250  # Canny edge detection high threshold
 
 # Hough transform parameters
 rho = 1  # rho的步长，即直线到图像原点(0,0)点的距离
@@ -200,7 +200,7 @@ def process_an_image(img):
 
 if __name__ == "__main__":
     # img_path = "../data_split_v5/train/Cloud/17424_2021_01_25 12_03_57_97_0.jpg"
-    img_path = "../data_split_v5/train/Cloud/19724_2021_01_25 11_47_30_58_0.jpg"
+    # img_path = "../data_split_v5/train/Cloud/19724_2021_01_25 11_47_30_58_0.jpg"
     # img_path = "../data_split_v5/train/Cloud/22740_2021_01_25 11_57_44_73_0.jpg"
     # img_path = "../data_split_v5/train/Cloud/29640_2021_01_05 11_02_35_98.jpg"
     # img_path = "../data_split_v5/train/Cloud/30428_2021_01_05 10_27_31_5.jpg"  # 有遮挡
@@ -219,7 +219,8 @@ if __name__ == "__main__":
     # img_path = "../data_split_v5/train/Sunny/11808_2020_12_29 16_28_55_1.jpg"
     # img_path = "../data_split_v5/train/Snow/1368_2021_01_15 10_35_36_11_0.jpg"
     # img_path = "../data_split_v5/train/Sunny/11472_2020_12_29 16_20_09_8.jpg"
-    img_path = "../data_split_v5/train/Sunny/46668_2020_12_30 10_30_49_16.jpg"
+    # img_path = "../data_split_v5/train/Sunny/46668_2020_12_30 10_30_49_16.jpg"
+    img_path = "../data_split_v6/train/Sunny/20128_2020_12_30 10_56_02_14.jpg"
     img = cv2.imread(img_path)
     res_img = process_an_image(img)
     plt.imshow(res_img)

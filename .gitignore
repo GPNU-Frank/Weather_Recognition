@@ -7,7 +7,11 @@ __pycache__/
 
 data/
 
-checkpoints/
+data2/
+
+data3/
+
+*.tar
 
 data_*/
 
@@ -18,3 +22,13 @@ data_*/
 *.jpg
 
 segmentation/
+
+*.zip
+
+*val_imgs*/
+
+pretrained/
+
+*.pkl
+
+test/

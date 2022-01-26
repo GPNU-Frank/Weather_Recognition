@@ -1,0 +1,27 @@
+2021-03-05 09:33:58,022 INFO      ----------configuration**********
+2021-03-05 09:33:58,022 INFO      ('dataset', 'my_data')
+2021-03-05 09:33:58,022 INFO      ('train_path', 'D:\\flk\\Weather_Recognition\\data_split_v5\\train\\')
+2021-03-05 09:33:58,022 INFO      ('test_path', 'D:\\flk\\Weather_Recognition\\data_split_v5\\test\\')
+2021-03-05 09:33:58,022 INFO      ('imagesize', '224')
+2021-03-05 09:33:58,022 INFO      ('epochs', '100')
+2021-03-05 09:33:58,022 INFO      ('start_epoch', '0')
+2021-03-05 09:33:58,022 INFO      ('train_batch', '4')
+2021-03-05 09:33:58,023 INFO      ('test_batch', '4')
+2021-03-05 09:33:58,023 INFO      ('lr', '0.001')
+2021-03-05 09:33:58,023 INFO      ('drop', '0')
+2021-03-05 09:33:58,023 INFO      ('schedule', '[5, 10, 15]')
+2021-03-05 09:33:58,023 INFO      ('gamma', '0.8')
+2021-03-05 09:33:58,023 INFO      ('momentum', '0.8')
+2021-03-05 09:33:58,023 INFO      ('weight_decay', '0.0005')
+2021-03-05 09:33:58,023 INFO      ('checkpoint', 'checkpoints/my_data_v5_resnet18_dilate')
+2021-03-05 09:33:58,023 INFO      ('resume', '')
+2021-03-05 09:33:58,023 INFO      ('arch', 'resnet18')
+2021-03-05 09:33:58,023 INFO      ('manualSeed', '3624')
+2021-03-05 10:04:04,910 INFO      epoch: 1, train_acc: 94.27, test_acc: 77.02
+2021-03-05 10:26:12,186 INFO      epoch: 2, train_acc: 98.98, test_acc: 75.25
+2021-03-05 10:45:28,162 INFO      epoch: 3, train_acc: 99.31, test_acc: 77.24
+2021-03-05 11:04:44,689 INFO      epoch: 4, train_acc: 99.58, test_acc: 78.93
+2021-03-05 11:24:11,214 INFO      epoch: 5, train_acc: 99.69, test_acc: 74.15
+2021-03-05 11:43:45,966 INFO      epoch: 6, train_acc: 99.86, test_acc: 76.14
+2021-03-05 12:03:20,940 INFO      epoch: 7, train_acc: 99.80, test_acc: 71.60
+2021-03-05 12:22:57,398 INFO      epoch: 8, train_acc: 99.87, test_acc: 72.69

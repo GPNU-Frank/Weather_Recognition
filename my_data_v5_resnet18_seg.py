@@ -40,11 +40,11 @@ parser.add_argument('--test-batch', default=4, type=int, metavar='N',
                 help='test batchsize')
 parser.add_argument('--lr', '--learning-rate', default=0.001, type=float,
                 metavar='LR', help='initial learning rate')
-parser.add_argument('--other_lr', '--other-learning-rate', default=0.002, type=float,
+parser.add_argument('--other_lr', '--other-learning-rate', default=0.001, type=float,
                 metavar='LR', help='initial learning rate')
 parser.add_argument('--drop', '--dropout', default=0, type=float,
                 metavar='Dropout', help='Dropout ratio')
-parser.add_argument('--schedule', type=int, nargs='+', default=[1, 3, 5, 7, 9],
+parser.add_argument('--schedule', type=int, nargs='+', default=[1, 5, 10],
                 help='Decrease learning rate at these epochs.')
 parser.add_argument('--gamma', type=float, default=0.80, help='LR is multiplied by gamma on schedule.')
 parser.add_argument('--momentum', default=0.8, type=float, metavar='M',
@@ -56,7 +56,7 @@ parser.add_argument('--weight-decay', '--wd', default=1e-3, type=float,
 #                     help='path to latest checkpoint (default: none)')
 
 # checkpoints
-parser.add_argument('-c', '--checkpoint', default='checkpoints/my_data_v5_resnet18_seg_4classes', type=str, metavar='PATH',
+parser.add_argument('-c', '--checkpoint', default='checkpoints/my_data_v5_resnet18_seg', type=str, metavar='PATH',
                 help='path to save checkpoint (default:checkpoint)')
 parser.add_argument('--resume', default='', type=str, metavar='PATH')
 
@@ -94,8 +94,8 @@ def main():
         os.makedirs(args.checkpoint)
 
     # load data
-    # mean = [0.5, 0.5, 0.5]
-    # std = [0.5, 0.5, 0.5]
+    mean = [0.5, 0.5, 0.5]
+    std = [0.5, 0.5, 0.5]
     # imagesize = args.imagesize
     image_size = (576, 720)
 

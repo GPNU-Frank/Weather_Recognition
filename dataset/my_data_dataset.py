@@ -12,7 +12,7 @@ class MyData(Dataset):
         self.num_classes = 6
         self.transform = transform
         # label_dict = {'Cloud': 0, 'Fog': 1, 'Rainy': 2, 'Snow': 3, 'Sunny': 4, 'Thunderstorm': 5}
-        label_dict = {'Cloud': 0, 'Fog': 1, 'Rainy': 2, 'Snow': 3, 'Sunny': 0}
+        label_dict = {'Cloud': 0, 'Fog': 1, 'Rainy': 2, 'Snow': 3, 'Sunny': 4}
         if not os.path.exists(root_path):
             print(root_path)
             raise FileNotFoundError

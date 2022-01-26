@@ -11,8 +11,8 @@ if __name__ == '__main__':
     parser.add_argument('-u', '--url', type=str)
     parser.add_argument('-w', '--weather', type=str)
     parser.add_argument('-f', '--frame-num', default=100, type=int)
-    parser.add_argument('-g', '--gap', default=20, type=int)
-    # parser.add_argument('-g', '--gap', default=60, type=int)
+    # parser.add_argument('-g', '--gap', default=20, type=int)
+    parser.add_argument('-g', '--gap', default=60, type=int)
 
     # 取连续帧用
     parser.add_argument('-s', '--sequence', default=5, type=int)

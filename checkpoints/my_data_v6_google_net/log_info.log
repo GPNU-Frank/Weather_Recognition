@@ -1,0 +1,40 @@
+2022-03-01 16:23:52,645 INFO      ----------configuration**********
+2022-03-01 16:23:52,645 INFO      ('dataset', 'my_data')
+2022-03-01 16:23:52,646 INFO      ('train_path', 'G:\\vscode_workspace\\Weather_Recognition\\data_split_v6\\train\\')
+2022-03-01 16:23:52,646 INFO      ('test_path', 'G:\\vscode_workspace\\Weather_Recognition\\data_split_v6\\test\\')
+2022-03-01 16:23:52,646 INFO      ('imagesize', '224')
+2022-03-01 16:23:52,646 INFO      ('epochs', '20')
+2022-03-01 16:23:52,646 INFO      ('start_epoch', '0')
+2022-03-01 16:23:52,646 INFO      ('train_batch', '16')
+2022-03-01 16:23:52,646 INFO      ('test_batch', '2')
+2022-03-01 16:23:52,646 INFO      ('lr', '0.0001')
+2022-03-01 16:23:52,647 INFO      ('drop', '0')
+2022-03-01 16:23:52,647 INFO      ('schedule', '[5, 10, 15]')
+2022-03-01 16:23:52,647 INFO      ('gamma', '0.8')
+2022-03-01 16:23:52,647 INFO      ('momentum', '0.8')
+2022-03-01 16:23:52,647 INFO      ('weight_decay', '0.0001')
+2022-03-01 16:23:52,648 INFO      ('checkpoint', 'checkpoints/my_data_v6_google_net')
+2022-03-01 16:23:52,648 INFO      ('resume', '')
+2022-03-01 16:23:52,648 INFO      ('arch', 'resnet18')
+2022-03-01 16:23:52,648 INFO      ('manualSeed', '8121')
+2022-03-01 16:49:59,917 INFO      epoch: 1, train_acc: 63.97, test_acc: 59.73
+2022-03-01 17:16:34,906 INFO      epoch: 2, train_acc: 88.71, test_acc: 64.55
+2022-03-01 17:42:04,029 INFO      epoch: 3, train_acc: 95.25, test_acc: 65.96
+2022-03-01 18:07:04,076 INFO      epoch: 4, train_acc: 97.67, test_acc: 67.60
+2022-03-01 18:32:32,911 INFO      epoch: 5, train_acc: 98.46, test_acc: 66.69
+2022-03-01 18:58:00,862 INFO      epoch: 6, train_acc: 98.76, test_acc: 66.47
+2022-03-01 19:23:04,692 INFO      epoch: 7, train_acc: 99.04, test_acc: 67.38
+2022-03-01 19:49:05,818 INFO      epoch: 8, train_acc: 99.21, test_acc: 67.66
+2022-03-01 20:16:27,864 INFO      epoch: 9, train_acc: 99.33, test_acc: 67.10
+2022-03-01 20:44:11,778 INFO      epoch: 10, train_acc: 99.47, test_acc: 67.76
+2022-03-01 21:10:35,687 INFO      epoch: 11, train_acc: 99.51, test_acc: 67.97
+2022-03-01 21:36:01,073 INFO      epoch: 12, train_acc: 99.58, test_acc: 67.95
+2022-03-01 22:04:27,124 INFO      epoch: 13, train_acc: 99.64, test_acc: 67.27
+2022-03-01 22:31:21,142 INFO      epoch: 14, train_acc: 99.70, test_acc: 67.29
+2022-03-01 22:58:40,188 INFO      epoch: 15, train_acc: 99.67, test_acc: 66.93
+2022-03-01 23:24:59,821 INFO      epoch: 16, train_acc: 99.68, test_acc: 67.30
+2022-03-01 23:49:47,191 INFO      epoch: 17, train_acc: 99.71, test_acc: 67.76
+2022-03-02 00:15:34,940 INFO      epoch: 18, train_acc: 99.74, test_acc: 67.58
+2022-03-02 00:41:18,861 INFO      epoch: 19, train_acc: 99.76, test_acc: 66.64
+2022-03-02 01:06:07,591 INFO      epoch: 20, train_acc: 99.73, test_acc: 68.44
+2022-03-02 01:06:07,591 INFO      best_acc: 68.44

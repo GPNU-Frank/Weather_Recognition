@@ -1,0 +1,207 @@
+2022-01-01 00:59:35,688 INFO      ----------configuration**********
+2022-01-01 00:59:35,688 INFO      ('dataset', 'my_data')
+2022-01-01 00:59:35,689 INFO      ('train_path', 'G:\\vscode_workspace\\Weather_Recognition\\data_split_v6\\train\\')
+2022-01-01 00:59:35,689 INFO      ('test_path', 'G:\\vscode_workspace\\Weather_Recognition\\data_split_v6\\test\\')
+2022-01-01 00:59:35,689 INFO      ('imagesize', '224')
+2022-01-01 00:59:35,689 INFO      ('epochs', '100')
+2022-01-01 00:59:35,689 INFO      ('start_epoch', '0')
+2022-01-01 00:59:35,689 INFO      ('train_batch', '4')
+2022-01-01 00:59:35,689 INFO      ('test_batch', '4')
+2022-01-01 00:59:35,689 INFO      ('lr', '0.001')
+2022-01-01 00:59:35,689 INFO      ('drop', '0')
+2022-01-01 00:59:35,689 INFO      ('schedule', '[5, 10, 15]')
+2022-01-01 00:59:35,690 INFO      ('gamma', '0.8')
+2022-01-01 00:59:35,690 INFO      ('momentum', '0.8')
+2022-01-01 00:59:35,690 INFO      ('weight_decay', '0.001')
+2022-01-01 00:59:35,690 INFO      ('checkpoint', 'checkpoints/my_data_v6_vgg13')
+2022-01-01 00:59:35,690 INFO      ('resume', '')
+2022-01-01 00:59:35,690 INFO      ('arch', 'resnet18')
+2022-01-01 00:59:35,690 INFO      ('manualSeed', '9892')
+2022-01-01 10:47:55,709 INFO      ----------configuration**********
+2022-01-01 10:47:55,709 INFO      ('dataset', 'my_data')
+2022-01-01 10:47:55,710 INFO      ('train_path', 'G:\\vscode_workspace\\Weather_Recognition\\data_split_v6\\train\\')
+2022-01-01 10:47:55,710 INFO      ('test_path', 'G:\\vscode_workspace\\Weather_Recognition\\data_split_v6\\test\\')
+2022-01-01 10:47:55,710 INFO      ('imagesize', '224')
+2022-01-01 10:47:55,710 INFO      ('epochs', '100')
+2022-01-01 10:47:55,710 INFO      ('start_epoch', '0')
+2022-01-01 10:47:55,710 INFO      ('train_batch', '4')
+2022-01-01 10:47:55,710 INFO      ('test_batch', '4')
+2022-01-01 10:47:55,710 INFO      ('lr', '0.001')
+2022-01-01 10:47:55,710 INFO      ('drop', '0')
+2022-01-01 10:47:55,710 INFO      ('schedule', '[5, 10, 15]')
+2022-01-01 10:47:55,710 INFO      ('gamma', '0.8')
+2022-01-01 10:47:55,710 INFO      ('momentum', '0.8')
+2022-01-01 10:47:55,710 INFO      ('weight_decay', '0.0001')
+2022-01-01 10:47:55,710 INFO      ('checkpoint', 'checkpoints/my_data_v6_vgg13')
+2022-01-01 10:47:55,710 INFO      ('resume', '')
+2022-01-01 10:47:55,710 INFO      ('arch', 'resnet18')
+2022-01-01 10:47:55,710 INFO      ('manualSeed', '2477')
+2022-01-01 11:35:21,838 INFO      epoch: 1, train_acc: 95.06, test_acc: 83.48
+2022-01-01 12:20:33,770 INFO      epoch: 2, train_acc: 99.30, test_acc: 75.42
+2022-01-02 01:12:41,755 INFO      ----------configuration**********
+2022-01-02 01:12:41,755 INFO      ('dataset', 'my_data')
+2022-01-02 01:12:41,755 INFO      ('train_path', 'G:\\vscode_workspace\\Weather_Recognition\\data_split_v6\\train\\')
+2022-01-02 01:12:41,755 INFO      ('test_path', 'G:\\vscode_workspace\\Weather_Recognition\\data_split_v6\\test\\')
+2022-01-02 01:12:41,755 INFO      ('imagesize', '224')
+2022-01-02 01:12:41,755 INFO      ('epochs', '100')
+2022-01-02 01:12:41,755 INFO      ('start_epoch', '0')
+2022-01-02 01:12:41,755 INFO      ('train_batch', '4')
+2022-01-02 01:12:41,755 INFO      ('test_batch', '4')
+2022-01-02 01:12:41,756 INFO      ('lr', '0.001')
+2022-01-02 01:12:41,756 INFO      ('drop', '0')
+2022-01-02 01:12:41,756 INFO      ('schedule', '[5, 10, 15]')
+2022-01-02 01:12:41,756 INFO      ('gamma', '0.8')
+2022-01-02 01:12:41,756 INFO      ('momentum', '0.8')
+2022-01-02 01:12:41,756 INFO      ('weight_decay', '0.0001')
+2022-01-02 01:12:41,756 INFO      ('checkpoint', 'checkpoints/my_data_v6_vgg13')
+2022-01-02 01:12:41,756 INFO      ('resume', '')
+2022-01-02 01:12:41,756 INFO      ('arch', 'resnet18')
+2022-01-02 01:12:41,756 INFO      ('manualSeed', '346')
+2022-01-02 01:58:50,274 INFO      epoch: 1, train_acc: 95.03, test_acc: 80.48
+2022-01-02 02:44:16,121 INFO      epoch: 2, train_acc: 99.18, test_acc: 79.73
+2022-01-02 03:29:13,533 INFO      epoch: 3, train_acc: 99.51, test_acc: 80.25
+2022-01-02 04:13:53,466 INFO      epoch: 4, train_acc: 99.69, test_acc: 81.23
+2022-01-02 04:58:46,487 INFO      epoch: 5, train_acc: 99.67, test_acc: 78.36
+2022-01-02 05:43:09,821 INFO      epoch: 6, train_acc: 99.80, test_acc: 78.84
+2022-01-02 06:27:42,621 INFO      epoch: 7, train_acc: 99.88, test_acc: 82.72
+2022-01-02 07:12:20,416 INFO      epoch: 8, train_acc: 99.87, test_acc: 80.28
+2022-01-02 07:58:04,678 INFO      epoch: 9, train_acc: 99.91, test_acc: 79.20
+2022-01-02 08:42:59,228 INFO      epoch: 10, train_acc: 99.92, test_acc: 80.49
+2022-01-02 09:27:44,178 INFO      epoch: 11, train_acc: 99.95, test_acc: 80.55
+2022-01-02 10:12:40,092 INFO      epoch: 12, train_acc: 99.97, test_acc: 80.23
+2022-01-02 10:57:23,998 INFO      epoch: 13, train_acc: 99.99, test_acc: 78.35
+2022-01-02 11:42:24,552 INFO      epoch: 14, train_acc: 99.99, test_acc: 79.54
+2022-01-02 12:27:14,141 INFO      epoch: 15, train_acc: 99.98, test_acc: 79.29
+2022-01-02 13:11:59,999 INFO      epoch: 16, train_acc: 99.99, test_acc: 79.16
+2022-01-02 13:57:30,013 INFO      epoch: 17, train_acc: 99.99, test_acc: 77.46
+2022-01-02 14:43:06,488 INFO      epoch: 18, train_acc: 99.99, test_acc: 78.90
+2022-01-02 15:28:21,427 INFO      epoch: 19, train_acc: 99.99, test_acc: 79.24
+2022-01-02 16:13:31,284 INFO      epoch: 20, train_acc: 99.99, test_acc: 78.07
+2022-01-02 16:58:32,420 INFO      epoch: 21, train_acc: 100.00, test_acc: 78.43
+2022-01-02 17:43:51,977 INFO      epoch: 22, train_acc: 100.00, test_acc: 78.67
+2022-01-02 18:29:01,478 INFO      epoch: 23, train_acc: 99.96, test_acc: 79.71
+2022-01-02 19:14:51,913 INFO      epoch: 24, train_acc: 99.99, test_acc: 80.21
+2022-01-02 20:00:55,786 INFO      epoch: 25, train_acc: 100.00, test_acc: 78.71
+以上是 densenet121的结果
+
+
+Epoch: [1 | 20] LR: 0.001000
+Processing |################################| (18190/2) Data: 0.053s | Batch: 0.070s | Total: 0:21:10 | ETA: 0:00:01 | Loss: 0.0741 | top1:  97.3694      
+Processing |################################| (4485/2) Data: 0.060s | Batch: 0.073s | Total: 0:05:28 | ETA: 0:00:01 | Loss: 1.4620 | top1:  69.3200       
+
+Epoch: [2 | 20] LR: 0.001000
+Processing |################################| (18190/2) Data: 0.046s | Batch: 0.063s | Total: 0:19:13 | ETA: 0:00:01 | Loss: 0.0031 | top1:  99.9423      
+Processing |################################| (4485/2) Data: 0.056s | Batch: 0.069s | Total: 0:05:11 | ETA: 0:00:01 | Loss: 1.6269 | top1:  68.0268       
+
+Epoch: [3 | 20] LR: 0.001000
+Processing |################################| (18190/2) Data: 0.043s | Batch: 0.061s | Total: 0:18:28 | ETA: 0:00:01 | Loss: 0.0001 | top1:  100.0000     
+Processing |################################| (4485/2) Data: 0.055s | Batch: 0.069s | Total: 0:05:09 | ETA: 0:00:01 | Loss: 1.8229 | top1:  67.1014       
+
+Epoch: [4 | 20] LR: 0.001000
+Processing |################################| (18190/2) Data: 0.043s | Batch: 0.062s | Total: 0:18:38 | ETA: 0:00:01 | Loss: 0.0020 | top1:  99.9560      
+Processing |################################| (4485/2) Data: 0.055s | Batch: 0.069s | Total: 0:05:07 | ETA: 0:00:01 | Loss: 1.7898 | top1:  63.3891       
+
+Epoch: [5 | 20] LR: 0.001000
+Processing |################################| (18190/2) Data: 0.050s | Batch: 0.067s | Total: 0:20:17 | ETA: 0:00:01 | Loss: 0.0002 | top1:  99.9945      
+Processing |################################| (4485/2) Data: 0.057s | Batch: 0.070s | Total: 0:05:15 | ETA: 0:00:01 | Loss: 2.0286 | top1:  62.9431       
+
+Epoch: [6 | 20] LR: 0.000800
+Processing |################################| (18190/2) Data: 0.049s | Batch: 0.067s | Total: 0:20:10 | ETA: 0:00:01 | Loss: 0.0000 | top1:  100.0000     
+Processing |################################| (4485/2) Data: 0.057s | Batch: 0.071s | Total: 0:05:17 | ETA: 0:00:01 | Loss: 2.0975 | top1:  62.7536       
+
+Epoch: [7 | 20] LR: 0.000800
+Processing |################################| (18190/2) Data: 0.044s | Batch: 0.062s | Total: 0:18:49 | ETA: 0:00:01 | Loss: 0.0000 | top1:  100.0000     
+Processing |################################| (4485/2) Data: 0.054s | Batch: 0.067s | Total: 0:04:59 | ETA: 0:00:01 | Loss: 2.0197 | top1:  63.6901       
+
+Epoch: [8 | 20] LR: 0.000800
+Processing |################################| (18190/2) Data: 0.046s | Batch: 0.064s | Total: 0:19:26 | ETA: 0:00:01 | Loss: 0.0000 | top1:  100.0000     
+Processing |################################| (4485/2) Data: 0.058s | Batch: 0.071s | Total: 0:05:19 | ETA: 0:00:01 | Loss: 1.9331 | top1:  64.4816       
+
+Epoch: [9 | 20] LR: 0.000800
+Processing |################################| (18190/2) Data: 0.048s | Batch: 0.067s | Total: 0:20:27 | ETA: 0:00:01 | Loss: 0.0000 | top1:  100.0000     
+Processing |################################| (4485/2) Data: 0.060s | Batch: 0.075s | Total: 0:05:36 | ETA: 0:00:01 | Loss: 1.9208 | top1:  65.0948       
+
+Epoch: [10 | 20] LR: 0.000800
+Processing |################################| (18190/2) Data: 0.049s | Batch: 0.070s | Total: 0:21:07 | ETA: 0:00:01 | Loss: 0.0000 | top1:  100.0000     
+Processing |################################| (4485/2) Data: 0.060s | Batch: 0.075s | Total: 0:05:36 | ETA: 0:00:01 | Loss: 1.8221 | top1:  66.2765       
+
+Epoch: [11 | 20] LR: 0.000640
+Processing |################################| (18190/2) Data: 0.050s | Batch: 0.070s | Total: 0:21:14 | ETA: 0:00:01 | Loss: 0.0000 | top1:  100.0000     
+Processing |################################| (4485/2) Data: 0.057s | Batch: 0.070s | Total: 0:05:12 | ETA: 0:00:01 | Loss: 1.8570 | top1:  65.3846       
+
+Epoch: [12 | 20] LR: 0.000640
+Processing |################################| (18190/2) Data: 0.045s | Batch: 0.063s | Total: 0:19:03 | ETA: 0:00:01 | Loss: 0.0000 | top1:  100.0000     
+Processing |################################| (4485/2) Data: 0.057s | Batch: 0.070s | Total: 0:05:13 | ETA: 0:00:01 | Loss: 1.8526 | top1:  65.4849       
+
+Epoch: [13 | 20] LR: 0.000640
+Processing |################################| (18190/2) Data: 0.045s | Batch: 0.063s | Total: 0:19:02 | ETA: 0:00:01 | Loss: 0.0000 | top1:  100.0000     
+Processing |################################| (4485/2) Data: 0.056s | Batch: 0.069s | Total: 0:05:08 | ETA: 0:00:01 | Loss: 1.8603 | top1:  65.1059       
+
+Epoch: [14 | 20] LR: 0.000640
+Processing |################################| (18190/2) Data: 0.045s | Batch: 0.063s | Total: 0:19:03 | ETA: 0:00:01 | Loss: 0.0000 | top1:  100.0000     
+Processing |################################| (4485/2) Data: 0.056s | Batch: 0.069s | Total: 0:05:09 | ETA: 0:00:01 | Loss: 1.8410 | top1:  65.2843       
+
+Epoch: [15 | 20] LR: 0.000640
+Processing |################################| (18190/2) Data: 0.045s | Batch: 0.063s | Total: 0:19:02 | ETA: 0:00:01 | Loss: 0.0000 | top1:  100.0000     
+Processing |################################| (4485/2) Data: 0.057s | Batch: 0.070s | Total: 0:05:16 | ETA: 0:00:01 | Loss: 1.8462 | top1:  65.0948       
+
+Epoch: [16 | 20] LR: 0.000512
+Processing |################################| (18190/2) Data: 0.047s | Batch: 0.064s | Total: 0:19:29 | ETA: 0:00:01 | Loss: 0.0000 | top1:  100.0000     
+Epoch: [17 | 20] LR: 0.000512
+Processing |################################| (18190/2) Data: 0.047s | Batch: 0.064s | Total: 0:19:21 | ETA: 0:00:01 | Loss: 0.0000 | top1:  100.0000     
+Processing |################################| (4485/2) Data: 0.056s | Batch: 0.069s | Total: 0:05:11 | ETA: 0:00:01 | Loss: 1.8303 | top1:  65.4738       
+                                                                                                                                                          
+Epoch: [18 | 20] LR: 0.000512
+Processing |################################| (18190/2) Data: 0.045s | Batch: 0.063s | Total: 0:18:57 | ETA: 0:00:01 | Loss: 0.0000 | top1:  100.0000     
+Processing |################################| (4485/2) Data: 0.057s | Batch: 0.070s | Total: 0:05:12 | ETA: 0:00:01 | Loss: 1.8017 | top1:  65.5741       
+                                                                                                                                                          
+Epoch: [19 | 20] LR: 0.000512
+Processing |################################| (18190/2) Data: 0.045s | Batch: 0.062s | Total: 0:18:55 | ETA: 0:00:01 | Loss: 0.0000 | top1:  100.0000     
+Processing |################################| (4485/2) Data: 0.056s | Batch: 0.069s | Total: 0:05:08 | ETA: 0:00:01 | Loss: 1.7923 | top1:  65.7302       
+                                                                                                                                                          
+Epoch: [20 | 20] LR: 0.000512
+Processing |################################| (18190/2) Data: 0.045s | Batch: 0.063s | Total: 0:18:57 | ETA: 0:00:01 | Loss: 0.0000 | top1:  100.0000     
+Processing |################################| (4485/2) Data: 0.058s | Batch: 0.072s | Total: 0:05:21 | ETA: 0:00:01 | Loss: 1.8087 | top1:  65.7525 
+
+以上是01—07 没有记录的
+
+2022-01-08 11:22:01,984 INFO      ----------configuration**********
+2022-01-08 11:22:01,985 INFO      ('dataset', 'my_data')
+2022-01-08 11:22:01,985 INFO      ('train_path', 'G:\\vscode_workspace\\Weather_Recognition\\data_split_v6\\train\\')
+2022-01-08 11:22:01,985 INFO      ('test_path', 'G:\\vscode_workspace\\Weather_Recognition\\data_split_v6\\test\\')
+2022-01-08 11:22:01,985 INFO      ('imagesize', '224')
+2022-01-08 11:22:01,985 INFO      ('epochs', '20')
+2022-01-08 11:22:01,985 INFO      ('start_epoch', '0')
+2022-01-08 11:22:01,985 INFO      ('train_batch', '2')
+2022-01-08 11:22:01,985 INFO      ('test_batch', '2')
+2022-01-08 11:22:01,985 INFO      ('lr', '0.0001')
+2022-01-08 11:22:01,985 INFO      ('drop', '0')
+2022-01-08 11:22:01,985 INFO      ('schedule', '[5, 10, 15]')
+2022-01-08 11:22:01,985 INFO      ('gamma', '0.8')
+2022-01-08 11:22:01,985 INFO      ('momentum', '0.8')
+2022-01-08 11:22:01,985 INFO      ('weight_decay', '0.0001')
+2022-01-08 11:22:01,985 INFO      ('checkpoint', 'checkpoints/my_data_v6_vgg13')
+2022-01-08 11:22:01,985 INFO      ('resume', '')
+2022-01-08 11:22:01,985 INFO      ('arch', 'resnet18')
+2022-01-08 11:22:01,985 INFO      ('manualSeed', '5061')
+2022-01-08 11:48:43,133 INFO      epoch: 1, train_acc: 96.50, test_acc: 66.56
+2022-01-08 12:14:33,816 INFO      epoch: 2, train_acc: 99.91, test_acc: 57.30
+2022-01-08 12:39:54,375 INFO      epoch: 3, train_acc: 99.97, test_acc: 66.78
+2022-01-08 13:05:51,784 INFO      epoch: 4, train_acc: 99.99, test_acc: 65.07
+2022-01-08 13:31:19,381 INFO      epoch: 5, train_acc: 100.00, test_acc: 65.41
+2022-01-08 13:58:34,056 INFO      epoch: 6, train_acc: 100.00, test_acc: 66.28
+2022-01-08 14:25:07,055 INFO      epoch: 7, train_acc: 99.99, test_acc: 66.14
+2022-01-08 14:54:02,883 INFO      epoch: 8, train_acc: 99.97, test_acc: 65.30
+2022-01-08 15:20:49,973 INFO      epoch: 9, train_acc: 100.00, test_acc: 65.98
+2022-01-08 15:47:02,476 INFO      epoch: 10, train_acc: 100.00, test_acc: 65.17
+2022-01-08 16:12:43,708 INFO      epoch: 11, train_acc: 100.00, test_acc: 65.27
+2022-01-08 16:38:27,906 INFO      epoch: 12, train_acc: 100.00, test_acc: 66.01
+2022-01-08 17:04:07,615 INFO      epoch: 13, train_acc: 99.99, test_acc: 66.42
+2022-01-08 17:29:45,675 INFO      epoch: 14, train_acc: 99.99, test_acc: 64.66
+2022-01-08 17:55:30,813 INFO      epoch: 15, train_acc: 100.00, test_acc: 65.50
+2022-01-08 18:21:34,728 INFO      epoch: 16, train_acc: 100.00, test_acc: 66.45
+2022-01-08 18:48:42,998 INFO      epoch: 17, train_acc: 100.00, test_acc: 64.99
+2022-01-08 19:14:30,358 INFO      epoch: 18, train_acc: 100.00, test_acc: 64.85
+2022-01-08 19:40:32,657 INFO      epoch: 19, train_acc: 100.00, test_acc: 64.62
+2022-01-08 20:06:43,079 INFO      epoch: 20, train_acc: 100.00, test_acc: 65.48
+2022-01-08 20:06:43,079 INFO      best_acc: 66.78

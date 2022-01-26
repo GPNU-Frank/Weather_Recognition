@@ -1,6 +1,8 @@
 import numpy as np
 import torch
 import pickle
+import torchvision
+import matplotlib.pyplot as plt
 
 class AverageMeter(object):
     """Computes and stores the average and current value
@@ -92,3 +94,40 @@ def load_state_dict(model, fname):
                                    'dimensions in the checkpoint are {}.'.format(name, own_state[name].size(), param.size()))
         else:
             raise KeyError('unexpected key "{}" in state_dict'.format(name))
+
+
+def imshow_batch(images, labels):
+    """Displays two grids of images. The top grid displays ``images``
+    and the bottom grid ``labels``
+    Keyword arguments:
+    - images (``Tensor``): a 4D mini-batch tensor of shape
+    (B, C, H, W)
+    - labels (``Tensor``): a 4D mini-batch tensor of shape
+    (B, C, H, W)
+    """
+
+    # Make a grid with the images and labels and convert it to numpy
+    images = torchvision.utils.make_grid(images).numpy()
+    labels = torchvision.utils.make_grid(labels).numpy()
+
+    fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(15, 7))
+    ax1.imshow(np.transpose(images, (1, 2, 0)))
+    ax2.imshow(np.transpose(labels, (1, 2, 0)))
+
+    plt.show()
+
+
+def batch_transform(batch, transform):
+    """Applies a transform to a batch of samples.
+    Keyword arguments:
+    - batch (): a batch os samples
+    - transform (callable): A function/transform to apply to ``batch``
+    """
+
+    # Convert the single channel label to RGB in tensor form
+    # 1. torch.unbind removes the 0-dimension of "labels" and returns a tuple of
+    # all slices along that dimension
+    # 2. the transform is applied to each slice
+    transf_slices = [transform(tensor) for tensor in torch.unbind(batch)]
+
+    return torch.stack(transf_slices)

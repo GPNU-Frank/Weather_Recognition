@@ -4,7 +4,7 @@ import torch.utils.model_zoo as model_zoo
 import torch.nn.functional as F
 import torch
 import numpy as np
-import cv2
+# import cv2
 import pdb
 import pickle
 import sys

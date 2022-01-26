@@ -1,0 +1,34 @@
+2021-03-16 22:38:07,775 INFO      ----------configuration**********
+2021-03-16 22:38:07,775 INFO      ('dataset', 'my_data')
+2021-03-16 22:38:07,775 INFO      ('train_path', 'G:\\vscode_workspace\\Weather_Recognition\\data_split_v6\\train\\')
+2021-03-16 22:38:07,775 INFO      ('test_path', 'G:\\vscode_workspace\\Weather_Recognition\\data_split_v6\\test\\')
+2021-03-16 22:38:07,775 INFO      ('imagesize', '224')
+2021-03-16 22:38:07,776 INFO      ('epochs', '100')
+2021-03-16 22:38:07,776 INFO      ('start_epoch', '0')
+2021-03-16 22:38:07,776 INFO      ('train_batch', '4')
+2021-03-16 22:38:07,776 INFO      ('test_batch', '4')
+2021-03-16 22:38:07,776 INFO      ('lr', '0.001')
+2021-03-16 22:38:07,776 INFO      ('drop', '0')
+2021-03-16 22:38:07,776 INFO      ('schedule', '[5, 10, 15]')
+2021-03-16 22:38:07,776 INFO      ('gamma', '0.8')
+2021-03-16 22:38:07,776 INFO      ('momentum', '0.8')
+2021-03-16 22:38:07,776 INFO      ('weight_decay', '0.001')
+2021-03-16 22:38:07,776 INFO      ('checkpoint', 'checkpoints/my_data_v6_resnet18_dilated')
+2021-03-16 22:38:07,776 INFO      ('resume', '')
+2021-03-16 22:38:07,776 INFO      ('arch', 'resnet18')
+2021-03-16 22:38:07,776 INFO      ('manualSeed', '3958')
+2021-03-16 23:19:32,795 INFO      epoch: 1, train_acc: 95.14, test_acc: 70.25
+2021-03-17 00:00:58,736 INFO      epoch: 2, train_acc: 98.96, test_acc: 62.39
+2021-03-17 00:42:37,830 INFO      epoch: 3, train_acc: 99.24, test_acc: 63.56
+2021-03-17 01:22:42,456 INFO      epoch: 4, train_acc: 99.48, test_acc: 72.85
+2021-03-17 02:02:48,131 INFO      epoch: 5, train_acc: 99.60, test_acc: 67.11
+2021-03-17 02:41:51,416 INFO      epoch: 6, train_acc: 99.79, test_acc: 62.22
+2021-03-17 03:20:57,046 INFO      epoch: 7, train_acc: 99.76, test_acc: 61.91
+2021-03-17 03:59:55,097 INFO      epoch: 8, train_acc: 99.87, test_acc: 67.58
+2021-03-17 04:39:17,670 INFO      epoch: 9, train_acc: 99.91, test_acc: 66.42
+2021-03-17 05:18:26,317 INFO      epoch: 10, train_acc: 99.93, test_acc: 60.06
+2021-03-17 05:57:34,525 INFO      epoch: 11, train_acc: 99.94, test_acc: 68.71
+2021-03-17 06:36:45,082 INFO      epoch: 12, train_acc: 99.97, test_acc: 69.00
+2021-03-17 07:15:57,865 INFO      epoch: 13, train_acc: 99.97, test_acc: 69.58
+2021-03-17 07:55:09,849 INFO      epoch: 14, train_acc: 99.96, test_acc: 70.16
+2021-03-17 08:34:30,674 INFO      epoch: 15, train_acc: 99.98, test_acc: 67.28

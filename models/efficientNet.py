@@ -9,7 +9,7 @@
 import torch
 from torch import nn
 from torch.nn import functional as F
-from utils import (
+from .utils import (
     round_filters,
     round_repeats,
     drop_connect,
@@ -392,7 +392,16 @@ class EfficientNet(nn.Module):
 
 
 if __name__ == '__main__':
-    inputs = torch.rand((2, 3, 224, 224))
-    model = EfficientNet()
+    # inputs = torch.rand((2, 3, 224, 224))
+    # model = EfficientNet()
+    # outputs = model(inputs)
+    # print(outputs)
+
+    # inputs = torch.rand(1, 3, 224, 224)
+    inputs = torch.rand(1, 3, 702, 576)
+    model = EfficientNet.from_pretrained('efficientnet-b0')
+    feature = model._fc.in_features
+    model._fc = nn.Linear(in_features=feature, out_features=5,bias=True)
+    model.eval()
     outputs = model(inputs)
     print(outputs)

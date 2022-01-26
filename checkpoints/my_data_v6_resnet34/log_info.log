@@ -1,0 +1,114 @@
+2022-03-04 22:46:26,574 INFO      ----------configuration**********
+2022-03-04 22:46:26,574 INFO      ('dataset', 'my_data')
+2022-03-04 22:46:26,574 INFO      ('train_path', 'G:\\vscode_workspace\\Weather_Recognition\\data_split_v6\\train\\')
+2022-03-04 22:46:26,575 INFO      ('test_path', 'G:\\vscode_workspace\\Weather_Recognition\\data_split_v6\\test\\')
+2022-03-04 22:46:26,575 INFO      ('imagesize', '224')
+2022-03-04 22:46:26,575 INFO      ('epochs', '20')
+2022-03-04 22:46:26,575 INFO      ('start_epoch', '0')
+2022-03-04 22:46:26,575 INFO      ('train_batch', '8')
+2022-03-04 22:46:26,575 INFO      ('test_batch', '4')
+2022-03-04 22:46:26,575 INFO      ('lr', '0.001')
+2022-03-04 22:46:26,575 INFO      ('drop', '0')
+2022-03-04 22:46:26,581 INFO      ('schedule', '[5, 10, 15]')
+2022-03-04 22:46:26,581 INFO      ('gamma', '0.8')
+2022-03-04 22:46:26,581 INFO      ('momentum', '0.8')
+2022-03-04 22:46:26,581 INFO      ('weight_decay', '0.0001')
+2022-03-04 22:46:26,581 INFO      ('checkpoint', 'checkpoints/my_data_v6_resnet34')
+2022-03-04 22:46:26,581 INFO      ('resume', '')
+2022-03-04 22:46:26,581 INFO      ('arch', 'resnet18')
+2022-03-04 22:46:26,581 INFO      ('manualSeed', '9250')
+2022-03-05 01:14:13,749 INFO      ----------configuration**********
+2022-03-05 01:14:13,769 INFO      ('dataset', 'my_data')
+2022-03-05 01:14:13,770 INFO      ('train_path', 'G:\\vscode_workspace\\Weather_Recognition\\data_split_v6\\train\\')
+2022-03-05 01:14:13,770 INFO      ('test_path', 'G:\\vscode_workspace\\Weather_Recognition\\data_split_v6\\test\\')
+2022-03-05 01:14:13,770 INFO      ('imagesize', '224')
+2022-03-05 01:14:13,770 INFO      ('epochs', '20')
+2022-03-05 01:14:13,770 INFO      ('start_epoch', '0')
+2022-03-05 01:14:13,770 INFO      ('train_batch', '4')
+2022-03-05 01:14:13,770 INFO      ('test_batch', '4')
+2022-03-05 01:14:13,770 INFO      ('lr', '0.001')
+2022-03-05 01:14:13,771 INFO      ('drop', '0')
+2022-03-05 01:14:13,771 INFO      ('schedule', '[5, 10, 15]')
+2022-03-05 01:14:13,771 INFO      ('gamma', '0.8')
+2022-03-05 01:14:13,771 INFO      ('momentum', '0.8')
+2022-03-05 01:14:13,771 INFO      ('weight_decay', '0.0001')
+2022-03-05 01:14:13,771 INFO      ('checkpoint', 'checkpoints/my_data_v6_resnet34')
+2022-03-05 01:14:13,771 INFO      ('resume', '')
+2022-03-05 01:14:13,771 INFO      ('arch', 'resnet18')
+2022-03-05 01:14:13,771 INFO      ('manualSeed', '2875')
+2022-03-05 01:47:09,441 INFO      epoch: 1, train_acc: 90.66, test_acc: 71.29
+2022-03-05 02:13:08,079 INFO      epoch: 2, train_acc: 98.86, test_acc: 69.24
+2022-03-05 02:38:41,978 INFO      epoch: 3, train_acc: 99.38, test_acc: 72.14
+2022-03-05 03:04:42,831 INFO      epoch: 4, train_acc: 99.65, test_acc: 72.62
+2022-03-05 03:29:52,340 INFO      epoch: 5, train_acc: 99.70, test_acc: 72.05
+2022-03-05 03:55:03,031 INFO      epoch: 6, train_acc: 99.90, test_acc: 70.62
+2022-03-05 04:20:29,534 INFO      epoch: 7, train_acc: 99.92, test_acc: 74.39
+2022-03-05 04:46:13,337 INFO      epoch: 8, train_acc: 99.90, test_acc: 79.09
+2022-03-05 05:12:04,215 INFO      epoch: 9, train_acc: 99.95, test_acc: 73.34
+2022-03-05 05:37:28,506 INFO      epoch: 10, train_acc: 99.97, test_acc: 73.52
+2022-03-05 06:03:03,962 INFO      epoch: 11, train_acc: 99.99, test_acc: 73.02
+2022-03-05 06:29:10,062 INFO      epoch: 12, train_acc: 99.98, test_acc: 75.42
+2022-03-05 06:55:23,532 INFO      epoch: 13, train_acc: 99.99, test_acc: 69.92
+2022-03-05 07:21:04,773 INFO      epoch: 14, train_acc: 99.98, test_acc: 74.87
+2022-03-05 07:46:54,982 INFO      epoch: 15, train_acc: 99.98, test_acc: 75.62
+2022-03-05 08:13:00,662 INFO      epoch: 16, train_acc: 99.99, test_acc: 72.17
+2022-03-05 08:39:00,076 INFO      epoch: 17, train_acc: 99.98, test_acc: 73.29
+2022-03-05 09:05:03,533 INFO      epoch: 18, train_acc: 99.99, test_acc: 75.27
+2022-03-05 09:31:06,983 INFO      epoch: 19, train_acc: 100.00, test_acc: 76.76
+2022-03-05 09:56:56,054 INFO      epoch: 20, train_acc: 99.99, test_acc: 77.35
+2022-03-05 09:56:56,054 INFO      best_acc: 79.09
+2022-03-05 13:53:36,766 INFO      ----------configuration**********
+2022-03-05 13:53:36,767 INFO      ('dataset', 'my_data')
+2022-03-05 13:53:36,767 INFO      ('train_path', 'G:\\vscode_workspace\\Weather_Recognition\\data_split_v6\\train\\')
+2022-03-05 13:53:36,767 INFO      ('test_path', 'G:\\vscode_workspace\\Weather_Recognition\\data_split_v6\\test\\')
+2022-03-05 13:53:36,767 INFO      ('imagesize', '224')
+2022-03-05 13:53:36,767 INFO      ('epochs', '20')
+2022-03-05 13:53:36,767 INFO      ('start_epoch', '0')
+2022-03-05 13:53:36,767 INFO      ('train_batch', '4')
+2022-03-05 13:53:36,767 INFO      ('test_batch', '4')
+2022-03-05 13:53:36,767 INFO      ('lr', '0.001')
+2022-03-05 13:53:36,767 INFO      ('drop', '0')
+2022-03-05 13:53:36,767 INFO      ('schedule', '[5, 10, 15]')
+2022-03-05 13:53:36,767 INFO      ('gamma', '0.8')
+2022-03-05 13:53:36,767 INFO      ('momentum', '0.8')
+2022-03-05 13:53:36,767 INFO      ('weight_decay', '0.0001')
+2022-03-05 13:53:36,767 INFO      ('checkpoint', 'checkpoints/my_data_v6_resnet34')
+2022-03-05 13:53:36,767 INFO      ('resume', '')
+2022-03-05 13:53:36,767 INFO      ('arch', 'resnet18')
+2022-03-05 13:53:36,768 INFO      ('manualSeed', '10')
+2022-03-05 14:27:47,510 INFO      epoch: 1, train_acc: 90.49, test_acc: 72.51
+2022-03-05 14:29:46,677 INFO      ----------configuration**********
+2022-03-05 14:29:46,678 INFO      ('dataset', 'my_data')
+2022-03-05 14:29:46,678 INFO      ('train_path', 'G:\\vscode_workspace\\Weather_Recognition\\data_split_v6\\train\\')
+2022-03-05 14:29:46,678 INFO      ('test_path', 'G:\\vscode_workspace\\Weather_Recognition\\data_split_v6\\test\\')
+2022-03-05 14:29:46,678 INFO      ('imagesize', '224')
+2022-03-05 14:29:46,678 INFO      ('epochs', '20')
+2022-03-05 14:29:46,678 INFO      ('start_epoch', '0')
+2022-03-05 14:29:46,678 INFO      ('train_batch', '4')
+2022-03-05 14:29:46,678 INFO      ('test_batch', '4')
+2022-03-05 14:29:46,678 INFO      ('lr', '0.001')
+2022-03-05 14:29:46,678 INFO      ('drop', '0')
+2022-03-05 14:29:46,678 INFO      ('schedule', '[5, 10, 15]')
+2022-03-05 14:29:46,678 INFO      ('gamma', '0.8')
+2022-03-05 14:29:46,678 INFO      ('momentum', '0.8')
+2022-03-05 14:29:46,678 INFO      ('weight_decay', '0.0001')
+2022-03-05 14:29:46,678 INFO      ('checkpoint', 'checkpoints/my_data_v6_resnet34')
+2022-03-05 14:29:46,678 INFO      ('resume', '')
+2022-03-05 14:29:46,678 INFO      ('arch', 'resnet18')
+2022-03-05 14:29:46,678 INFO      ('manualSeed', '6546')
+2022-03-05 15:01:51,609 INFO      epoch: 1, train_acc: 96.01, test_acc: 77.66
+2022-03-05 15:33:21,484 INFO      epoch: 2, train_acc: 99.24, test_acc: 81.47
+2022-03-05 16:04:16,592 INFO      epoch: 3, train_acc: 99.47, test_acc: 81.36
+2022-03-05 16:35:09,464 INFO      epoch: 4, train_acc: 99.51, test_acc: 79.21
+2022-03-05 17:06:06,368 INFO      epoch: 5, train_acc: 99.72, test_acc: 79.93
+2022-03-05 17:36:54,863 INFO      epoch: 6, train_acc: 99.83, test_acc: 77.28
+2022-03-05 18:08:01,020 INFO      epoch: 7, train_acc: 99.87, test_acc: 79.25
+2022-03-05 18:39:50,672 INFO      epoch: 8, train_acc: 99.90, test_acc: 76.06
+2022-03-05 19:11:00,174 INFO      epoch: 9, train_acc: 99.93, test_acc: 80.22
+2022-03-05 19:42:26,399 INFO      epoch: 10, train_acc: 99.91, test_acc: 79.90
+2022-03-05 20:13:40,494 INFO      epoch: 11, train_acc: 99.98, test_acc: 78.36
+2022-03-05 20:44:56,274 INFO      epoch: 12, train_acc: 99.97, test_acc: 73.80
+2022-03-05 21:16:12,634 INFO      epoch: 13, train_acc: 99.98, test_acc: 79.74
+2022-03-05 21:50:28,454 INFO      epoch: 14, train_acc: 99.99, test_acc: 79.04
+2022-03-05 22:24:37,975 INFO      epoch: 15, train_acc: 99.99, test_acc: 78.85
+2022-03-05 23:01:12,548 INFO      epoch: 16, train_acc: 100.00, test_acc: 78.48

@@ -1,0 +1,113 @@
+2021-05-27 16:44:38,117 INFO      ----------configuration**********
+2021-05-27 16:44:38,117 INFO      ('dataset', 'my_data')
+2021-05-27 16:44:38,117 INFO      ('train_path', 'G:\\vscode_workspace\\Weather_Recognition\\data3\\train\\')
+2021-05-27 16:44:38,117 INFO      ('test_path', 'G:\\vscode_workspace\\Weather_Recognition\\data3\\test\\')
+2021-05-27 16:44:38,118 INFO      ('root_path', 'G:\\dataset\\MWD\\weather_classification\\')
+2021-05-27 16:44:38,118 INFO      ('imagesize', '224')
+2021-05-27 16:44:38,118 INFO      ('pretrained_path', 'G:\\vscode_workspace\\Weather_Recognition\\checkpoints\\mwd_resnet18\\04_14_14_25_fold_0_model_best.pth.tar')
+2021-05-27 16:44:38,118 INFO      ('epochs', '20')
+2021-05-27 16:44:38,118 INFO      ('start_epoch', '0')
+2021-05-27 16:44:38,118 INFO      ('train_batch', '8')
+2021-05-27 16:44:38,118 INFO      ('test_batch', '8')
+2021-05-27 16:44:38,118 INFO      ('lr', '0.0005')
+2021-05-27 16:44:38,118 INFO      ('drop', '0')
+2021-05-27 16:44:38,118 INFO      ('schedule', '[5, 10, 15, 20, 25, 30, 35, 40, 45]')
+2021-05-27 16:44:38,118 INFO      ('gamma', '0.9')
+2021-05-27 16:44:38,118 INFO      ('momentum', '0.8')
+2021-05-27 16:44:38,119 INFO      ('lr_cent', '0.001')
+2021-05-27 16:44:38,119 INFO      ('weight_cent', '0.3')
+2021-05-27 16:44:38,119 INFO      ('weight_decay', '0.0001')
+2021-05-27 16:44:38,119 INFO      ('checkpoint', 'checkpoints/data3_resnet18_transfer_480_my_centerloss')
+2021-05-27 16:44:38,119 INFO      ('resume', '')
+2021-05-27 16:44:38,119 INFO      ('arch', 'resnet18')
+2021-05-27 16:44:38,119 INFO      ('manualSeed', '4444')
+2021-05-27 16:45:06,332 INFO      ----------configuration**********
+2021-05-27 16:45:06,332 INFO      ('dataset', 'my_data')
+2021-05-27 16:45:06,332 INFO      ('train_path', 'G:\\vscode_workspace\\Weather_Recognition\\data3\\train\\')
+2021-05-27 16:45:06,332 INFO      ('test_path', 'G:\\vscode_workspace\\Weather_Recognition\\data3\\test\\')
+2021-05-27 16:45:06,332 INFO      ('root_path', 'G:\\dataset\\MWD\\weather_classification\\')
+2021-05-27 16:45:06,332 INFO      ('imagesize', '224')
+2021-05-27 16:45:06,332 INFO      ('pretrained_path', 'G:\\vscode_workspace\\Weather_Recognition\\checkpoints\\mwd_resnet18\\04_14_14_25_fold_0_model_best.pth.tar')
+2021-05-27 16:45:06,332 INFO      ('epochs', '20')
+2021-05-27 16:45:06,332 INFO      ('start_epoch', '0')
+2021-05-27 16:45:06,332 INFO      ('train_batch', '8')
+2021-05-27 16:45:06,332 INFO      ('test_batch', '8')
+2021-05-27 16:45:06,333 INFO      ('lr', '0.0005')
+2021-05-27 16:45:06,333 INFO      ('drop', '0')
+2021-05-27 16:45:06,333 INFO      ('schedule', '[5, 10, 15, 20, 25, 30, 35, 40, 45]')
+2021-05-27 16:45:06,333 INFO      ('gamma', '0.9')
+2021-05-27 16:45:06,333 INFO      ('momentum', '0.8')
+2021-05-27 16:45:06,333 INFO      ('lr_cent', '0.001')
+2021-05-27 16:45:06,333 INFO      ('weight_cent', '0.3')
+2021-05-27 16:45:06,333 INFO      ('weight_decay', '0.0001')
+2021-05-27 16:45:06,333 INFO      ('checkpoint', 'checkpoints/data3_resnet18_transfer_480_my_centerloss')
+2021-05-27 16:45:06,333 INFO      ('resume', '')
+2021-05-27 16:45:06,333 INFO      ('arch', 'resnet18')
+2021-05-27 16:45:06,333 INFO      ('manualSeed', '9875')
+2021-05-27 16:45:27,532 INFO      ----------configuration**********
+2021-05-27 16:45:27,533 INFO      ('dataset', 'my_data')
+2021-05-27 16:45:27,533 INFO      ('train_path', 'G:\\vscode_workspace\\Weather_Recognition\\data3\\train\\')
+2021-05-27 16:45:27,533 INFO      ('test_path', 'G:\\vscode_workspace\\Weather_Recognition\\data3\\test\\')
+2021-05-27 16:45:27,533 INFO      ('root_path', 'G:\\dataset\\MWD\\weather_classification\\')
+2021-05-27 16:45:27,533 INFO      ('imagesize', '224')
+2021-05-27 16:45:27,533 INFO      ('pretrained_path', 'G:\\vscode_workspace\\Weather_Recognition\\checkpoints\\mwd_resnet18\\04_14_14_25_fold_0_model_best.pth.tar')
+2021-05-27 16:45:27,533 INFO      ('epochs', '20')
+2021-05-27 16:45:27,533 INFO      ('start_epoch', '0')
+2021-05-27 16:45:27,533 INFO      ('train_batch', '8')
+2021-05-27 16:45:27,533 INFO      ('test_batch', '8')
+2021-05-27 16:45:27,533 INFO      ('lr', '0.0005')
+2021-05-27 16:45:27,533 INFO      ('drop', '0')
+2021-05-27 16:45:27,533 INFO      ('schedule', '[5, 10, 15, 20, 25, 30, 35, 40, 45]')
+2021-05-27 16:45:27,533 INFO      ('gamma', '0.9')
+2021-05-27 16:45:27,533 INFO      ('momentum', '0.8')
+2021-05-27 16:45:27,533 INFO      ('lr_cent', '0.001')
+2021-05-27 16:45:27,533 INFO      ('weight_cent', '0.3')
+2021-05-27 16:45:27,534 INFO      ('weight_decay', '0.0001')
+2021-05-27 16:45:27,534 INFO      ('checkpoint', 'checkpoints/data3_resnet18_transfer_480_my_centerloss')
+2021-05-27 16:45:27,534 INFO      ('resume', '')
+2021-05-27 16:45:27,534 INFO      ('arch', 'resnet18')
+2021-05-27 16:45:27,534 INFO      ('manualSeed', '103')
+2021-05-27 16:51:17,854 INFO      ----------configuration**********
+2021-05-27 16:51:17,854 INFO      ('dataset', 'my_data')
+2021-05-27 16:51:17,854 INFO      ('train_path', 'G:\\vscode_workspace\\Weather_Recognition\\data3\\train\\')
+2021-05-27 16:51:17,854 INFO      ('test_path', 'G:\\vscode_workspace\\Weather_Recognition\\data3\\test\\')
+2021-05-27 16:51:17,855 INFO      ('root_path', 'G:\\dataset\\MWD\\weather_classification\\')
+2021-05-27 16:51:17,855 INFO      ('imagesize', '224')
+2021-05-27 16:51:17,855 INFO      ('pretrained_path', 'G:\\vscode_workspace\\Weather_Recognition\\checkpoints\\mwd_resnet18\\04_14_14_25_fold_0_model_best.pth.tar')
+2021-05-27 16:51:17,855 INFO      ('epochs', '20')
+2021-05-27 16:51:17,855 INFO      ('start_epoch', '0')
+2021-05-27 16:51:17,855 INFO      ('train_batch', '8')
+2021-05-27 16:51:17,855 INFO      ('test_batch', '8')
+2021-05-27 16:51:17,855 INFO      ('lr', '0.0005')
+2021-05-27 16:51:17,855 INFO      ('drop', '0')
+2021-05-27 16:51:17,856 INFO      ('schedule', '[5, 10, 15, 20, 25, 30, 35, 40, 45]')
+2021-05-27 16:51:17,856 INFO      ('gamma', '0.9')
+2021-05-27 16:51:17,856 INFO      ('momentum', '0.8')
+2021-05-27 16:51:17,856 INFO      ('lr_cent', '0.001')
+2021-05-27 16:51:17,856 INFO      ('weight_cent', '0.3')
+2021-05-27 16:51:17,856 INFO      ('weight_decay', '0.0001')
+2021-05-27 16:51:17,856 INFO      ('checkpoint', 'checkpoints/data3_resnet18_transfer_480_my_centerloss')
+2021-05-27 16:51:17,856 INFO      ('resume', '')
+2021-05-27 16:51:17,856 INFO      ('arch', 'resnet18')
+2021-05-27 16:51:17,856 INFO      ('manualSeed', '1926')
+2021-05-27 17:07:58,821 INFO      epoch: 1, train_acc: 59.08, test_acc: 69.58
+2021-05-27 17:09:36,616 INFO      epoch: 2, train_acc: 80.46, test_acc: 69.38
+2021-05-27 17:11:13,060 INFO      epoch: 3, train_acc: 85.85, test_acc: 72.18
+2021-05-27 17:12:54,164 INFO      epoch: 4, train_acc: 90.32, test_acc: 74.45
+2021-05-27 17:14:32,424 INFO      epoch: 5, train_acc: 92.90, test_acc: 77.18
+2021-05-27 17:16:07,584 INFO      epoch: 6, train_acc: 95.25, test_acc: 74.72
+2021-05-27 17:17:43,743 INFO      epoch: 7, train_acc: 96.59, test_acc: 73.78
+2021-05-27 17:19:19,960 INFO      epoch: 8, train_acc: 97.97, test_acc: 76.58
+2021-05-27 17:20:58,176 INFO      epoch: 9, train_acc: 97.60, test_acc: 75.52
+2021-05-27 17:22:38,856 INFO      epoch: 10, train_acc: 98.76, test_acc: 77.38
+2021-05-27 17:24:14,038 INFO      epoch: 11, train_acc: 99.03, test_acc: 76.85
+2021-05-27 17:25:49,329 INFO      epoch: 12, train_acc: 99.08, test_acc: 76.38
+2021-05-27 17:27:28,030 INFO      epoch: 13, train_acc: 99.45, test_acc: 75.52
+2021-05-27 17:29:05,921 INFO      epoch: 14, train_acc: 99.40, test_acc: 76.72
+2021-05-27 17:30:41,340 INFO      epoch: 15, train_acc: 99.77, test_acc: 75.92
+2021-05-27 17:32:17,230 INFO      epoch: 16, train_acc: 99.77, test_acc: 75.58
+2021-05-27 17:33:51,163 INFO      epoch: 17, train_acc: 99.59, test_acc: 76.78
+2021-05-27 17:35:25,227 INFO      epoch: 18, train_acc: 99.77, test_acc: 75.85
+2021-05-27 17:36:58,936 INFO      epoch: 19, train_acc: 99.77, test_acc: 76.85
+2021-05-27 17:38:33,344 INFO      epoch: 20, train_acc: 99.77, test_acc: 75.72
+2021-05-27 17:38:33,344 INFO      best_acc: 77.38

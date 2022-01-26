@@ -14,7 +14,7 @@ class MyDataSeg(Dataset):
         self.num_classes = 6
         self.transform = transform
         # label_dict = {'Cloud': 0, 'Fog': 1, 'Rainy': 2, 'Snow': 3, 'Sunny': 4, 'Thunderstorm': 5}
-        label_dict = {'Cloud': 0, 'Fog': 1, 'Rainy': 2, 'Snow': 3, 'Sunny': 0}
+        label_dict = {'Cloud': 0, 'Fog': 1, 'Rainy': 2, 'Snow': 3, 'Sunny': 4}
 
         if not os.path.exists(root_path):
             print(root_path)
@@ -25,7 +25,9 @@ class MyDataSeg(Dataset):
                 label = label_dict[emotion.name]
                 with os.scandir(emotion.path) as fold:
                     for img in fold:
-                        img_seg = img.path.replace("data_split_v4", "data_split_road_segment_v4")
+                        img_seg = img.path.replace("data_split", "data_split_road_segment")
+                        if img_seg == img:
+                            raise Exception("road image path wrong")
                         self.img_list.append((img.path, img_seg, label))
     
     def __getitem__(self, index):
